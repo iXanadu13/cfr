@@ -1,5 +1,6 @@
 package org.benf.cfr.reader.state;
 
+import lombok.Getter;
 import org.benf.cfr.reader.apiunreleased.ClassFileSource2;
 import org.benf.cfr.reader.apiunreleased.JarContent;
 import org.benf.cfr.reader.bytecode.analysis.parse.utils.Pair;
@@ -32,13 +33,18 @@ import java.util.regex.Matcher;
 
 public class DCCommonState {
 
+    @Getter
     private final ClassCache classCache;
     private final ClassFileSource2 classFileSource;
+    @Getter
     private final Options options;
     private final Map<String, ClassFile> classFileCache;
+    @Getter
     private Set<JavaTypeInstance> versionCollisions;
-    private transient LinkedHashSet<String> couldNotLoadClasses = new LinkedHashSet<String>();
+    private transient LinkedHashSet<String> couldNotLoadClasses = new LinkedHashSet<>();
+    @Getter
     private final ObfuscationMapping obfuscationMapping;
+    @Getter
     private final OverloadMethodSetCache overloadMethodSetCache;
     private final Set<JavaTypeInstance> permittedSealed;
 
@@ -93,10 +99,6 @@ public class DCCommonState {
 
     public void setCollisions(Set<JavaTypeInstance> versionCollisions) {
         this.versionCollisions = versionCollisions;
-    }
-
-    public Set<JavaTypeInstance> getVersionCollisions() {
-        return versionCollisions;
     }
 
     public void configureWith(ClassFile classFile) {
@@ -220,14 +222,6 @@ public class DCCommonState {
     }
 
 
-    public ClassCache getClassCache() {
-        return classCache;
-    }
-
-    public Options getOptions() {
-        return options;
-    }
-
     // No fancy file identification right now, just very very simple.
     public AnalysisType detectClsJar(String path) {
         String lcPath = path.toLowerCase();
@@ -236,11 +230,4 @@ public class DCCommonState {
         return AnalysisType.CLASS;
     }
 
-    public ObfuscationMapping getObfuscationMapping() {
-        return obfuscationMapping;
-    }
-
-    public OverloadMethodSetCache getOverloadMethodSetCache() {
-        return overloadMethodSetCache;
-    }
 }

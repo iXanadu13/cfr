@@ -42,7 +42,7 @@ public class PluginRunner {
     }
 
     public List<List<String>> addJarPaths(String[] jarPaths) {
-        List<List<String>> res = new ArrayList<List<String>>();
+        List<List<String>> res = new ArrayList<>();
         for (String jarPath : jarPaths) {
             res.add(addJarPath(jarPath));
         }
@@ -59,7 +59,7 @@ public class PluginRunner {
                 }
             });
         } catch (Exception e) {
-            return new ArrayList<String>();
+            return new ArrayList<>();
         }
     }
 

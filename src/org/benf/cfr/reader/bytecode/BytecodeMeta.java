@@ -1,5 +1,6 @@
 package org.benf.cfr.reader.bytecode;
 
+import lombok.Getter;
 import org.benf.cfr.reader.bytecode.analysis.opgraph.Op01WithProcessedDataAndByteJumps;
 import org.benf.cfr.reader.bytecode.analysis.types.JavaTypeInstance;
 import org.benf.cfr.reader.bytecode.analysis.types.discovery.InferredJavaType;
@@ -31,7 +32,9 @@ public class BytecodeMeta {
 
     private final EnumSet<CodeInfoFlag> flags = EnumSet.noneOf(CodeInfoFlag.class);
 
+    @Getter
     private final Set<Integer> livenessClashes = SetFactory.newSet();
+    @Getter
     private final Map<Integer, JavaTypeInstance> iteratedTypeHints = MapFactory.newMap();
     private final Options options;
 
@@ -83,14 +86,6 @@ public class BytecodeMeta {
             flags.add(CodeInfoFlag.ITERATED_TYPE_HINTS);
             iteratedTypeHints.put(key, itertype);
         }
-    }
-
-    public Map<Integer, JavaTypeInstance> getIteratedTypeHints() {
-           return iteratedTypeHints;
-    }
-
-    public Set<Integer> getLivenessClashes() {
-        return livenessClashes;
     }
 
     private static class FlagTest implements UnaryFunction<BytecodeMeta, Boolean> {
