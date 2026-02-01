@@ -10,6 +10,7 @@ import org.benf.cfr.reader.util.collections.MapFactory;
 import org.benf.cfr.reader.util.collections.SetFactory;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Multiple expressions / lvalues will have pointers to a single instance of this - at type changing boundaries,
@@ -59,7 +60,7 @@ public class InferredJavaType {
     }
 
     // This doesn't need to be threadsafe, it's a debugging aid only.
-    private static int global_id = 0;
+    private static final AtomicInteger global_id = new AtomicInteger();
 
     private enum ClashState {
         None,
@@ -117,7 +118,7 @@ public class InferredJavaType {
         private JavaTypeInstance type = null;
 
         private IJTInternal_Clash(Collection<IJTInternal> clashes) {
-            this.id = global_id++;
+            this.id = global_id.getAndIncrement();
             this.clashes = ListFactory.newList(SetFactory.newOrderedSet(clashes));
         }
 
@@ -460,7 +461,7 @@ public class InferredJavaType {
         private IJTInternal_Impl(JavaTypeInstance type, Source source, boolean locked) {
             this.type = type;
             this.source = source;
-            this.id = global_id++;
+            this.id = global_id.getAndIncrement();
             this.locked = locked;
         }
 
@@ -559,7 +560,8 @@ public class InferredJavaType {
 
         public void mkDelegate(IJTInternal newDelegate) {
             if (isDelegate) {
-                delegate.mkDelegate(newDelegate);
+                InferredJavaType.mkDelegate(delegate, newDelegate);
+//                delegate.mkDelegate(newDelegate);
             } else {
                 isDelegate = true;
                 delegate = newDelegate;
