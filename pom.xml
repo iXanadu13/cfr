@@ -122,6 +122,8 @@
                     <testSource>9</testSource>
                     <testTarget>9</testTarget>
                     <compilerArgument>-Xlint:none</compilerArgument>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
             <plugin>
