@@ -10,3 +10,14 @@ out
 
 # Maven
 /target
+
+# Test Files
+# 1. 忽略所有内容
+/decompilation-test/test-data-expected-output/*
+
+# 2. 但允许进入这个目录本身
+!/decompilation-test/test-data-expected-output/
+
+# 3. 放行你想要的子目录
+!/decompilation-test/test-data-expected-output/classes/
+!/decompilation-test/test-data-expected-output/jars/

@@ -119,8 +119,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.9.0</version>
                 <configuration>
-                    <testSource>9</testSource>
-                    <testTarget>9</testTarget>
+                    <testSource>11</testSource>
+                    <testTarget>11</testTarget>
                     <compilerArgument>-Xlint:none</compilerArgument>
                     <source>8</source>
                     <target>8</target>

@@ -193,7 +193,7 @@ class DecompilationTestImplementation {
         return new String(Files.readAllBytes(path), StandardCharsets.UTF_8).replaceAll("\\R", "\n");
     }
 
-    private static class DecompilationResult {
+    static class DecompilationResult {
         public final String summary;
         public final String exceptions;
         public final List<DecompiledMultiVer> decompiled;
@@ -205,7 +205,7 @@ class DecompilationTestImplementation {
         }
     }
 
-    private static DecompilationResult decompile(Path path, Map<String, String> options) {
+    static DecompilationResult decompile(Path path, Map<String, String> options) {
         StringWriter summaryOutput = new StringWriter();
         Sink<String> summarySink = summaryOutput::append; // Messages include line terminator, therefore only print
 
@@ -284,7 +284,7 @@ class DecompilationTestImplementation {
         return new DecompilationResult(summary, exceptionsOutput.toString(), decompiledList);
     }
 
-    private static void writeString(Path path, String s) throws IOException {
+    static void writeString(Path path, String s) throws IOException {
         Files.write(path, s.getBytes(StandardCharsets.UTF_8));
     }
 
@@ -303,7 +303,7 @@ class DecompilationTestImplementation {
         return strippedCodeJoiner.toString();
     }
 
-    private static class DiffCodeResult {
+    static class DiffCodeResult {
         /**
          * Assertion error in case the expected test data differed from the actual test data.
          * {@code null} if they were the same, or if {@link #updatedExpectedData} or
@@ -333,7 +333,7 @@ class DecompilationTestImplementation {
      * If there is a difference between the expected and the actual data, a diff file is created in
      * {@link #TEST_FAILURE_DIFF_OUTPUT_DIR} (or a subdirectory).
      */
-    private static DiffCodeResult diffCodeAndWriteOnMismatch(Path expectedCodeFilePath, String actualCode) throws IOException {
+    static DiffCodeResult diffCodeAndWriteOnMismatch(Path expectedCodeFilePath, String actualCode) throws IOException {
         String originalExpectedCode = readNormalizedString(expectedCodeFilePath);
         String expectedCodeWithoutNotes = stripDecompilationNotes(originalExpectedCode);
 
@@ -371,7 +371,7 @@ class DecompilationTestImplementation {
         }
     }
 
-    private static void throwTestSetupError(String message) {
+    static void throwTestSetupError(String message) {
         fail("Test setup error: " + message);
     }
 
@@ -380,7 +380,7 @@ class DecompilationTestImplementation {
      *
      * @see #CREATE_EXPECTED_DATA_IF_MISSING
      */
-    private static void failCreatedMissingExpectedData() {
+    static void failCreatedMissingExpectedData() {
         fail("Created missing expected data");
     }
 
@@ -392,7 +392,7 @@ class DecompilationTestImplementation {
      *      decompilation notes
      * @see #UPDATE_EXPECTED_DATA
      */
-    private static void failUpdatedExpectedData(List<Path> filesWithDecompilationNotes) {
+    static void failUpdatedExpectedData(List<Path> filesWithDecompilationNotes) {
         String message = "Updated expected data";
 
         if (!filesWithDecompilationNotes.isEmpty()) {
@@ -411,7 +411,7 @@ class DecompilationTestImplementation {
      *      decompilation notes
      * @see #UPDATE_EXPECTED_DATA
      */
-    private static void failNotUpdatableDueToDecompilationNotes(List<Path> filesWithDecompilationNotes) {
+    static void failNotUpdatableDueToDecompilationNotes(List<Path> filesWithDecompilationNotes) {
         String filesList = filesWithDecompilationNotes.stream().map(Path::toString).collect(Collectors.joining(", "));
         fail("Failed updating these files due to decompilation notes which would get lost: " + filesList);
     }
