@@ -1,0 +1,54 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+class Scratch {
+    Scratch() {
+    }
+
+    public static void main(String[] args) {
+        new Runnable(){
+
+            @Override
+            public void run() {
+                new Runnable(){
+
+                    @Override
+                    public void run() {
+                    }
+                };
+            }
+
+            record G() {
+                static G createG() {
+                    return new G();
+                }
+            }
+        };
+        record Example() {
+            static Example createExample() {
+                return new Example();
+            }
+
+            class D {
+                D() {
+                }
+            }
+        }
+        Example example = Example.createExample();
+    }
+
+    class X {
+        X() {
+        }
+
+        class Y {
+            Y() {
+            }
+
+            void method() {
+            }
+        }
+    }
+}

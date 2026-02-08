@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+class Scratch.1A.B {
+    Scratch.1A.B() {
+    }
+
+    class C {
+        C() {
+        }
+    }
+}

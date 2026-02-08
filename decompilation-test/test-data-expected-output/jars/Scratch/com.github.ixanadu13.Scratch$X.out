@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+class Scratch.X {
+    Scratch.X() {
+    }
+
+    class Y {
+        Y() {
+        }
+
+        void method() {
+        }
+    }
+}

@@ -1,0 +1,7 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+record Scratch.1Example.1F() {
+}

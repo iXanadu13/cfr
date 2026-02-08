@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+class Scratch.1A {
+    Scratch.1A() {
+    }
+
+    Object method() {
+        record E() {
+            static E createE() {
+                return new E();
+            }
+        }
+        return new E();
+    }
+
+    static class B {
+        B() {
+        }
+
+        class C {
+            C() {
+            }
+        }
+    }
+}

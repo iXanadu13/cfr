@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+record Scratch.1A.1E() {
+    static Scratch.1A.1E createE() {
+        return new Scratch.1A.1E();
+    }
+}

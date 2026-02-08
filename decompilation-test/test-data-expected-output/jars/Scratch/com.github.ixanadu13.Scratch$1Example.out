@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+record Scratch.1Example() {
+    static Scratch.1Example createExample() {
+        return new Scratch.1Example();
+    }
+
+    class D {
+        D() {
+        }
+    }
+}

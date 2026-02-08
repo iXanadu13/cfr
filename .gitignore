@@ -12,6 +12,7 @@ out
 /target
 
 # Test Files
+/decompilation-test/output
 # 1. 忽略所有内容
 /decompilation-test/test-data-expected-output/*
 

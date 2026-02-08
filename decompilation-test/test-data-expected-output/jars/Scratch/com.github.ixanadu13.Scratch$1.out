@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+class Scratch.1
+implements Runnable {
+    Scratch.1() {
+    }
+
+    @Override
+    public void run() {
+        new Runnable(){
+
+            @Override
+            public void run() {
+            }
+        };
+    }
+
+    record G() {
+        static G createG() {
+            return new G();
+        }
+    }
+}

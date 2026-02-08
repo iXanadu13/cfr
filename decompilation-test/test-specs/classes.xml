@@ -24,6 +24,21 @@
         <label>6</label>
     </class>
     <class>
+        <path>precompiled_tests/java_6/org/benf/cfr/tests</path>
+        <name>AnonymousInnerClassTest3</name>
+        <label>6</label>
+    </class>
+    <class>
+        <path>precompiled_tests/java_6/org/benf/cfr/tests</path>
+        <name>AnonymousInnerClassTest3$1</name>
+        <label>6</label>
+    </class>
+    <class>
+        <path>precompiled_tests/java_6/org/benf/cfr/tests</path>
+        <name>AnonymousInnerClassTest3$1$X</name>
+        <label>6</label>
+    </class>
+    <class>
         <path>precompiled_tests/java_13/org/benf/cfr/tests</path>
         <name>EnumTestEmpty</name>
         <label>13</label>

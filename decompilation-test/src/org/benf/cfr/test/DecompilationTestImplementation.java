@@ -16,10 +16,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.ArgumentsProvider;
 import org.junit.jupiter.params.provider.ArgumentsSource;
 import org.junit.jupiter.params.support.AnnotationConsumer;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -157,7 +154,7 @@ class DecompilationTestImplementation {
                 // Should be using path selector here, content is simple enough to cheat.
                 String classFilePath = clazz.getElementsByTagName("path").item(0).getTextContent();
                 String name = clazz.getElementsByTagName("name").item(0).getTextContent();
-                String label = clazz.getElementsByTagName("label").item(0).getTextContent();
+                Node label = clazz.getElementsByTagName("label").item(0);
                 Map<String, String> options = new HashMap<>();
                 NodeList optionNodes = clazz.getElementsByTagName("option");
                 for (int o=0;o<optionNodes.getLength();++o) {
@@ -169,7 +166,8 @@ class DecompilationTestImplementation {
                 Path expectedSource = getTestDataSubDir(classFilePath).resolve(name + ".class");
                 Path expectedTgt = TEST_DATA_EXPECTED_OUTPUT_ROOT_DIR.resolve("classes");
 
-                res.add(Arguments.of(expectedSource, options, expectedTgt, name + "." + label));
+                String path = label == null ? name : name + "." + label.getTextContent();
+                res.add(Arguments.of(expectedSource, options, expectedTgt, path));
             }
             return res.stream();
         }
@@ -362,6 +360,7 @@ class DecompilationTestImplementation {
             Patch<String> diff = DiffUtils.diff(expectedLines, actualLines);
 
             String fileName = expectedCodeFilePath.getFileName().toString();
+            DiffCollector.addDiff(expectedCodeFilePath, fileName, expectedLines, diff);
             List<String> unifiedDiff = UnifiedDiffUtils.generateUnifiedDiff(fileName, "actual-code", expectedLines, diff, 1);
             Path outputPath = TEST_FAILURE_DIFF_OUTPUT_DIR.resolve(TEST_DATA_EXPECTED_OUTPUT_ROOT_DIR.toAbsolutePath().relativize(expectedCodeFilePath.toAbsolutePath()).getParent().resolve(fileName + ".diff"));
             Files.createDirectories(outputPath.getParent());
