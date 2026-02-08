@@ -6,8 +6,8 @@ package org.benf.cfr.tests;
 import java.util.Objects;
 import org.benf.cfr.tests.InnerClassTest23_Strobel;
 
-class InnerClassTest23_Strobel.T.Inner {
-    InnerClassTest23_Strobel.T.Inner() {
+class InnerClassTest23_Strobel.T.1.Inner {
+    InnerClassTest23_Strobel.T.1.Inner() {
     }
 
     InnerClassTest23_Strobel.T.A.D getD() {

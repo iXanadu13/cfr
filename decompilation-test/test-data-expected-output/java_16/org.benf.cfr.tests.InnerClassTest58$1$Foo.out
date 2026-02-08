@@ -3,10 +3,10 @@
  */
 package org.benf.cfr.tests;
 
-class InnerClassTest58.Foo {
+class InnerClassTest58.1.Foo {
     int f;
 
-    public InnerClassTest58.Foo(int f) {
+    public InnerClassTest58.1.Foo(int f) {
         this.f = f;
     }
 }

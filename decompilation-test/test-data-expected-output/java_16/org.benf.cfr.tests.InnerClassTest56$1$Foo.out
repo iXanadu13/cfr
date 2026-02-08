@@ -3,8 +3,8 @@
  */
 package org.benf.cfr.tests;
 
-class InnerClassTest56.Foo {
-    public InnerClassTest56.Foo() {
+class InnerClassTest56.1.Foo {
+    public InnerClassTest56.1.Foo() {
         ++this$0.f;
     }
 }

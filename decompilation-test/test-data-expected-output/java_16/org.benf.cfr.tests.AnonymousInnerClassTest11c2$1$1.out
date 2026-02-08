@@ -5,9 +5,9 @@ package org.benf.cfr.tests;
 
 import org.benf.cfr.tests.support.UnaryFunction;
 
-class AnonymousInnerClassTest11c2.1
+class AnonymousInnerClassTest11c2.1.1
 implements UnaryFunction<Integer, Integer> {
-    AnonymousInnerClassTest11c2.1() {
+    AnonymousInnerClassTest11c2.1.1() {
     }
 
     @Override

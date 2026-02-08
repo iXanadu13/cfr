@@ -14,10 +14,10 @@ class InnerClassTest23_Strobel.T {
         InnerClassTest23_Strobel.T t = new InnerClassTest23_Strobel.T();
         A a2 = a = t.new A();
         Objects.requireNonNull(a2);
-        A.B b = a2.new A.B(a);
+        A.B b = a2.new B(a);
         A a3 = a;
         Objects.requireNonNull(a3);
-        A.D d = a3.new A.D(a, b);
+        A.D d = a3.new D(a, b);
         A.D d2 = new Object(){
 
             class Inner {
@@ -29,10 +29,10 @@ class InnerClassTest23_Strobel.T {
                     InnerClassTest23_Strobel.T t = new InnerClassTest23_Strobel.T();
                     A a2 = a = t.new A();
                     Objects.requireNonNull(a2);
-                    A.B b = a2.new A.B(a);
+                    A.B b = a2.new B(a);
                     A a3 = a;
                     Objects.requireNonNull(a3);
-                    A.D d = a3.new A.D(a, b);
+                    A.D d = a3.new D(a, b);
                     return d;
                 }
             }

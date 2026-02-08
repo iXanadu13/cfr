@@ -5,7 +5,7 @@ package org.benf.cfr.tests;
 
 public class InnerClassTest44 {
     public Object test2(InnerClassTest44 other) {
-        Bob.Jim bob1 = other.new Bob().new Bob.Jim();
+        Bob.Jim bob1 = other.new Bob().new Jim();
         return bob1;
     }
 

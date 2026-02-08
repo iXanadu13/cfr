@@ -5,9 +5,9 @@ package org.benf.cfr.tests;
 
 import java.util.Iterator;
 
-class InnerClassTest23_Strobel.A.1
+class InnerClassTest23_Strobel.A.1.1
 implements Iterator<String> {
-    InnerClassTest23_Strobel.A.1() {
+    InnerClassTest23_Strobel.A.1.1() {
     }
 
     @Override

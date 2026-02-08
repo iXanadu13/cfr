@@ -5,11 +5,11 @@ package org.benf.cfr.tests;
 
 import org.benf.cfr.tests.support.UnaryFunction;
 
-class AnonymousInnerClassTest11b2.1
+class AnonymousInnerClassTest11b2.1.1
 implements UnaryFunction<Integer, Integer> {
     final /* synthetic */ Integer val$arg;
 
-    AnonymousInnerClassTest11b2.1() {
+    AnonymousInnerClassTest11b2.1.1() {
         this.val$arg = n;
     }
 
