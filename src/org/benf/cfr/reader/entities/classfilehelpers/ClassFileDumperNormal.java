@@ -18,13 +18,19 @@ public class ClassFileDumperNormal extends AbstractClassFileDumper {
     private static final AccessFlag[] dumpableAccessFlagsInlineClass = new AccessFlag[]{
             AccessFlag.ACC_PUBLIC, AccessFlag.ACC_PRIVATE, AccessFlag.ACC_PROTECTED, AccessFlag.ACC_STRICT, AccessFlag.ACC_FINAL, AccessFlag.ACC_ABSTRACT, AccessFlag.ACC_FAKE_SEALED, AccessFlag.ACC_FAKE_NON_SEALED
     };
+    private static final AccessFlag[] dumpableAccessFlagsOuterClass = new AccessFlag[]{
+        AccessFlag.ACC_PUBLIC, AccessFlag.ACC_STRICT, AccessFlag.ACC_FINAL, AccessFlag.ACC_ABSTRACT, AccessFlag.ACC_FAKE_SEALED, AccessFlag.ACC_FAKE_NON_SEALED
+    };
 
     public ClassFileDumperNormal(DCCommonState dcCommonState) {
         super(dcCommonState);
     }
 
     private void dumpHeader(ClassFile c, InnerClassDumpType innerClassDumpType, Dumper d) {
-        AccessFlag[] accessFlagsToDump = innerClassDumpType == InnerClassDumpType.INLINE_CLASS ? dumpableAccessFlagsInlineClass : dumpableAccessFlagsClass;
+        AccessFlag[] accessFlagsToDump;
+        if (innerClassDumpType == InnerClassDumpType.NOT) accessFlagsToDump = dumpableAccessFlagsOuterClass;
+        else if (innerClassDumpType == InnerClassDumpType.INLINE_CLASS) accessFlagsToDump = dumpableAccessFlagsInlineClass;
+        else accessFlagsToDump = dumpableAccessFlagsClass;
         d.keyword(getAccessFlagsString(c.getAccessFlags(), accessFlagsToDump));
 
         d.keyword("class ");

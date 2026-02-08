@@ -13,13 +13,19 @@ public class ClassFileDumperAnnotation extends AbstractClassFileDumper {
             AccessFlag.ACC_PUBLIC, AccessFlag.ACC_PRIVATE, AccessFlag.ACC_PROTECTED, AccessFlag.ACC_STATIC, AccessFlag.ACC_FINAL
     };
 
+    private static final AccessFlag[] dumpableAccessFlagsOuterInterface = new AccessFlag[]{
+        AccessFlag.ACC_PUBLIC, AccessFlag.ACC_FINAL
+    };
+
     public ClassFileDumperAnnotation(DCCommonState dcCommonState) {
         super(dcCommonState);
     }
 
     private void dumpHeader(ClassFile c, InnerClassDumpType innerClassDumpType, Dumper d) {
-
-        d.print(getAccessFlagsString(c.getAccessFlags(), dumpableAccessFlagsInterface));
+        AccessFlag[] accessFlagsToDump;
+        if (innerClassDumpType == InnerClassDumpType.NOT) accessFlagsToDump = dumpableAccessFlagsOuterInterface;
+        else accessFlagsToDump = dumpableAccessFlagsInterface;
+        d.print(getAccessFlagsString(c.getAccessFlags(), accessFlagsToDump));
 
         d.print("@interface ");
         c.dumpClassIdentity(d);

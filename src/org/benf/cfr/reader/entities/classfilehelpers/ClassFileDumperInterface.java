@@ -18,6 +18,9 @@ public class ClassFileDumperInterface extends AbstractClassFileDumper {
     private static final AccessFlag[] dumpableAccessFlagsInterface = new AccessFlag[]{
             AccessFlag.ACC_PUBLIC, AccessFlag.ACC_PRIVATE, AccessFlag.ACC_PROTECTED, AccessFlag.ACC_STRICT, AccessFlag.ACC_STATIC, AccessFlag.ACC_FINAL, AccessFlag.ACC_FAKE_SEALED, AccessFlag.ACC_FAKE_NON_SEALED
     };
+    private static final AccessFlag[] dumpableAccessFlagsOuterInterface = new AccessFlag[]{
+        AccessFlag.ACC_PUBLIC, AccessFlag.ACC_STRICT, AccessFlag.ACC_FINAL, AccessFlag.ACC_FAKE_SEALED, AccessFlag.ACC_FAKE_NON_SEALED
+    };
 
     public ClassFileDumperInterface(DCCommonState dcCommonState) {
         super(dcCommonState);
@@ -25,10 +28,13 @@ public class ClassFileDumperInterface extends AbstractClassFileDumper {
 
     private void dumpHeader(ClassFile c, InnerClassDumpType innerClassDumpType, Dumper d) {
 
-        d.print(getAccessFlagsString(c.getAccessFlags(), dumpableAccessFlagsInterface));
+        AccessFlag[] accessFlagsToDump;
+        if (innerClassDumpType == InnerClassDumpType.NOT) accessFlagsToDump = dumpableAccessFlagsOuterInterface;
+        else accessFlagsToDump = dumpableAccessFlagsInterface;
+        d.print(getAccessFlagsString(c.getAccessFlags(), accessFlagsToDump));
 
         d.print("interface ");
-        c.dumpClassIdentity(d);
+        c.dumpClassIdentity(d, innerClassDumpType);
         d.newln();
 
         ClassSignature signature = c.getClassSignature();

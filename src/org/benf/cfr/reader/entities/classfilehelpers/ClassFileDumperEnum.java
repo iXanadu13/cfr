@@ -23,6 +23,9 @@ public class ClassFileDumperEnum extends AbstractClassFileDumper {
     private static final AccessFlag[] dumpableAccessFlagsEnum = new AccessFlag[]{
             AccessFlag.ACC_PUBLIC, AccessFlag.ACC_PRIVATE, AccessFlag.ACC_PROTECTED, AccessFlag.ACC_STRICT, AccessFlag.ACC_STATIC
     };
+    private static final AccessFlag[] dumpableAccessFlagsOuterEnum = new AccessFlag[]{
+        AccessFlag.ACC_PUBLIC, AccessFlag.ACC_STRICT
+    };
 
     private final List<Pair<StaticVariable, AbstractConstructorInvokation>> entries;
 
@@ -32,7 +35,10 @@ public class ClassFileDumperEnum extends AbstractClassFileDumper {
     }
 
     private static void dumpHeader(ClassFile c, InnerClassDumpType innerClassDumpType, Dumper d) {
-        d.print(getAccessFlagsString(c.getAccessFlags(), dumpableAccessFlagsEnum));
+        AccessFlag[] accessFlagsToDump;
+        if (innerClassDumpType == InnerClassDumpType.NOT) accessFlagsToDump = dumpableAccessFlagsOuterEnum;
+        else accessFlagsToDump = dumpableAccessFlagsEnum;
+        d.print(getAccessFlagsString(c.getAccessFlags(), accessFlagsToDump));
 
         d.print("enum ").dump(c.getThisClassConstpoolEntry().getTypeInstance()).print(" ");
 
