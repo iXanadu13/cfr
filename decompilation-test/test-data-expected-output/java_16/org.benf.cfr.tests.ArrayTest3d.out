@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest3d {
+    int x;
+    int y;
+    int z;
+
+    void test1(int a, int b) {
+        String[] tmp = new String[]{"a", "b", "c"};
+        for (String s : tmp) {
+            if (s == null) break;
+            System.out.println(s);
+        }
+        System.out.println("foo");
+    }
+}

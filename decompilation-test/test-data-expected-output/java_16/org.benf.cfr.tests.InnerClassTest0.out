@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest0 {
+    public void foo() {
+        new Inner1();
+    }
+
+    public class Inner1 {
+    }
+}

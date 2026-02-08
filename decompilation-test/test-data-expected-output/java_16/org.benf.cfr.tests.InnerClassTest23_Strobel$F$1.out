@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest23_Strobel.F.1
+extends Error {
+    InnerClassTest23_Strobel.F.1() {
+    }
+}

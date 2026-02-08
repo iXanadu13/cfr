@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest8c2 {
+    public int test(Object a, Object b, Object c, Object d) throws Exception {
+        return 1;
+    }
+}

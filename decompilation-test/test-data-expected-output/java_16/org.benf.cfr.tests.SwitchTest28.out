@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest28 {
+    public static void foo(int x) {
+        System.out.println(switch (x) {
+            case 1 -> throw new IllegalStateException();
+            case 2, 3 -> {
+                System.out.println("JIM");
+                yield "JIM";
+            }
+            case 4, 5, 54 -> "FRED";
+            default -> x < 100 ? "ALICE" : "BOB";
+        });
+    }
+
+    public static void main(String ... args) {
+        SwitchTest28.foo(1);
+        SwitchTest28.foo(3);
+        SwitchTest28.foo(50);
+        SwitchTest28.foo(300);
+        SwitchTest28.foo(4);
+    }
+}

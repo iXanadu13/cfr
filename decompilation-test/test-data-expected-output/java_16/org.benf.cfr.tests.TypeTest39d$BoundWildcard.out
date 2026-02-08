@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.TypeTest39d;
+
+class TypeTest39d.BoundWildcard
+implements TypeTest39d.Wildcard<Integer> {
+    private TypeTest39d.BoundWildcard() {
+    }
+}

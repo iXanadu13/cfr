@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TernaryTest4 {
+    public static Object bob(Integer a, Double b, boolean c) {
+        Object x = (double)a.intValue() > b ? (double)a.intValue() : b;
+        if (c) {
+            x = "Hello";
+        }
+        return x;
+    }
+}

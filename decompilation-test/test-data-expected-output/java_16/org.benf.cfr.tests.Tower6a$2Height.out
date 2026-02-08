@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Tower6a.2Height {
+    final /* synthetic */ int val$x;
+
+    Tower6a.2Height() {
+        this.val$x = n;
+    }
+
+    void test() {
+        System.out.println("CHEEEEESE" + this.val$x);
+    }
+}

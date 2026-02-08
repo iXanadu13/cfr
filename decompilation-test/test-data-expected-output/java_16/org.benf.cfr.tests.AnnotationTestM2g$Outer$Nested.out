@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.MyParam;
+import org.benf.cfr.tests.MyParam2;
+import org.benf.cfr.tests.Nested;
+
+class AnnotationTestM2g.Outer.Nested<T extends List, A> {
+    AnnotationTestM2g.Outer.Nested() {
+    }
+
+    public String test2(AnnotationTestM2g.Outer.Nested<@MyParam T, @MyParam2 A> b, Nested<@MyParam A, @MyParam2 T> c) {
+        return null;
+    }
+}

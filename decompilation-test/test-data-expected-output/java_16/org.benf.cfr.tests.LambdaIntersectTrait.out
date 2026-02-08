@@ -1,0 +1,35 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Function;
+
+public class LambdaIntersectTrait {
+    public static void main(String ... args) {
+        Function x = (Function<Integer, Boolean> & Thing & Thang)i -> true;
+        ((Thing)((Object)x)).doThing();
+        ((Thang)((Object)x)).doThang();
+        ((Thong)((Object)x)).doThang();
+    }
+
+    public static interface Thing {
+        default public void doThing() {
+            System.out.println("thing");
+        }
+    }
+
+    public static interface Thang
+    extends Thong {
+        @Override
+        default public void doThang() {
+            System.out.println("thang");
+        }
+    }
+
+    public static interface Thong {
+        default public void doThang() {
+            System.out.println("thong");
+        }
+    }
+}

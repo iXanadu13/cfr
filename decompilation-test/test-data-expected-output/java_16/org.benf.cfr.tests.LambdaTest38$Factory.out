@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.LambdaTest38;
+
+interface LambdaTest38.Factory {
+    public LambdaTest38 create(int var1, String var2);
+}

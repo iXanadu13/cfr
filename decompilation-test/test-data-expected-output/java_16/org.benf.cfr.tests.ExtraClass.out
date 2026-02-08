@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ExtraClass {
+    int foo;
+
+    ExtraClass() {
+    }
+
+    public int testfoo(int x, int y) {
+        return x + y * 2;
+    }
+
+    public int testbar(int a) {
+        return a + 2;
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest22 {
+    public float fred;
+    public int free;
+
+    public NameTest22(int a) {
+        this.fred = a + 3;
+        this.free = a + 4;
+    }
+
+    public void test1a() {
+        System.out.println(this.fred);
+    }
+
+    public void test1b() {
+        System.out.println(this.free);
+    }
+}

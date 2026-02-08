@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally19a {
+    public void test1(int x) {
+        while (true) {
+            try {
+                while (true) {
+                    System.out.println("Oops");
+                }
+            } catch (RuntimeException t) {
+                if (x != 3) continue;
+                System.out.print(5);
+                return;
+            }
+            break;
+        }
+    }
+}

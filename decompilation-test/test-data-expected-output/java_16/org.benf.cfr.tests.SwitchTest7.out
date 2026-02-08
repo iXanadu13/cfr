@@ -1,0 +1,38 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest7 {
+    public void test1(int x) {
+        switch (x) {
+            case 0: {
+                System.out.println("0");
+            }
+            case 1: {
+                System.out.println("1");
+                break;
+            }
+            case 2: {
+                System.out.println("2");
+            }
+        }
+        System.out.println("Test");
+    }
+
+    public void test2(int x) {
+        switch (x) {
+            case 0: {
+                System.out.println("0");
+            }
+            case 1: {
+                System.out.println("1");
+                break;
+            }
+            case 2: {
+                System.out.println("2");
+            }
+        }
+        System.out.println("Test");
+    }
+}

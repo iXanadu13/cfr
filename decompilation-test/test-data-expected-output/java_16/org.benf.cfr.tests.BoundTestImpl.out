@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BoundTestPart3;
+
+public class BoundTestImpl<X>
+implements BoundTestPart3<X> {
+    @Override
+    public String getA() {
+        return null;
+    }
+
+    @Override
+    public X getB() {
+        return null;
+    }
+}

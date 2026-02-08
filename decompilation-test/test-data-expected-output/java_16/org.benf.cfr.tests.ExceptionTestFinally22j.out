@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22j {
+    private static String negative() {
+        return "negative";
+    }
+
+    public String test(int x) {
+        try {
+            try {
+                System.out.println("a");
+                return ExceptionTestFinally22j.negative();
+            } catch (IllegalStateException t) {
+                System.out.println("b");
+                return "inner error";
+            }
+        } catch (RuntimeException e) {
+            System.out.println("c");
+            return "error";
+        }
+    }
+}

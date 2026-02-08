@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest8 {
+    char[] foo;
+
+    public void test(int end) {
+        char ch;
+        int x = 0;
+        while ((ch = this.foo[++x]) != '*') {
+            System.out.println(x + ": " + ch);
+        }
+    }
+}

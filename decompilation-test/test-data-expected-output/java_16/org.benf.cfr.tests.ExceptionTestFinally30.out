@@ -1,0 +1,38 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally30 {
+    public void foo() throws Exception {
+        boolean b = true;
+        try {
+            try {
+                throw new Exception();
+            } catch (Exception e) {
+                b = false;
+                try {
+                    throw new Exception();
+                } catch (Exception e2) {
+                    b = true;
+                    if (b) {
+                        throw new Exception("");
+                    }
+                }
+            }
+        } catch (Throwable throwable) {
+            try {
+                throw new Exception();
+            } catch (Exception e2) {
+                b = true;
+                if (b) {
+                    throw new Exception("");
+                }
+                throw throwable;
+            }
+        }
+        if (!b) {
+            throw new Exception("");
+        }
+    }
+}

@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ShortCircuitAssignTest4c {
+    public boolean test1(boolean a, boolean b, boolean c) {
+        System.out.println(b && a == (c = b) && b);
+        return c;
+    }
+}

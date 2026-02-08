@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class BreakTest4 {
+    public int doIt(List<Integer> as, List<Integer> bs) {
+        for (int a : as) {
+            System.out.println(bs.contains(a));
+        }
+        return 1;
+    }
+}

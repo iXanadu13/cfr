@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Consumer;
+
+public class NotNullTest {
+    private Consumer<String> s = System.out::println;
+}

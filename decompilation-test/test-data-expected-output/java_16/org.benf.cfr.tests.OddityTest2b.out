@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class OddityTest2b {
+    public static void a(boolean x) {
+        int[] c;
+        int[] a = new int[]{4};
+        int[] b = new int[]{3};
+        int[] nArray = c = a;
+        c = x ? b : a;
+        nArray[0] = c[0] + c[0];
+        System.out.println("a " + a[0] + " b" + b[0]);
+    }
+
+    public static void b(boolean x) {
+        int[] a = new int[]{4};
+        int[] b = new int[]{3};
+        int[] c = a;
+        int[] arrn = a;
+        c = x ? b : a;
+        arrn[0] = c[0] + c[0];
+        System.out.println("a " + a[0] + " b" + b[0]);
+    }
+
+    public static void main(String ... s) {
+        OddityTest2b.a(true);
+        OddityTest2b.b(true);
+    }
+}

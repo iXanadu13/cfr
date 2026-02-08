@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class DoubleTest {
+    public static double a() {
+        double res = 0.0;
+        for (int x = 1; x <= 1000000; ++x) {
+            res += 1.0 / (double)x;
+        }
+        return res;
+    }
+
+    public static double b() {
+        double res = 0.0;
+        for (int x = 1000000; x >= 1; --x) {
+            res += 1.0 / (double)x;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(DoubleTest.a());
+        System.out.println(DoubleTest.b());
+    }
+}

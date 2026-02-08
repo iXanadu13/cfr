@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest14 {
+    public int foo(int i) {
+        int a = 1;
+        a = 2 + a;
+        a = i == 1 ? 8 : 9;
+        return a;
+    }
+}

@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class BreakTest5 {
+    public int doIt(List<Integer> as, List<Integer> bs) {
+        int x = 1;
+        while (x <= 200) {
+            System.out.println(x);
+            if (x % 5 == 0) {
+                ++x;
+                continue;
+            }
+            x += 5;
+        }
+        return 1;
+    }
+}

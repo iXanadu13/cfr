@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest1;
+
+public class SwitchTest13 {
+    public void test1(EnumTest1 e) {
+        switch (e) {
+            default: 
+        }
+        System.out.println("Nothing here but us chickens.");
+    }
+}

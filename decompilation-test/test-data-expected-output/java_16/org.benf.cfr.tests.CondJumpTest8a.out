@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondJumpTest8a {
+    public static boolean test(int a, int b) {
+        return a++ == a;
+    }
+
+    public static void main(String ... args) {
+        System.out.println(CondJumpTest8a.test(3, 2));
+    }
+}

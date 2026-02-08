@@ -1,0 +1,33 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+class DeclarationAndTypeUseAnnotations {
+    DeclarationAndTypeUseAnnotations() {
+    }
+
+    static class Test {
+        @MyParam
+        String field;
+
+        @MyParam
+        Test() {
+        }
+
+        @MyParam
+        String test(@MyParam int i) {
+            return null;
+        }
+    }
+
+    @Retention(value=RetentionPolicy.RUNTIME)
+    @Target(value={ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER, ElementType.TYPE, ElementType.TYPE_USE})
+    static @interface MyParam {
+    }
+}

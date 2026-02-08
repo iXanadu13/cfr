@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest29b {
+    private void intFn(Integer i) {
+    }
+
+    private void t(double d) {
+        this.intFn((int)d);
+    }
+}

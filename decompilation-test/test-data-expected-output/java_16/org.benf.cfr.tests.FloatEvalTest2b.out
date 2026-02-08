@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FloatEvalTest2b {
+    public static void t1(double d, double c) {
+        System.out.println(!(d > c));
+    }
+
+    public static void t2(double d, double c) {
+        System.out.println(d <= c);
+    }
+
+    public static void main(String ... args) {
+        FloatEvalTest2b.t1(3.9, 1.2);
+        FloatEvalTest2b.t2(3.9, 1.2);
+        FloatEvalTest2b.t1(3.9, Double.NaN);
+        FloatEvalTest2b.t2(3.9, Double.NaN);
+        FloatEvalTest2b.t1(Double.NaN, 1.2);
+        FloatEvalTest2b.t2(Double.NaN, 1.2);
+    }
+}

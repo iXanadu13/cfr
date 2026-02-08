@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface UnboundTypeTest<T> {
+    public T doSomething();
+
+    public static UnboundTypeTest<?> getWildcardInstance() {
+        return null;
+    }
+
+    public static <T> UnboundTypeTest<T> getInstance() {
+        return null;
+    }
+
+    public static void main(String[] args) {
+        Object o = UnboundTypeTest.getWildcardInstance().doSomething();
+        Object o2 = UnboundTypeTest.getInstance().doSomething();
+        UnboundTypeTest o3 = UnboundTypeTest.getInstance();
+    }
+}

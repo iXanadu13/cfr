@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest17 {
+    char[] foo;
+
+    public void test(int end) {
+        int x = 3;
+        while (true) {
+            System.out.println(x++);
+            if (x > 5) break;
+            System.out.println("fred");
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class LoopTestTyped2 {
+    public void test5(List<String> lst) {
+        for (String s : lst) {
+            System.out.println(s);
+        }
+    }
+}

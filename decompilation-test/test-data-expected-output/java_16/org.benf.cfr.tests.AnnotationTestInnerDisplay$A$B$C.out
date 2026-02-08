@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyField;
+
+class AnnotationTestInnerDisplay.A.B.C {
+    @MyField
+    AnnotationTestInnerDisplay.A.B.C f;
+
+    AnnotationTestInnerDisplay.A.B.C() {
+    }
+}

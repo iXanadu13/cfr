@@ -1,0 +1,36 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class BranchTest3 {
+    private int i;
+
+    private BranchTest3(int i) {
+        this.i = i;
+    }
+
+    private static boolean test() {
+        return true;
+    }
+
+    void foo() {
+        block8: {
+            if (BranchTest3.test()) {
+                File file = new File("");
+                try (FileInputStream input = new FileInputStream(file);){
+                    this.i = 999;
+                    break block8;
+                } catch (Throwable t) {
+                    throw new RuntimeException(t);
+                }
+            }
+            System.out.println("foo");
+            this.i = -1;
+        }
+        System.out.println("bar");
+    }
+}

@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class PrecedenceTest12 {
+    public static void main(String ... args) {
+        System.out.println("3-12");
+    }
+}

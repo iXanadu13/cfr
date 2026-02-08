@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyParam;
+import org.benf.cfr.tests.MyParamOnly;
+
+class AnnotationTestM5 {
+    AnnotationTestM5() {
+    }
+
+    void test(@MyParam int i) throws Exception {
+    }
+
+    void test(@MyParamOnly long i) throws @MyParam Exception {
+    }
+}

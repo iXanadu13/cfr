@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class NameTest23.a {
+    private NameTest23.a() {
+    }
+
+    public int a() {
+        return NameTest23.this.a;
+    }
+}

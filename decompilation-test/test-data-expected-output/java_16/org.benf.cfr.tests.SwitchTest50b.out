@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest50b {
+    /*
+     * Enabled aggressive block sorting
+     */
+    void test(int e) {
+        block4: {
+            switch (e) {
+                case 3: 
+                case 4: {
+                    if (e == 3) break;
+                    System.out.println("fred");
+                    if (e != 4) break;
+                    break block4;
+                }
+                case 5: {
+                    System.out.println("jim");
+                    break block4;
+                }
+            }
+            System.out.println("bob");
+        }
+        System.out.println("alan");
+    }
+}

@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+abstract class Tower.Watch<T> {
+    Tower.Watch(T s, long l) {
+    }
+
+    abstract void test();
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest15b.Inner1.Inner2 {
+    public int c;
+
+    public void foo() {
+        System.out.println("Res" + (Inner1.this.this$0.a + Inner1.this.b + this.c));
+        int c2 = this.c;
+        ++Inner1.this.this$0.a;
+        Inner1.this.this$0.a += 2;
+    }
+}

@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class DoubleTest2 {
+    public static void main(String[] args) {
+        double a = 5.789999999999999;
+        double b = 5.79;
+        System.out.println(Double.compare(a, b));
+        float f = 110224.77f;
+        double d = 110224.7728308591;
+        double d2 = (float)d;
+        System.out.println(f + ", " + d2 + "," + (float)d + "," + d);
+    }
+}

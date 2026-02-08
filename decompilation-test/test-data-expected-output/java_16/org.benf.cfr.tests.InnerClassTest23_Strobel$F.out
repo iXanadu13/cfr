@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest23_Strobel.F {
+    private InnerClassTest23_Strobel.F() {
+    }
+
+    public static void test() {
+        Error o = new Error(){};
+        System.out.println(o.getClass().isAnonymousClass());
+    }
+}

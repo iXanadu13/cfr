@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+
+public class OverrideGenericBridge
+extends ArrayList<String> {
+    public String[] toArray(String[] a) {
+        String[] array = super.toArray(a);
+        array[2] = "wat";
+        return array;
+    }
+}

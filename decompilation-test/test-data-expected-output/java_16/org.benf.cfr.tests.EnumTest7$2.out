@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest7;
+
+final class EnumTest7.2
+extends EnumTest7 {
+}

@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest73 {
+    public static void main(String[] args) {
+        while (true) {
+            System.out.println("HERE");
+            if (args.length < 10) continue;
+            System.out.println("THERE");
+            if (args.length < 5) continue;
+            System.out.println("EVERYWHERE");
+        }
+    }
+}

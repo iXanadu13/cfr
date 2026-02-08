@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22d {
+    public String test(int x) {
+        try {
+            if (x == 0) {
+                x = 1;
+            }
+            try {
+                String string = "one";
+                System.out.println("inner finally");
+            } catch (Throwable throwable) {
+                try {
+                    System.out.println("inner finally");
+                    throw throwable;
+                } catch (Throwable throwable2) {}
+            }
+        } finally {
+            return "outer finally";
+        }
+    }
+}

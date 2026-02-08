@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty.sable;
+
+import org.benf.cfr.tests.thirdparty.sable.Drawable;
+
+public class Circle
+implements Drawable {
+    public int radius;
+
+    public Circle(int r) {
+        this.radius = r;
+    }
+
+    public boolean isFat() {
+        return false;
+    }
+
+    @Override
+    public void draw() {
+    }
+}

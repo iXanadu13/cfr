@@ -1,0 +1,33 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest2a {
+    private int x;
+    private boolean called;
+
+    private int OnlyCallOnce() {
+        if (!this.called) {
+            this.called = true;
+            return 10;
+        }
+        throw new IllegalStateException();
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test1() {
+        SyncTest2a syncTest2a = this;
+        synchronized (syncTest2a) {
+            try {
+                this.x /= 0;
+            } catch (RuntimeException e) {
+                this.x = 4;
+            } finally {
+                this.x = this.OnlyCallOnce();
+            }
+        }
+    }
+}

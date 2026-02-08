@@ -1,0 +1,36 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
+import java.util.Locale;
+
+public class NumberFormatTest1 {
+    NumberFormat numberFormat;
+    Locale locale;
+    String currentValue;
+
+    public double getNumericValue() throws NumberFormatException {
+        if (this.numberFormat == null) {
+            this.numberFormat = DecimalFormat.getInstance(this.locale);
+        }
+        String trimmed = this.currentValue.trim().toUpperCase();
+        int[] zero = new int[]{0};
+        ParsePosition pp = new ParsePosition(zero[0]);
+        Number n = this.numberFormat.parse(trimmed, pp);
+        int consumed = zero[0];
+        if (n != null && consumed == trimmed.length()) {
+            if (n instanceof Long || n instanceof Integer) {
+                return n.longValue();
+            }
+            return n.doubleValue();
+        }
+        if (this.locale == null) {
+            throw new NumberFormatException("Invalid number \"" + this.currentValue + "\" ");
+        }
+        throw new NumberFormatException("Invalid number \"" + this.currentValue + "\" for locale " + this.locale.getDisplayName());
+    }
+}

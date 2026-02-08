@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTest5c {
+    int test2() {
+        return 1 / 0;
+    }
+
+    public int test(Object a, Object b, Object c, Object d) {
+        try {
+            try {
+                if (a == null) {
+                    return this.test2();
+                }
+            } catch (Exception e) {
+                System.out.println("1");
+                throw e;
+            }
+        } catch (Exception e) {
+            System.out.println("2");
+        }
+        System.out.println("3");
+        return 1;
+    }
+}

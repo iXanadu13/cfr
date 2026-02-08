@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+
+public class LambdaTest33 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void benchmark(Supplier<String> supplier) {
+        long startTime;
+        Supplier<String> supplier2 = supplier;
+        synchronized (supplier2) {
+            startTime = System.nanoTime();
+        }
+        new Thread(() -> System.out.println(startTime)).start();
+    }
+}

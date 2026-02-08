@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InstanceOfPatternTest4 {
+    public static void test(boolean bool, Object obj) {
+        String s;
+        Object object;
+        if (bool && (object = obj) instanceof String) {
+            s = (String)object;
+            System.out.println(s.length());
+        } else {
+            System.out.println("Foo");
+        }
+        if (bool && (object = obj) instanceof String) {
+            s = (String)object;
+            System.out.println(s.length());
+        } else {
+            System.out.println("Bar");
+        }
+    }
+}

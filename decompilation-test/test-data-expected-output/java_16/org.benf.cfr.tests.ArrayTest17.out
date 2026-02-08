@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest17 {
+    public void test(String[] args) {
+        while (args == null) {
+            String[][] array = new String[][]{{"", ""}};
+            array.toString();
+        }
+    }
+}

@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+public interface Predicate<X> {
+    public boolean test(X var1);
+}

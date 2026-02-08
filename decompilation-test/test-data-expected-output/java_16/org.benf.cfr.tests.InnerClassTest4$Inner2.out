@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.InnerClassTest4;
+
+public class InnerClassTest4.Inner2
+extends InnerClassTest4.Inner1 {
+    public InnerClassTest4.Inner2(List arg) {
+        super(InnerClassTest4.this, arg);
+    }
+}

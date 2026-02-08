@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest30;
+
+public class InnerClassTest30.C
+implements InnerClassTest30.I {
+    @Override
+    public Double get(Object o) {
+        return 2.0;
+    }
+}

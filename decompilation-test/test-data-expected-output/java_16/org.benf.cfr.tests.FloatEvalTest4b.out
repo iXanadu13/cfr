@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FloatEvalTest4b {
+    public static boolean test1(double a, double b) {
+        return a != b;
+    }
+
+    public static boolean test2(double a, double b) {
+        return a != b;
+    }
+
+    public static void test(double a, double b) {
+        System.out.println(a + " vs " + b + ":" + FloatEvalTest4b.test1(a, b) + "," + FloatEvalTest4b.test2(a, b));
+    }
+
+    public static void main(String ... args) {
+        FloatEvalTest4b.test(1.0, 2.0);
+        FloatEvalTest4b.test(2.0, 1.0);
+        FloatEvalTest4b.test(1.0, 1.0);
+        FloatEvalTest4b.test(Double.NaN, 1.0);
+        FloatEvalTest4b.test(1.0, Double.NaN);
+    }
+}

@@ -1,0 +1,42 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest27 {
+    void f(int x, short y) {
+    }
+
+    void f(short x, short y) {
+    }
+
+    void f(short x, int y) {
+    }
+
+    void f(int x, int y) {
+    }
+
+    void f(short x, int y, int z) {
+    }
+
+    void f(double x, int y, short z) {
+    }
+
+    void f(double x, int y, char z) {
+    }
+
+    void f(double x, int y, double z) {
+    }
+
+    void test(int i, short s, int i2, char c) {
+        this.f(i, s);
+        this.f((int)s, s);
+        this.f((short)i, s);
+        this.f(i, (int)s);
+        this.f((double)i, i, c);
+        this.f((double)i, i, (short)c);
+        this.f((double)i, i, (double)s);
+        this.f((double)i, (int)c, s);
+        this.f((double)i, (int)((short)i), s);
+    }
+}

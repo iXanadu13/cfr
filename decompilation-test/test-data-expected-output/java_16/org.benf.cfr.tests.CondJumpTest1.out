@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondJumpTest1 {
+    public boolean test(int a, int b, boolean c) {
+        return a < b;
+    }
+}

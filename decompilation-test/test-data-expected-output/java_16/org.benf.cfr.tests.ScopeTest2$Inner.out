@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ScopeTest2;
+
+class ScopeTest2.Inner {
+    int x;
+    int y;
+    ScopeTest2 scopeTest2;
+
+    public ScopeTest2.Inner() {
+        this.scopeTest2 = ScopeTest2.this;
+        this.y = this.x;
+        this.y = ScopeTest2.this.x;
+    }
+
+    public void foo() {
+        this.x = 3;
+    }
+
+    public void bar() {
+        this.scopeTest2 = ScopeTest2.this;
+        this.x = ScopeTest2.this.x;
+    }
+}

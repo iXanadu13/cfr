@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.benf.cfr.tests.BaseConstructorTestBase;
+
+public class BaseConstructorTest
+extends BaseConstructorTestBase {
+    private List<Integer> lst = new ArrayList<Integer>();
+}

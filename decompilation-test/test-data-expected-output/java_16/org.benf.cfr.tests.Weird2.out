@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class Weird2 {
+    public static void main(String[] args) {
+        Class<Weird2> cls = Weird2.class;
+        System.out.println(cls.getName());
+    }
+}

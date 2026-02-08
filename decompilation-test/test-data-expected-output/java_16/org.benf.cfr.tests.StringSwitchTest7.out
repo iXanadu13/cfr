@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class StringSwitchTest7 {
+    public static void foo(int x) {
+        block6: while (true) {
+            if (x < 5) {
+                switch ("test") {
+                    case "okay": {
+                        continue block6;
+                    }
+                }
+                continue;
+            }
+            System.out.println("wow x2!");
+        }
+    }
+}

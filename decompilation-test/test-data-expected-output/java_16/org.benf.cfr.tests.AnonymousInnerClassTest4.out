@@ -1,0 +1,34 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnonymousInnerClassTest4 {
+    static Integer invoke(int arg, UF fn) {
+        return fn.invoke(arg);
+    }
+
+    public void main(String[] args) {
+        System.out.println(AnonymousInnerClassTest4.invoke(4, new UF(3){
+
+            @Override
+            int invoke(int y) {
+                return this.getX() + y;
+            }
+        }));
+    }
+
+    private static abstract class UF {
+        private final int x;
+
+        public UF(int x) {
+            this.x = x;
+        }
+
+        public int getX() {
+            return this.x;
+        }
+
+        abstract int invoke(int var1);
+    }
+}

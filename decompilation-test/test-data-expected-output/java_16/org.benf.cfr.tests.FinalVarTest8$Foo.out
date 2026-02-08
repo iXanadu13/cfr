@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FinalVarTest8;
+
+public class FinalVarTest8.Foo {
+    public static final String h2 = "Chap";
+
+    public void thing() {
+        System.out.println(FinalVarTest8.h1);
+        System.out.println(h2);
+        System.out.println(h2.equals(FinalVarTest8.h1));
+    }
+}

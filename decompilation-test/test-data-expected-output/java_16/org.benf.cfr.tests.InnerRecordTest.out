@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyField;
+
+public class InnerRecordTest {
+    void test(RecordTest8 foo) {
+    }
+
+    record RecordTest8(@MyField String firstName, String lastName) {
+    }
+}

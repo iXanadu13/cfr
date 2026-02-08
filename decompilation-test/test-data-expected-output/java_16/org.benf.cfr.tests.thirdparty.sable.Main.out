@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty.sable;
+
+import org.benf.cfr.tests.thirdparty.sable.Circle;
+import org.benf.cfr.tests.thirdparty.sable.Drawable;
+import org.benf.cfr.tests.thirdparty.sable.Rectangle;
+
+public class Main {
+    public static void f(short i) {
+        Drawable d;
+        boolean is_fat;
+        if (i > 10) {
+            Rectangle r = new Rectangle(i, i);
+            is_fat = r.isFat();
+            d = r;
+        } else {
+            Circle c = new Circle(i);
+            is_fat = c.isFat();
+            d = c;
+        }
+        if (!is_fat) {
+            d.draw();
+        }
+    }
+
+    public static void main(String[] args) {
+        Main.f((short)11);
+    }
+}

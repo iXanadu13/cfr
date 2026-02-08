@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationTestM3;
+import org.benf.cfr.tests.MyParam;
+
+class AnnotationTestM3.Inner {
+    public AnnotationTestM3.Inner(@MyParam AnnotationTestM3 AnnotationTestM3.this) {
+    }
+}

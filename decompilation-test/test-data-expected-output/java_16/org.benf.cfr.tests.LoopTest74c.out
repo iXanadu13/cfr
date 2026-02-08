@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest74c {
+    public static void foo1() {
+        float i = 10.0f;
+        while (i < 15.0f) {
+            System.out.println(i -= 2.0f);
+        }
+    }
+}

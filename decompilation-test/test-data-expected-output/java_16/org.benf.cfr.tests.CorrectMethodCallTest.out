@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+
+public interface CorrectMethodCallTest {
+    public void call(CharSequence var1, Object var2);
+
+    public void call(String var1, Object var2);
+
+    public void call(String var1, Supplier<?> ... var2);
+
+    default public void test() {
+        this.call("test", () -> "test");
+    }
+}

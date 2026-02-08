@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InheritedMethodOverloadTest_Nested;
+
+class InheritedMethodOverloadTest2 {
+    InheritedMethodOverloadTest2() {
+    }
+
+    public static void main(String ... args) {
+        new InheritedMethodOverloadTest_Nested().test();
+    }
+}

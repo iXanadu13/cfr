@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest23_Strobel;
+
+interface InnerClassTest23_Strobel.E {
+    public static final InnerClassTest23_Strobel.I i = new InnerClassTest23_Strobel.I(){};
+}

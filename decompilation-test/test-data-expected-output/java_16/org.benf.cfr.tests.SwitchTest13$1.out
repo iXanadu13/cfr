@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest1;
+
+class SwitchTest13.1 {
+    static final /* synthetic */ int[] $SwitchMap$org$benf$cfr$tests$EnumTest1;
+
+    static {
+        $SwitchMap$org$benf$cfr$tests$EnumTest1 = new int[EnumTest1.values().length];
+    }
+}

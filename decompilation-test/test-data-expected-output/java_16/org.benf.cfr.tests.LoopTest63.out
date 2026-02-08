@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest63 {
+    public void loop() {
+        int x = 3;
+        while (x < 50 && x++ < 100) {
+        }
+        System.out.println("Done.");
+    }
+}

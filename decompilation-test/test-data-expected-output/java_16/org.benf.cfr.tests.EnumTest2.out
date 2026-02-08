@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Map;
+import org.benf.cfr.tests.support.MapFactory;
+
+public enum EnumTest2 {
+    FOO(2),
+    BAR(1),
+    BAP(5);
+
+    private final int x;
+    private static final Map<String, EnumTest2> smap;
+
+    private EnumTest2(int x) {
+        this.x = x;
+    }
+
+    static {
+        smap = MapFactory.newMap();
+    }
+}

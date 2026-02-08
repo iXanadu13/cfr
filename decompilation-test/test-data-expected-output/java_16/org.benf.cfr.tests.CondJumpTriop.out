@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondJumpTriop {
+    public boolean test(boolean a, boolean b, boolean c) {
+        return a ? b : c;
+    }
+}

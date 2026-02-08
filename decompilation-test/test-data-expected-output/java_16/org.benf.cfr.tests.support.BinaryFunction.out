@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+public interface BinaryFunction<X, Y, R> {
+    public R invoke(X var1, Y var2);
+}

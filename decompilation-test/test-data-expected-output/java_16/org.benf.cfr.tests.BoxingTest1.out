@@ -1,0 +1,42 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest1 {
+    private void a(Integer i) {
+        this.a(i);
+        this.b(i);
+        this.c(i.intValue());
+    }
+
+    private void b(int i) {
+        this.a(i);
+        this.b(i);
+        this.c(i);
+    }
+
+    private void c(double d) {
+        this.c(d);
+        this.d(d);
+    }
+
+    private void d(Double d) {
+        this.c(d);
+        this.d(d);
+    }
+
+    private void e(Short s) {
+        this.b(s.shortValue());
+        this.c(s.shortValue());
+        this.e(s);
+        this.f(s);
+    }
+
+    private void f(short s) {
+        this.b(s);
+        this.c(s);
+        this.e(s);
+        this.f(s);
+    }
+}

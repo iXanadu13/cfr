@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class AnonymousInnerClassTest15.Priv {
+    private int x;
+
+    public AnonymousInnerClassTest15.Priv(int x) {
+        this.x = x;
+    }
+}

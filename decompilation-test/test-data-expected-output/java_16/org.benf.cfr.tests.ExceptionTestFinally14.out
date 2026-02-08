@@ -1,0 +1,43 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally14 {
+    int test1(int a) {
+        try {
+            if (a != 1) {
+                if (a == 2) {
+                    int n = 0;
+                    return n;
+                }
+                if (a != 3) {
+                    if (a == 4) {
+                        int n = 1;
+                        return n;
+                    }
+                    if (a != 5) {
+                        if (a == 6) {
+                            int n = 9;
+                            return n;
+                        }
+                        if (a != 7) {
+                            if (a == 8) {
+                                int n = 2;
+                                return n;
+                            }
+                            if (a == 9) {
+                                // empty if block
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (Throwable t) {
+            throw t;
+        } finally {
+            System.out.println("Fred");
+        }
+        return 0;
+    }
+}

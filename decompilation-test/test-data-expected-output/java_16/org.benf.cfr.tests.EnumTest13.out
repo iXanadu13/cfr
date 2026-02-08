@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+public enum EnumTest13 {
+    None{
+
+        @Override
+        public Integer performCastAction(Integer orig, Integer tgtType) {
+            return EnumTest13.foo();
+        }
+    };
+
+
+    private static Integer foo() {
+        return 1;
+    }
+
+    public abstract Integer performCastAction(Integer var1, Integer var2);
+}

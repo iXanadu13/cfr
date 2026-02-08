@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class LambdaTest13 {
+    static <T, R> List<R> map(Function<T, R> function, List<T> source) {
+        List destiny = LambdaTest13.create(ArrayList::new);
+        for (T item : source) {
+            R value = function.apply(item);
+            destiny.add(value);
+        }
+        return destiny;
+    }
+
+    public static <V> V create(Supplier<V> factory) {
+        return factory.get();
+    }
+}

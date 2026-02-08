@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.RecordTest12;
+
+public record RecordTest12.Son<T extends Comparable<T>>(RecordTest12<T> stuff) {
+}

@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TryTest6 {
+    public void functionWhichMightThrow() {
+    }
+
+    public void foo() {
+        try {
+            this.functionWhichMightThrow();
+            System.out.println("Fred");
+        } catch (Exception exception) {
+            // empty catch block
+        }
+        System.out.println("Jim");
+    }
+}

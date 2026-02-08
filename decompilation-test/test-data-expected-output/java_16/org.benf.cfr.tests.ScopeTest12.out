@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ScopeTest12 {
+    public static String test(char[] chars) {
+        int x = 0;
+        for (char c : chars) {
+            if (c < '0') break;
+        }
+        return null;
+    }
+}

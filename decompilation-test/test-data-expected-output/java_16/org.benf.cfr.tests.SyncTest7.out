@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest7 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public int test(Object a, Object b, Object c, Object d) {
+        Object object = a;
+        synchronized (object) {
+            Object object2 = b;
+            synchronized (object2) {
+                Object object3 = c;
+                synchronized (object3) {
+                    Object object4 = d;
+                    synchronized (object4) {
+                        return 1;
+                    }
+                }
+            }
+        }
+    }
+}

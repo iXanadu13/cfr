@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class VarArgsTest5 {
+    public static void x(int a, Object ... bs) {
+    }
+
+    public static void x(int a, Object bs) {
+    }
+
+    public void t() {
+        Integer a = 2;
+        Object b = new Object();
+        Integer B = 5;
+        VarArgsTest5.x(3, (Object)a);
+        VarArgsTest5.x(3, new Integer[]{a});
+        VarArgsTest5.x(3, a, b);
+        VarArgsTest5.x(3, a, b);
+        VarArgsTest5.x(3, a, B);
+        VarArgsTest5.x(3, a, B);
+        VarArgsTest5.x(3, a, b, a);
+        VarArgsTest5.x(3, a, b, a);
+    }
+}

@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SuperMemberCast.Foo {
+    private String bar() {
+        return "hello";
+    }
+}

@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest14 {
+    String[] fred() {
+        return new String[]{"hello", "old", "chap"};
+    }
+}

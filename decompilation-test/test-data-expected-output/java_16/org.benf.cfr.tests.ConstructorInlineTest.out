@@ -1,0 +1,33 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstructorInlineTest {
+    public static void main(String[] args) {
+        int id = 0;
+        int oldid = 0;
+        try {
+            while (true) {
+                oldid = ++id;
+                new List(oldid);
+            }
+        } catch (Error e) {
+            List.head = null;
+            System.out.println(e.getClass() + ", " + (oldid == id));
+            return;
+        }
+    }
+
+    static class List {
+        int value;
+        List next;
+        static List head = new List(0);
+
+        List(int n) {
+            this.value = n;
+            this.next = head;
+            head = this;
+        }
+    }
+}

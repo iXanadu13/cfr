@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest13;
+
+public class InnerClassTest13.Inner1.Inner2 {
+    public int c;
+
+    public void foo() {
+        System.out.println("Res" + (a + Inner1.this.b + this.c));
+        int c2 = this.c;
+        int b2 = Inner1.this.b;
+        InnerClassTest13 cfr_ignored_0 = Inner1.this.this$0;
+        int a2 = a;
+        a += Inner1.this.b;
+    }
+}

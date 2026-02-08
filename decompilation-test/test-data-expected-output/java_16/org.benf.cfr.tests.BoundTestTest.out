@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BoundTestImpl;
+import org.benf.cfr.tests.BoundTestPart1;
+
+public class BoundTestTest {
+    final BoundTestPart1<String, Long> f = new BoundTestImpl<Long>();
+}

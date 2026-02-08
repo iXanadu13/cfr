@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BadDescLegal2;
+
+class BadDescLegal2.D1
+extends BadDescLegal2.Base {
+    private BadDescLegal2.D1() {
+    }
+
+    public String foo() {
+        return null;
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest53 {
+    public static void dump(boolean b, int i1, int i2) {
+        int j;
+        int i = 0;
+        int n = j = b ? i1 : i2;
+        while (i < i1) {
+            System.out.println("Done" + i + j);
+            ++i;
+            ++j;
+        }
+    }
+}

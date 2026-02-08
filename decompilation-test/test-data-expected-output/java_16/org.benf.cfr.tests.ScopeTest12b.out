@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ScopeTest12b {
+    public static String test(char[] chars) {
+        char c;
+        int x = 0;
+        int len = chars.length;
+        for (x = 0; x < len && (c = chars[x]) >= 48 + x; ++x) {
+        }
+        return null;
+    }
+}

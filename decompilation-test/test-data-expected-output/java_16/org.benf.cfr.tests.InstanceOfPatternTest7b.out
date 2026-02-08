@@ -1,0 +1,38 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InstanceOfPatternTest7b {
+    /*
+     * Unable to fully structure code
+     */
+    public static void test(Object obj, Object obj2) {
+        var4_2 = obj;
+        if (!(var4_2 instanceof String)) ** GOTO lbl-1000
+        s = (String)var4_2;
+        var4_2 = obj2;
+        if (var4_2 instanceof String) {
+            s2 = (String)var4_2;
+            System.out.println(s + s2);
+        } else lbl-1000:
+        // 2 sources
+
+        {
+            System.out.println("Foo");
+        }
+        var4_2 = obj;
+        if (!(var4_2 instanceof String)) ** GOTO lbl-1000
+        s = (String)var4_2;
+        var4_2 = obj2;
+        if (var4_2 instanceof String) {
+            s2 = (String)var4_2;
+            System.out.println(s + s2);
+        } else lbl-1000:
+        // 2 sources
+
+        {
+            System.out.println("Foo");
+        }
+    }
+}

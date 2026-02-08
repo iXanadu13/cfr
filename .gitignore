@@ -22,3 +22,4 @@ out
 # 3. 放行你想要的子目录
 !/decompilation-test/test-data-expected-output/classes/
 !/decompilation-test/test-data-expected-output/jars/
+!/decompilation-test/test-data-expected-output/java_16/

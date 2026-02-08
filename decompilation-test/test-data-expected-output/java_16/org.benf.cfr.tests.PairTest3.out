@@ -1,0 +1,34 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Pair;
+
+public class PairTest3 {
+    public Object test(boolean a) {
+        Pair<String, Interface> res;
+        if (a) {
+            System.out.println("Filler");
+            res = new Pair<String, Impl1>("Test", new Impl1());
+        } else {
+            res = new Pair<String, Impl2>("Other", new Impl2());
+        }
+        return res;
+    }
+
+    private static class Impl1
+    implements Interface {
+        private Impl1() {
+        }
+    }
+
+    private static class Impl2
+    implements Interface {
+        private Impl2() {
+        }
+    }
+
+    private static interface Interface {
+    }
+}

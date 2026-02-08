@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty;
+
+public class Usa.England.Ireland {
+    public String name = "Dublin";
+
+    public void print_names() {
+        System.out.println(this.name);
+    }
+}

@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.concurrent.ExecutorService;
+
+public class LambdaTest36b {
+    private ExecutorService executorService;
+
+    public void doThing(double d) {
+        final double x = d;
+        this.executorService.submit(() -> new Thread(){
+
+            @Override
+            public void run() {
+                LambdaTest36b.this.executorService.submit(() -> System.out.println("" + x));
+            }
+        }.start());
+    }
+}

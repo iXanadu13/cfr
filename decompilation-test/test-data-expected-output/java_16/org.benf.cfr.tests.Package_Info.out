@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface Package_Info {
+    public static final int x = 1;
+}

@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest77 {
+    private int i;
+
+    public int doSomething() {
+        do {
+            if (this.i <= 1) {
+                this.doSomething2();
+                if (this.i == 0) break;
+            }
+            if (this.i % 5 == 3) break;
+            if (this.i < 41) continue;
+            this.doSomething2();
+            if (this.i != 42) continue;
+            return 1;
+        } while (this.i != 23);
+        return 0;
+    }
+
+    private void doSomething2() {
+    }
+}

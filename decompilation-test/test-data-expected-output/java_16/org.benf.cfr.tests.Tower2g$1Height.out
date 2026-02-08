@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Tower2g.1Height {
+    private Tower2g.1Height() {
+    }
+
+    void test() {
+        System.out.println(Tower2g.this.z);
+    }
+}

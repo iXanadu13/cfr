@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Tower2e.1Height {
+    final /* synthetic */ String[] val$args;
+
+    private Tower2e.1Height(int l) {
+        this.val$args = stringArray;
+        ++l;
+    }
+
+    private Tower2e.1Height(String s, int l) {
+        this.val$args = stringArray;
+        ++l;
+    }
+
+    void test() {
+        System.out.println(this.val$args.length);
+    }
+}

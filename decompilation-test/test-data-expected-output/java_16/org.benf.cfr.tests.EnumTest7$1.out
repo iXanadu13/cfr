@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest7;
+
+final class EnumTest7.1
+extends EnumTest7 {
+    @Override
+    public void f() {
+        System.out.println(x);
+    }
+}

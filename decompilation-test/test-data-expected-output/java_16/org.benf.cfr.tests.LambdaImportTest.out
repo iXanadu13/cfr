@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.regex.Pattern;
+
+public class LambdaImportTest {
+    public void test() {
+        Pattern.compile("test").matcher("test").replaceFirst(result -> "");
+    }
+}

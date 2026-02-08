@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.advent;
+
+public class Eg3 {
+    public static boolean fn(boolean a, boolean b, boolean c) {
+        return a || b && c;
+    }
+}

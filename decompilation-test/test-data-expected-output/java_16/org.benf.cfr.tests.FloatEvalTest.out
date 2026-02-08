@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FloatEvalTest {
+    public static void main(String[] args) {
+        double d = 1.0;
+        float f = 1.0f;
+        System.out.println(!(d < Double.NaN));
+        System.out.println(!(f >= Float.NaN));
+    }
+}

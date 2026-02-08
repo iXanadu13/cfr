@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CastTest16 {
+    public char foo(char c) {
+        char x = (char)(c + '\u0001');
+        return x;
+    }
+
+    public short bar(short c) {
+        short x = (short)(c >> 1);
+        return x;
+    }
+
+    public byte bap(byte c) {
+        byte x = (byte)(c + 1);
+        return x;
+    }
+}

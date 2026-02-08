@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TernaryTest5b {
+    public static Number bob(Integer a, Double b, boolean c) {
+        Number x = c ? (Number)a : (Number)b;
+        return x;
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest61 {
+    public int cannotMoveIteratorVariableDeclaration(int start, int[] l2) {
+        for (int n : l2) {
+        }
+        return l2.length;
+    }
+}

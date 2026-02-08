@@ -1,0 +1,35 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.support.Functional;
+import org.benf.cfr.tests.support.Predicate;
+
+public class LoopTestTyped5a {
+    public static void testList(List<Container> in) {
+        List<Container> tries = Functional.filter(in, new TypeFilter<String>(String.class));
+    }
+
+    public static class TypeFilter<X>
+    implements Predicate<Container> {
+        private final Class<X> cls;
+
+        TypeFilter(Class<X> cls) {
+            this.cls = cls;
+        }
+
+        @Override
+        public boolean test(Container in) {
+            return in.contained.getClass() == this.cls;
+        }
+    }
+
+    static class Container<X> {
+        Object contained;
+
+        Container() {
+        }
+    }
+}

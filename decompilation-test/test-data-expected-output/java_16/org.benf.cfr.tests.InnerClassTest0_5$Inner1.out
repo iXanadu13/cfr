@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest0_5.Inner1 {
+    public InnerClassTest0_5.Inner1() {
+        System.out.println(InnerClassTest0_5.this.x);
+        System.out.println(InnerClassTest0_5.this.y);
+    }
+
+    public void foo() {
+        System.out.println(InnerClassTest0_5.this.x);
+        System.out.println(InnerClassTest0_5.this.y);
+        System.out.println(Math.max(InnerClassTest0_5.this.x, InnerClassTest0_5.this.y));
+    }
+}

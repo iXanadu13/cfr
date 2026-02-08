@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest3.Inner1.Inner2 {
+    int z;
+
+    private InnerClassTest3.Inner1.Inner2(int z) {
+        this.z = z;
+    }
+
+    int getZ() {
+        return Inner1.this.this$0.x + Inner1.this.getX(3) + this.z;
+    }
+}

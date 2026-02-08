@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class VarTypeTest6.1
+implements AutoCloseable {
+    double dVal = 1.2;
+
+    VarTypeTest6.1() {
+    }
+
+    @Override
+    public void close() {
+        System.out.println("Close!");
+    }
+}

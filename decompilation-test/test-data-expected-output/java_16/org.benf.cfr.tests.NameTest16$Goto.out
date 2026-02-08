@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest16.Goto {
+    void foo() {
+    }
+}

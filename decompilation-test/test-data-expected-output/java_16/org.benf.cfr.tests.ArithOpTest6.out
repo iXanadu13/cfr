@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArithOpTest6 {
+    long nextIdx = 0L;
+
+    public Long getNextIdent(long slot) {
+        return new Long(this.nextIdx++);
+    }
+
+    public Long getPrevIdent(long slot) {
+        return new Long(this.nextIdx--);
+    }
+
+    public long getNextIdent() {
+        return this.nextIdx++;
+    }
+
+    public long getPrevIdent() {
+        return this.nextIdx--;
+    }
+}

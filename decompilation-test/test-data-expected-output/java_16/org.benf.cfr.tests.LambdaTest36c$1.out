@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class LambdaTest36c.1
+extends Thread {
+    LambdaTest36c.1() {
+    }
+
+    @Override
+    public void run() {
+        LambdaTest36c.this.executorService.submit(() -> System.out.println("" + LambdaTest36c.this.x));
+    }
+}

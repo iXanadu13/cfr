@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22h {
+    private static String negative() {
+        return "negative";
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public String test(int x) {
+        try {
+            String string = ExceptionTestFinally22h.negative();
+            return string;
+        } catch (Throwable t) {
+            String string = "inner error";
+            return string;
+        } catch (RuntimeException e) {
+            String string = "error";
+            return string;
+        } finally {
+            System.out.println("finally");
+            throw new RuntimeException("whoop whoop");
+        }
+    }
+}

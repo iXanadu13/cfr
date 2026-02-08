@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+
+@FunctionalInterface
+public interface LambdaUtilities1 {
+    public static <OUTPUT> Supplier<OUTPUT> conditional(Supplier<Boolean> condition, Supplier<OUTPUT> ifTrue, Supplier<OUTPUT> ifFalse) {
+        return () -> ((Boolean)condition.get() != false ? ifTrue : ifFalse).get();
+    }
+
+    public boolean isLoggingEnabled();
+}

@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InstanceOfPatternTest1 {
+    public static void test(Object obj) {
+        Object object;
+        if (obj instanceof Person) {
+            int n = ((Person)obj).getAge();
+        }
+        if ((object = obj) instanceof Person) {
+            Person person1 = (Person)object;
+            int age = person1.getAge();
+            System.out.println("Age is " + age);
+        }
+    }
+
+    private static class Person {
+        public Person(int x) {
+        }
+
+        public int getAge() {
+            return 3;
+        }
+    }
+}

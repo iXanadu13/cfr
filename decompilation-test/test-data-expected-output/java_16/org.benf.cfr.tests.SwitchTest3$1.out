@@ -1,0 +1,34 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SwitchTest3;
+
+class SwitchTest3.1 {
+    static final /* synthetic */ int[] $SwitchMap$org$benf$cfr$tests$SwitchTest3$enm;
+
+    static {
+        $SwitchMap$org$benf$cfr$tests$SwitchTest3$enm = new int[SwitchTest3.enm.values().length];
+        try {
+            SwitchTest3.1.$SwitchMap$org$benf$cfr$tests$SwitchTest3$enm[SwitchTest3.enm.ONE.ordinal()] = 1;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            SwitchTest3.1.$SwitchMap$org$benf$cfr$tests$SwitchTest3$enm[SwitchTest3.enm.TWO.ordinal()] = 2;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            SwitchTest3.1.$SwitchMap$org$benf$cfr$tests$SwitchTest3$enm[SwitchTest3.enm.FOUR.ordinal()] = 3;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            SwitchTest3.1.$SwitchMap$org$benf$cfr$tests$SwitchTest3$enm[SwitchTest3.enm.THREE.ordinal()] = 4;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
+}

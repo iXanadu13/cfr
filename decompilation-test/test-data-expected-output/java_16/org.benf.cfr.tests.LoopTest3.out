@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import java.util.Set;
+
+public class LoopTest3 {
+    public int testNested(List<Object> list, Set<Object> set) {
+        int result = 0;
+        boolean x = false;
+        boolean y = false;
+        block0: for (Object o : list) {
+            System.out.println("fred");
+            for (Object o2 : set) {
+                System.out.println("jim");
+                if (x != y) continue block0;
+            }
+        }
+        return result;
+    }
+}

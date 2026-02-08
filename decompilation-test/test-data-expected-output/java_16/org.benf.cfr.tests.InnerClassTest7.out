@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest7 {
+
+    public static enum bar {
+        JENNIFER,
+        JAMES;
+
+    }
+
+    public static enum foo {
+        FRED,
+        KIM;
+
+    }
+}

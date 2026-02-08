@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InitTest3 {
+    final boolean b1 = true;
+    public static final boolean b2 = false;
+    final byte c1 = (byte)12;
+    public static final byte c2 = 12;
+    final char d1 = (char)97;
+    public static final char d2 = 'a';
+}

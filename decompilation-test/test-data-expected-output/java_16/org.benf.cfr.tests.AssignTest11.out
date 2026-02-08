@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest11 {
+    public void test(int j) {
+        int i = j < 3 ? (j = 10) : 32;
+    }
+}

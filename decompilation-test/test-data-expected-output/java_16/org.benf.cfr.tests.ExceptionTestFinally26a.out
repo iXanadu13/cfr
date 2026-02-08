@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally26a {
+    public void fn() {
+    }
+
+    public boolean test(int x) {
+        try {
+            if (x == 2) {
+                boolean bl = true;
+                return bl;
+            }
+            try {
+                throw new UnsupportedOperationException();
+            } catch (UnsupportedOperationException e) {
+                System.out.println("foo");
+            }
+        } finally {
+            System.out.print("arg");
+            return true;
+        }
+    }
+}

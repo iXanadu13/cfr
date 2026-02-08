@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class VarTypeTest3.Bob {
+    public int foo;
+
+    private VarTypeTest3.Bob() {
+    }
+}

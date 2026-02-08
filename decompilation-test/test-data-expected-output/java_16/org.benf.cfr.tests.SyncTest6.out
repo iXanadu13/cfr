@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest6 {
+    private int[] x;
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public int test1() {
+        SyncTest6 syncTest6 = this;
+        synchronized (syncTest6) {
+            return this.x[2];
+        }
+    }
+}

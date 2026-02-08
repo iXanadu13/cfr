@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class CaptureScope.1Foo {
+    CaptureScope.1Foo() {
+    }
+}

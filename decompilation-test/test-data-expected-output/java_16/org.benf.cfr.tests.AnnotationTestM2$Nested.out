@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyParam;
+
+@MyParam
+class AnnotationTestM2.Nested<@MyParam T> {
+    AnnotationTestM2.Nested() {
+    }
+
+    public @MyParam String test(@MyParam AnnotationTestM2.Nested<T> this, @MyParam String t) throws @MyParam Exception {
+        return null;
+    }
+}

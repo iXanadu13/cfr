@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class StaticInnerClassTest1.Inner1 {
+    public int x;
+    private final int y;
+
+    private StaticInnerClassTest1.Inner1(int y) {
+        this.y = y;
+    }
+}

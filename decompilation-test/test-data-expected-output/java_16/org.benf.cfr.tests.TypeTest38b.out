@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import java.util.TreeMap;
+
+public class TypeTest38b {
+    public static <X> void test(List<X> input, TreeMap<X, List<X>> temp, List<X> res) {
+        for (X object : input) {
+        }
+        for (List list : temp.values()) {
+        }
+    }
+}

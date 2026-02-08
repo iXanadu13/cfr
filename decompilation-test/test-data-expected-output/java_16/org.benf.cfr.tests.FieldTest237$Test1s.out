@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldTest237;
+
+class FieldTest237.Test1s {
+    FieldTest237.Test1s() {
+    }
+
+    int test1a(FieldTest237.Test1 a) {
+        return a.eight;
+    }
+
+    double test1b(FieldTest237.Test1 a) {
+        return (double)a.eight * 2.5 + Math.sin(a.eight + 1) * 8.0;
+    }
+
+    double test1c(FieldTest237.Test1 a) {
+        a.getClass();
+        a.getClass();
+        return 20.0 + Math.sin(9.0) * 8.0;
+    }
+}

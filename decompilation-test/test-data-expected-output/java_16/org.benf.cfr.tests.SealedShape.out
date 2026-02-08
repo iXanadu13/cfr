@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SealedCircle;
+import org.benf.cfr.tests.SealedRectangle;
+import org.benf.cfr.tests.SealedSquare;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+public abstract sealed class SealedShape
+permits SealedCircle, SealedRectangle, SealedSquare {
+}

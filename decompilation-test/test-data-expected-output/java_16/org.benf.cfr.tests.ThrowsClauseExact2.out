@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ThrowsClauseExact2<EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE extends Exception> {
+    ThrowsClauseExact2() {
+    }
+
+    public void testThrow() throws EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE {
+    }
+
+    public static void main(String ... args) throws Exception {
+        new ThrowsClauseExact2().testThrow();
+    }
+}

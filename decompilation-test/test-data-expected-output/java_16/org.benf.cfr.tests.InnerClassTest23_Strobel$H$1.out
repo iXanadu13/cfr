@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest23_Strobel.H.1
+implements Runnable {
+    private final Integer mCount = new Integer(2);
+
+    InnerClassTest23_Strobel.H.1() {
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Runnable: mCount = " + this.mCount);
+    }
+}

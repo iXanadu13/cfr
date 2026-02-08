@@ -1,0 +1,7 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+public @interface NotNull {
+}

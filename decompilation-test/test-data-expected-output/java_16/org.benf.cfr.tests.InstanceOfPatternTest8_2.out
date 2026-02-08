@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InstanceOfPatternTest8_2 {
+    static String s = "Fred";
+
+    public static void test(Object obj) {
+        String s;
+        Object object = obj;
+        if (object instanceof String && (s = (String)object).length() > 8) {
+            System.out.println(s.length());
+        }
+    }
+
+    public static void main(String ... args) {
+        InstanceOfPatternTest8_2.test("foooooooooo");
+    }
+}

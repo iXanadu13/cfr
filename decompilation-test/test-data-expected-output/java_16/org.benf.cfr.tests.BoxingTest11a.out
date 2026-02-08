@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class BoxingTest11a {
+    private void t(int v, List<Integer> is) {
+        for (Integer i : is) {
+            if (i == v) {
+                throw new IllegalStateException();
+            }
+            Integer n = i;
+            i = i + 1;
+            System.out.println("A");
+        }
+    }
+}

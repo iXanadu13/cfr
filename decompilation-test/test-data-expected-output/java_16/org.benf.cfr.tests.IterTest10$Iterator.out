@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IterTest10.Iterator<T> {
+    boolean hasNext() {
+        return false;
+    }
+
+    T next() {
+        return null;
+    }
+}

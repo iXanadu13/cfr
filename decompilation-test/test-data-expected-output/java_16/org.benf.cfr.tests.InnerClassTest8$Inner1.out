@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest8.Inner1 {
+    public int tweakX(int y) {
+        InnerClassTest8.this.x += y;
+        return InnerClassTest8.this.x;
+    }
+}

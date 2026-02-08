@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+
+public class CreateTest1 {
+    public void test1() {
+        ArrayList l = new ArrayList();
+    }
+}

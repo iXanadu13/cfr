@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class IncrTest7c {
+    abstract int toDigit(char var1, int var2);
+
+    public void foo(int len, char[] data, byte[] out) {
+        int i = 0;
+        int j = 0;
+        while (j < len) {
+            int f = this.toDigit(data[++j], j);
+            ++j;
+            out[i] = (byte)(f & 0xFF);
+            ++i;
+        }
+    }
+}

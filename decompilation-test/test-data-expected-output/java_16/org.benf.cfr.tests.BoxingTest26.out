@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest26 {
+    private void t(boolean b) {
+        Integer i = 3;
+        Integer i2 = 3;
+        int i3 = 3;
+        this.fn((int)i);
+        this.fn(i2);
+        this.fn(i3);
+        this.fn((Integer)i3);
+    }
+
+    private void fn(Integer i) {
+    }
+
+    private void fn(int i) {
+    }
+}

@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class MalformedBlockTest1f {
+    MalformedBlockTest1f() {
+    }
+
+    void useShort(short s) {
+        System.out.println(s);
+    }
+
+    void useBoolean(boolean b) {
+        System.out.println(b);
+    }
+
+    void testChar() {
+        int i = -32767;
+        i = (short)(i - 1);
+        this.useShort((short)i);
+        i = 1;
+        this.useBoolean(i != 0);
+    }
+}

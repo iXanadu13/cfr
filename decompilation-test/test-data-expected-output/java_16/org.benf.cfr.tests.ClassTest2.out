@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ClassTest2 {
+    private final Class c;
+    public static ClassTest2 instance = new ClassTest2(String.class);
+
+    public ClassTest2(Class c) {
+        this.c = c;
+    }
+}

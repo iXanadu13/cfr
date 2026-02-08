@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.StaticTest4;
+
+public class StaticTest5
+extends StaticTest4 {
+    public static void foo1(int x2) {
+        StaticTest4.x = x2;
+        StaticTest4.x = x2;
+        x = x2;
+    }
+}

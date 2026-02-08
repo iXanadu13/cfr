@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class EnumSwitchTest1 {
+    public int test0(enm e) {
+        switch (e) {
+            default: {
+                System.out.println("Test");
+                break;
+            }
+            case ONE: {
+                return 9;
+            }
+            case TWO: {
+                return 2;
+            }
+        }
+        System.out.println("Here");
+        return 1;
+    }
+
+    static enum enm {
+        ONE,
+        TWO,
+        THREE,
+        FOUR;
+
+    }
+}

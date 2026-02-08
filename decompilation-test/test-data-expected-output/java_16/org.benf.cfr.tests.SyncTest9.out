@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest9 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public int test(Object a, Object b, Object c, Object d) {
+        Object object = a;
+        synchronized (object) {
+            return 1;
+        }
+    }
+}

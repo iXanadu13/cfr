@@ -1,0 +1,62 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest28c {
+    public static void foo(int x) {
+        int n;
+        int y = Integer.divideUnsigned(42, 7);
+        System.out.println(y);
+        switch (x) {
+            case 1: {
+                throw new IllegalStateException();
+            }
+            case 2: 
+            case 3: {
+                if ("".isEmpty()) {
+                    if (Integer.parseInt("42") < 17) {
+                        System.out.println("lolwut");
+                    } else {
+                        System.out.println("HMMM");
+                    }
+                    System.out.println("cowabunga");
+                } else {
+                    System.out.println("hmm");
+                }
+                System.out.println("123");
+                n = 123;
+                break;
+            }
+            case 7: 
+            case 8: 
+            case 42: {
+                System.out.println("fall through!");
+            }
+            case 4: 
+            case 5: 
+            case 54: {
+                n = 456;
+                break;
+            }
+            default: {
+                if (x < 100) {
+                    System.out.println("x < 100");
+                    n = 789;
+                    break;
+                }
+                n = 987;
+            }
+        }
+        y = n;
+        System.out.println(y);
+    }
+
+    public static void main(String ... args) {
+        SwitchTest28c.foo(1);
+        SwitchTest28c.foo(3);
+        SwitchTest28c.foo(50);
+        SwitchTest28c.foo(300);
+        SwitchTest28c.foo(4);
+    }
+}

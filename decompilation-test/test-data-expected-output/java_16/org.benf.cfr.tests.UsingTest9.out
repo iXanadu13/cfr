@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.InputStream;
+import java.util.Base64;
+
+public class UsingTest9 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    static void test(InputStream in, Base64.Decoder decoder) {
+        try {
+            block8: {
+                try (InputStream is = decoder.wrap(in);){
+                    int x;
+                    while ((x = is.read()) != 0) {
+                    }
+                    if (is == null) break block8;
+                }
+            }
+        } finally {
+            throw new Error("pass");
+        }
+    }
+}

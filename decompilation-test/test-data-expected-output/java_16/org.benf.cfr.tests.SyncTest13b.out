@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest13b {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test(int x) {
+        while (true) {
+            SyncTest13b syncTest13b = this;
+            synchronized (syncTest13b) {
+                long time = System.currentTimeMillis();
+                if (time > (long)x) {
+                    System.out.println("X");
+                    return;
+                }
+            }
+        }
+    }
+}

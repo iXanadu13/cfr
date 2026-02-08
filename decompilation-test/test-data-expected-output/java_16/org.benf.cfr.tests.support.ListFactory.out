@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListFactory {
+    public static <X> List<X> newList() {
+        return new ArrayList();
+    }
+}

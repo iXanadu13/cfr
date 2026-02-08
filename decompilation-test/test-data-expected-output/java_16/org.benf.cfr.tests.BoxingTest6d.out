@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest6d {
+    private void shorts(short s) {
+        this.DoubleF(Double.valueOf(s));
+    }
+
+    private void DoubleF(Double Darg) {
+    }
+}

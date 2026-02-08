@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest5;
+
+final class EnumTest5.1
+extends EnumTest5 {
+    @Override
+    public void f() {
+        System.out.println("FOO!");
+    }
+}

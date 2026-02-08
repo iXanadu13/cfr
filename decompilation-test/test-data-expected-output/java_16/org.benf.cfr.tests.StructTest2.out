@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.StructTest1;
+
+public class StructTest2 {
+    public StructTest1 x;
+
+    void a() {
+        this.x = new StructTest1();
+        this.x.a = "TesT";
+        this.x.b = 4;
+    }
+}

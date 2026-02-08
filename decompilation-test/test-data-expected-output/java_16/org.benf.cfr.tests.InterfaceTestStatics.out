@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface InterfaceTestStatics {
+    public static final String STATIC_STRING = "Here be a static";
+}

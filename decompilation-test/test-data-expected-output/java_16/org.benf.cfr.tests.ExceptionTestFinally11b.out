@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally11b {
+    void test1(String path) {
+        int x = 3;
+        if (path != null) {
+            // empty if block
+        }
+    }
+}

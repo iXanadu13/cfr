@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest16 {
+    public int test(int x) {
+        int a = x;
+        int b = x;
+        int c = a + b;
+        return a + b + c;
+    }
+
+    public int test2(int x) {
+        int a = 3;
+        int b = x < 5 ? (a = x) : 12;
+        return b + a;
+    }
+
+    public int test3(int x) {
+        int b;
+        int a = 3;
+        if ((x < 5 ? (a = x) : 12) > 1) {
+            b = 1;
+        } else {
+            b = 2;
+            System.out.println("HERE");
+        }
+        return b + a;
+    }
+}

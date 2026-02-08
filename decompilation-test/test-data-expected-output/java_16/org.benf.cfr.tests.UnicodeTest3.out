@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class UnicodeTest3 {
+    public static void foo() {
+        System.out.println("\u4f60\u597d");
+        System.out.println("\u4f60\u597d");
+        System.out.println("\u00e4\u00bd\u00a0\u00e5\u00a5\u00bd");
+    }
+
+    public static void main(String ... args) {
+        UnicodeTest3.foo();
+    }
+}

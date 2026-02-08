@@ -1,0 +1,34 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SwitchConstructorTest8;
+
+class SwitchConstructorTest8.Sub
+extends SwitchConstructorTest8.Parent {
+    SwitchConstructorTest8.Sub(String s) {
+        super(SwitchConstructorTest8.this, switch (s) {
+            default -> 2;
+        });
+    }
+
+    SwitchConstructorTest8.Sub(String s, int ignored) {
+        super(SwitchConstructorTest8.this, switch (s) {
+            case "test" -> 1;
+            default -> 2;
+        });
+    }
+
+    SwitchConstructorTest8.Sub(SwitchConstructorTest8.MyEnum e) {
+        super(SwitchConstructorTest8.this, switch (e) {
+            default -> 2;
+        });
+    }
+
+    SwitchConstructorTest8.Sub(Byte b) {
+        super(SwitchConstructorTest8.this, switch (b) {
+            default -> 1;
+        });
+    }
+}

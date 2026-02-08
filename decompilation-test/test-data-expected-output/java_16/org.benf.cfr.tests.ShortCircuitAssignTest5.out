@@ -1,0 +1,48 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ShortCircuitAssignTest5 {
+    boolean[] c;
+
+    public boolean test1(boolean a, boolean b) {
+        System.out.println(b && a == (this.c[0] = b) && b || !this.c[0]);
+        return this.c[0];
+    }
+
+    public boolean test2(boolean a, boolean b) {
+        System.out.println(b && a == (this.c[0] = b) || !this.c[0]);
+        return this.c[0];
+    }
+
+    public boolean test3(boolean a, boolean b) {
+        System.out.println(b && a || (this.c[0] = b) || !this.c[0]);
+        return this.c[0];
+    }
+
+    public boolean test4(boolean a, boolean b) {
+        System.out.println(b && (this.c[0] = a) || !this.c[0]);
+        return this.c[0];
+    }
+
+    public boolean test5(boolean a, boolean b) {
+        System.out.println(b || (this.c[0] = a) || !this.c[0]);
+        return this.c[0];
+    }
+
+    public boolean test6(boolean a, boolean b) {
+        System.out.println(b && (this.c[0] = a));
+        return this.c[0];
+    }
+
+    public boolean test7(boolean a, boolean b) {
+        System.out.println(b || (this.c[0] = a));
+        return this.c[0];
+    }
+
+    public boolean test8(boolean a, boolean b) {
+        System.out.println(b && a == (this.c[0] = b) && b && this.c[0]);
+        return this.c[0];
+    }
+}

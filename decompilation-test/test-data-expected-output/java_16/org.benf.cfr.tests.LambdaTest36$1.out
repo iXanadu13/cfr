@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class LambdaTest36.1
+extends Thread {
+    final /* synthetic */ double val$d;
+
+    LambdaTest36.1(double d) {
+        this.val$d = d;
+    }
+
+    @Override
+    public void run() {
+        LambdaTest36.this.executorService.submit(() -> System.out.println("" + this.val$d));
+    }
+}

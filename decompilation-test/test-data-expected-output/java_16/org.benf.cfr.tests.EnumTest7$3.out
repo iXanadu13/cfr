@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest7;
+
+final class EnumTest7.3
+extends EnumTest7 {
+    public String toString() {
+        return "OVERRIDE" + FOO.name();
+    }
+}

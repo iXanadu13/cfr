@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArgClassifyTest3 {
+    public static void main(String[] args) {
+        if (args.length > 1) {
+            System.out.println("Fred");
+        }
+    }
+}

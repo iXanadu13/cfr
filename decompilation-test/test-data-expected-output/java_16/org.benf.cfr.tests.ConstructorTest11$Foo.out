@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ConstructorTest11.Foo {
+    public ConstructorTest11.Foo(int x) {
+    }
+
+    void bar() {
+    }
+}

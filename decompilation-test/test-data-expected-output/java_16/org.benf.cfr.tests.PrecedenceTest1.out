@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class PrecedenceTest1 {
+    public int test1() {
+        return new String("fred").hashCode();
+    }
+
+    public int test2() {
+        return new String("fred").hashCode();
+    }
+}

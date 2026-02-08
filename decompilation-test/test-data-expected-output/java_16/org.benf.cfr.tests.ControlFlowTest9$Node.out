@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.regex.Matcher;
+
+class ControlFlowTest9.Node {
+    private ControlFlowTest9.Node() {
+    }
+
+    boolean match(Matcher matcher, int i, CharSequence seq) {
+        return true;
+    }
+}

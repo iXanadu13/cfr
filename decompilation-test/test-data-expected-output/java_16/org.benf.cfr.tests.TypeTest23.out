@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest23 {
+    private short s;
+    private int i;
+    private long l;
+    private byte b;
+    private boolean bl;
+
+    public void test3(int a) {
+        this.b = (byte)a;
+        this.i = a;
+        this.l = a;
+        this.s = (short)a;
+        this.bl = a == 1;
+    }
+}

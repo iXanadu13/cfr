@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest22 {
+    private int i;
+
+    private int shortFn(short x) {
+        return x;
+    }
+
+    public void test3(short s2) {
+        this.i = this.shortFn(s2);
+    }
+}

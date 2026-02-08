@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ExceptionTest10.UserAuthentication {
+    private boolean loggedIn;
+
+    private ExceptionTest10.UserAuthentication() {
+    }
+
+    public ExceptionTest10.UserAuthentication getByUUID(String uuid) {
+        return new ExceptionTest10.UserAuthentication();
+    }
+
+    public boolean isLoggedIn() {
+        return this.loggedIn;
+    }
+
+    public boolean canLogIn() {
+        return false;
+    }
+
+    public void logIn() {
+    }
+
+    public boolean canPlayOnline() {
+        return false;
+    }
+}

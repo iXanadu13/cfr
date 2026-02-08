@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstantFolding4 {
+    public static void main(String[] argv) {
+        double d = Double.MIN_VALUE;
+        System.out.println("non strictfp : " + ConstantFolding4.notStrictFP(d));
+        System.out.println("strictfp : " + ConstantFolding4.strictFP(d));
+    }
+
+    static double notStrictFP(double a) {
+        return a / 2.0 * 2.0;
+    }
+
+    static strictfp double strictFP(double a) {
+        return a / 2.0 * 2.0;
+    }
+}

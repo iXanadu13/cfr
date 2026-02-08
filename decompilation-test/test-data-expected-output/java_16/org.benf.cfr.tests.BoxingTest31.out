@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest31 {
+    private void t(Boolean b, boolean b2) {
+        System.out.println(b);
+        System.out.println(b2);
+    }
+}

@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.Closeable;
+
+class EmptyStatementsTest1a {
+    EmptyStatementsTest1a() {
+    }
+
+    void emptyTryWithResources(Closeable closeable) throws Exception {
+        Closeable c = closeable;
+        if (c != null) {
+            c.close();
+        }
+    }
+}

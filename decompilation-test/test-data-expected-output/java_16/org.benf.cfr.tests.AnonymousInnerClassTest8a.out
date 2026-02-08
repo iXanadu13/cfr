@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnonymousInnerClassTest8a {
+
+    private static abstract class Inner1 {
+        private Inner1() {
+        }
+    }
+}

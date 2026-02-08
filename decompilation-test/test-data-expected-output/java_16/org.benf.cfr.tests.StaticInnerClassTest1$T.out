@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class StaticInnerClassTest1.T {
+    private StaticInnerClassTest1.T() {
+    }
+}

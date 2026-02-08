@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+
+class StreamTest1.1
+extends ArrayList<Integer> {
+    StreamTest1.1() {
+        this.add(1);
+        this.add(2);
+    }
+}

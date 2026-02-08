@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.io.StringWriter;
+
+public class UsingTest2a {
+    public StringWriter testEnhancedTryEmpty() throws IOException {
+        try (StringWriter writer = new StringWriter();){
+            StringWriter stringWriter = writer;
+            return stringWriter;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IterTest7 {
+    private List x = new ArrayList();
+
+    void foo() {
+        for (String s : this.x) {
+            System.out.println(s);
+        }
+    }
+}

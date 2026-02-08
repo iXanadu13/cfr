@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.NameTest24;
+
+public class NameTest27 {
+    public static void main(String ... args) {
+        System.out.println(new NameTest24().b);
+    }
+}

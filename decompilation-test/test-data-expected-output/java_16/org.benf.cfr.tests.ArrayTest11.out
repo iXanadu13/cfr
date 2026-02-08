@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest11 {
+    private static final char[] data = new char[]{'a', 'b', 'c'};
+}

@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class AssertTest17.Inner {
+    AssertTest17.Inner() {
+    }
+}

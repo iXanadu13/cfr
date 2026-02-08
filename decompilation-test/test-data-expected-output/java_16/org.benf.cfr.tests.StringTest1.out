@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class StringTest1 {
+    private static final int HASHING_SEED;
+
+    static {
+        long nanos = System.nanoTime();
+        long now = System.currentTimeMillis();
+        int[] SEED_MATERIAL = new int[]{System.identityHashCode(String.class), System.identityHashCode(System.class), (int)(nanos >>> 32), (int)nanos, (int)(now >>> 32), (int)now, (int)(System.nanoTime() >>> 2)};
+        int h1 = 0;
+        for (int k1 : SEED_MATERIAL) {
+            k1 *= -862048943;
+            k1 = k1 << 15 | k1 >>> 17;
+            h1 ^= (k1 *= 461845907);
+            h1 = h1 << 13 | h1 >>> 19;
+            h1 = h1 * 5 + -430675100;
+        }
+        h1 ^= SEED_MATERIAL.length * 4;
+        h1 ^= h1 >>> 16;
+        h1 *= -2048144789;
+        h1 ^= h1 >>> 13;
+        h1 *= -1028477387;
+        h1 ^= h1 >>> 16;
+        HASHING_SEED = h1;
+    }
+}

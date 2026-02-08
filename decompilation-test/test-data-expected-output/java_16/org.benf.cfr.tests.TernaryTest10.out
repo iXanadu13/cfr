@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TernaryTest10 {
+    private short s;
+    private int i;
+    private long l;
+    private byte b;
+    private boolean bl;
+
+    public void test3(boolean a) {
+        this.b = (byte)(a ? 1 : 0);
+        this.i = a ? 1 : 0;
+        this.l = a ? 1 : 0;
+        this.s = (short)(a ? 1 : 0);
+        this.bl = a;
+    }
+}

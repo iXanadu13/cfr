@@ -1,0 +1,63 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest49 {
+    static int x;
+    static int i;
+    static int i2;
+
+    public static void main(String[] a) {
+        boolean z;
+        boolean y;
+        block4: {
+            y = a.length > 0;
+            z = a.length < 2;
+            x = 42;
+            while (++x <= 127) {
+                if (y ^ z) {
+                    x = a.length ^ x;
+                    break block4;
+                }
+                y &= true;
+                z |= false;
+            }
+            x = ~(~x) >>> 3;
+        }
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+        try {
+            LoopTest49.main(a[0]);
+        } catch (IllegalArgumentException illegalArgumentException) {
+            // empty catch block
+        }
+    }
+
+    private static int foo() {
+        --i;
+        return 4369;
+    }
+
+    private static void main(String a) {
+        int xx = Integer.valueOf(a);
+        while (true) {
+            if (i2 < 0) {
+                if (xx > 1111 && i > LoopTest49.foo()) continue;
+                ++i;
+                break;
+            }
+            i = xx;
+            if (++i == 10) break;
+            if (++i != 20) {
+                if (++i == 30) break;
+                if (++i == 50) {
+                    // empty if block
+                }
+            }
+            i2 = i - i * i;
+        }
+        System.out.println(i);
+    }
+}

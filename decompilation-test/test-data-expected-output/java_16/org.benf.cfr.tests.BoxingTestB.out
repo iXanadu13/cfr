@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTestB {
+    private boolean t(Boolean i, Boolean j) {
+        return i == j;
+    }
+}

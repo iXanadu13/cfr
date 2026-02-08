@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest4b {
+    int x;
+    int y;
+    int z;
+
+    void test1(int a, int b) {
+        String[] tmp = new String[]{"a", "b", "c"};
+        String[][] tmp2 = new String[][]{tmp, tmp, {"a"}};
+        this.test2(tmp);
+        this.test2(new String[]{"a"});
+    }
+
+    void test2(String[] x) {
+    }
+}

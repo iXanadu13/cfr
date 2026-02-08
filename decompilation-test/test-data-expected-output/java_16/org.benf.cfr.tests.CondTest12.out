@@ -1,0 +1,33 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondTest12 {
+    /*
+     * Enabled aggressive block sorting
+     */
+    public int foo(boolean a, boolean b, boolean c) {
+        block4: {
+            if (a) {
+                if (b) {
+                    this.doSomething();
+                    break block4;
+                } else {
+                    if (c) {
+                        this.doSomething();
+                        return 1;
+                    }
+                    this.doSomething();
+                    return 0;
+                }
+            }
+            this.doSomething();
+        }
+        this.doSomething();
+        return 2;
+    }
+
+    private void doSomething() {
+    }
+}

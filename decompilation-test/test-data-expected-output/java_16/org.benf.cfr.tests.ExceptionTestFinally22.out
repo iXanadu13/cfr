@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22 {
+    private static String negative() {
+        return "negative";
+    }
+
+    /*
+     * Exception decompiling
+     */
+    public String test(int x) {
+        /*
+         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
+         * 
+         * org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [3[TRYBLOCK]], but top level block is 4[TRYBLOCK]
+         */
+        throw new IllegalStateException("Decompilation failed");
+    }
+}

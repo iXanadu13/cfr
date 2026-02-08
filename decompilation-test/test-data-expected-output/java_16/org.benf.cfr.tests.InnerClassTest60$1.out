@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest60;
+
+class InnerClassTest60.1
+extends InnerClassTest60.Foo {
+    final /* synthetic */ InnerClassTest60.Bip val$runner;
+
+    InnerClassTest60.1(InnerClassTest60.Bip bip) {
+        this.val$runner = bip;
+    }
+
+    @Override
+    public InnerClassTest60.Bip getBip() {
+        return this.val$runner;
+    }
+}

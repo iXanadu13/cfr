@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+
+public class UsingTest13 {
+    public void testNonCloseble() throws IOException {
+        try (NotCloseable c = new NotCloseable();){
+            c.doSomething();
+        }
+    }
+
+    static final class NotCloseable {
+        NotCloseable() {
+        }
+
+        public final void doSomething() {
+        }
+
+        public final void close() {
+        }
+    }
+}

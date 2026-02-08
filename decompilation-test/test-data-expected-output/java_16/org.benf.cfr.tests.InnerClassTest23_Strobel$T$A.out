@@ -1,0 +1,38 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Objects;
+import org.benf.cfr.tests.InnerClassTest23_Strobel;
+
+public class InnerClassTest23_Strobel.T.A
+extends InnerClassTest23_Strobel.T {
+    public InnerClassTest23_Strobel.T.A() {
+        super(T.this.this$0);
+    }
+
+    public class D
+    extends B.C {
+        public D(InnerClassTest23_Strobel.T.A a, B b) {
+            B b2 = b;
+            Objects.requireNonNull(b2);
+            super(a);
+        }
+    }
+
+    public class B
+    extends InnerClassTest23_Strobel.T.A {
+        public B(InnerClassTest23_Strobel.T.A a) {
+        }
+
+        public class C
+        extends B {
+            public C(InnerClassTest23_Strobel.T.A a) {
+                InnerClassTest23_Strobel.T.A a2 = a;
+                Objects.requireNonNull(a2);
+                super(a);
+            }
+        }
+    }
+}

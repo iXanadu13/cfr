@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest18 {
+    public static int test1(int y) {
+        return y += 4;
+    }
+}

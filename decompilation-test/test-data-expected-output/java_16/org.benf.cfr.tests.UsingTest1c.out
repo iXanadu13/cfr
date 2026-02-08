@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.nio.file.Path;
+import java.util.stream.BaseStream;
+
+public class UsingTest1c {
+    private static void getPathStream(Path path) {
+        try (BaseStream paths = null;){
+            System.out.println("TEST" + paths);
+        }
+        System.out.println("SEP");
+        try (BaseStream pathsb = null;){
+            System.out.println("TEST2" + pathsb);
+        }
+    }
+}

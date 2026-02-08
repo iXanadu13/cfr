@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BridgeTest2Base;
+
+public class BridgeTest2Derived
+extends BridgeTest2Base {
+}

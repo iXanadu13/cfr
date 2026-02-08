@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssertTest11 {
+    public boolean test() {
+        try {
+            assert (false);
+        } catch (AssertionError e) {
+            return true;
+        }
+        throw new IllegalStateException("Assertions not enabled");
+    }
+}

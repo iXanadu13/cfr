@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Tower6a.1Height {
+    final /* synthetic */ String[] val$args;
+    final /* synthetic */ int val$x;
+    final /* synthetic */ int val$x2;
+
+    Tower6a.1Height() {
+        this.val$args = stringArray;
+        this.val$x = n;
+        this.val$x2 = n2;
+    }
+
+    void test() {
+        System.out.println(this.val$args.length + this.val$x + this.val$x2);
+    }
+}

@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FinalVarConstants;
+
+public class FinalVarTest5 {
+    public static final int MAX_CUSTOMERS = 11;
+
+    public void thing() {
+        System.out.println(11);
+        System.out.println(11);
+        System.out.println(FinalVarConstants.Months[11]);
+    }
+}

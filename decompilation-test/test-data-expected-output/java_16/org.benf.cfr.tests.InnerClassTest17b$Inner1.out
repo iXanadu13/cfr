@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest17b;
+
+public class InnerClassTest17b.Inner1<E> {
+    public int getX(int y) {
+        return 2 + y + InnerClassTest17b.getX(y, 1, y);
+    }
+}

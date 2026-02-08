@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class MemberTest1 {
+    private int x;
+
+    public MemberTest1(int x) {
+        this.x = x;
+    }
+
+    public int inc(int y) {
+        return this.x += y;
+    }
+}

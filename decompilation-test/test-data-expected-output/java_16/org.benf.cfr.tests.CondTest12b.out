@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondTest12b {
+    /*
+     * Enabled force condition propagation
+     * Lifted jumps to return sites
+     */
+    public int foo(boolean a, boolean b) {
+        if (a) {
+            if (!b) return 1;
+            this.doSomething();
+            return 2;
+        } else {
+            this.doSomething();
+        }
+        return 2;
+    }
+
+    private void doSomething() {
+    }
+}

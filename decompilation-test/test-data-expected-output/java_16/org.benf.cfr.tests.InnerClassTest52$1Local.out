@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest52.1Local {
+    InnerClassTest52.1Local() {
+    }
+}

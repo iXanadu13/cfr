@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.PairTest3c;
+
+class PairTest3c.Impl1
+implements PairTest3c.Interface {
+    private PairTest3c.Impl1() {
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstructorTest8 {
+    private final int[] fred;
+
+    public ConstructorTest8(int x) {
+        this.fred = new int[x];
+    }
+}

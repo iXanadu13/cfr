@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest20 {
+    int y;
+
+    public void test1(int end) {
+        for (int y = 0; y < end; ++y) {
+            System.out.println(y);
+        }
+    }
+
+    public void test2(int end) {
+        this.y = 0;
+        while (this.y < end) {
+            System.out.println(this.y);
+            ++this.y;
+        }
+    }
+}

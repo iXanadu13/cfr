@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class InitTest {
+    final int x = 5;
+    final Map<String, String> map = new HashMap<String, String>(5);
+    private final int y;
+
+    public InitTest() {
+        this.y = 3;
+    }
+
+    public InitTest(int y) {
+        this.y = y;
+    }
+}

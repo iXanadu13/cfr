@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class StringSwitchTest {
+    StringSwitchTest() {
+    }
+
+    public static void main(String[] args) {
+        int i = 0;
+        switch ("" + Long.valueOf((long)i + 1L)) {
+            case "1": {
+                System.out.println("one");
+            }
+        }
+    }
+}

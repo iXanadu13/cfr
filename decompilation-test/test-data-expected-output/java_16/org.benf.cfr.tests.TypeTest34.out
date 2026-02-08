@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class TypeTest34 {
+    public TypeTest34() {
+        List<String> foo = Arrays.asList("jennifer", "alison", "phillipa", null);
+    }
+}

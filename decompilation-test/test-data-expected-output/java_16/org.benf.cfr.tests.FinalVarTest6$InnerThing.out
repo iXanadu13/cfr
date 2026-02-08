@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FinalVarTest6;
+
+class FinalVarTest6.InnerThing {
+    private FinalVarTest6.InnerThing() {
+    }
+
+    public void thing() {
+        System.out.println(FinalVarTest6.h1);
+        System.out.println(FinalVarTest6.h2);
+        System.out.println(FinalVarTest6.h2.equals(FinalVarTest6.h1));
+    }
+}

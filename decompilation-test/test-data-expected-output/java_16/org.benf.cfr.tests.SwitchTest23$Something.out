@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+enum SwitchTest23.Something {
+    ONE;
+
+}

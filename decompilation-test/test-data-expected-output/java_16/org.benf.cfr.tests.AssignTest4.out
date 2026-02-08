@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class AssignTest4 {
+    public void test() {
+        AbstractList l = new ArrayList();
+        l = new LinkedList();
+    }
+}

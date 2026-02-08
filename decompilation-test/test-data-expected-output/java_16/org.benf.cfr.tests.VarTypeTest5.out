@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestFred2;
+
+public class VarTypeTest5 {
+    public static void test1() {
+        VarTypeTestFred2 x = new VarTypeTestFred2(){};
+        System.out.println(x.bar);
+        System.out.println(x.foo);
+        System.out.println(x.foo);
+        System.out.println(x.foo);
+    }
+}

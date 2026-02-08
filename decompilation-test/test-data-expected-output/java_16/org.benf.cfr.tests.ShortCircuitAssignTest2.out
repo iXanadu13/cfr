@@ -1,0 +1,48 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ShortCircuitAssignTest2 {
+    boolean c;
+
+    public boolean test1(boolean a, boolean b) {
+        System.out.println(b && a == (this.c = b) && b || !this.c);
+        return this.c;
+    }
+
+    public boolean test2(boolean a, boolean b) {
+        System.out.println(b && a == (this.c = b) || !this.c);
+        return this.c;
+    }
+
+    public boolean test3(boolean a, boolean b) {
+        System.out.println(b && a || (this.c = b) || !this.c);
+        return this.c;
+    }
+
+    public boolean test4(boolean a, boolean b) {
+        System.out.println(b && (this.c = a) || !this.c);
+        return this.c;
+    }
+
+    public boolean test5(boolean a, boolean b) {
+        System.out.println(b || (this.c = a) || !this.c);
+        return this.c;
+    }
+
+    public boolean test6(boolean a, boolean b) {
+        System.out.println(b && (this.c = a));
+        return this.c;
+    }
+
+    public boolean test7(boolean a, boolean b) {
+        System.out.println(b || (this.c = a));
+        return this.c;
+    }
+
+    public boolean test8(boolean a, boolean b) {
+        System.out.println(b && a == (this.c = b) && b && this.c);
+        return this.c;
+    }
+}

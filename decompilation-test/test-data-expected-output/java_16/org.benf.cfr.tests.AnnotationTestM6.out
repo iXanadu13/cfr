@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyParam4;
+
+class AnnotationTestM6 {
+    @MyParam4
+    String field;
+
+    @MyParam4
+    AnnotationTestM6() {
+    }
+
+    @MyParam4
+    String test(@MyParam4 int i) {
+        return null;
+    }
+}

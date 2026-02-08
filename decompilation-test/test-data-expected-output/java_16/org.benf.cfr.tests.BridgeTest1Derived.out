@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BridgeTest1Base;
+
+public class BridgeTest1Derived
+extends BridgeTest1Base<Integer> {
+    @Override
+    public Integer frob() {
+        return null;
+    }
+}

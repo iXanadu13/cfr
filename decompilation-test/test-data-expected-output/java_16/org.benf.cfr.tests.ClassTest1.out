@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Logger;
+import org.benf.cfr.tests.support.LoggerFactory;
+
+public class ClassTest1 {
+    private static final Logger logger = LoggerFactory.create(ClassTest1.class);
+
+    public void test1(String a, String b, int c) {
+    }
+}

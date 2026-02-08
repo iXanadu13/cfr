@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest3 {
+    private int x = 1;
+    private Object y;
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test1() {
+        SyncTest3 syncTest3 = this;
+        synchronized (syncTest3) {
+            try {
+                if (this.x == 4) {
+                    return;
+                }
+                Object object = this.y;
+                synchronized (object) {
+                    this.x = 5;
+                }
+                this.x = 3;
+                return;
+            } catch (RuntimeException e) {
+                this.x = 4;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest52 {
+    static void foo(int n) {
+        String s;
+        int i = 0;
+        switch (n) {
+            case 3: {
+                String string = "FOO";
+                break;
+            }
+            case 4: {
+                String string = "what";
+                break;
+            }
+            case 5: {
+                String string = "grrrr";
+                break;
+            }
+            default: {
+                String string = s = "lolwut";
+            }
+        }
+        while (i < s.length()) {
+            System.out.print(s.charAt(i));
+            ++i;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        SwitchTest52.foo(1);
+        SwitchTest52.foo(2);
+        SwitchTest52.foo(3);
+        SwitchTest52.foo(4);
+        SwitchTest52.foo(5);
+    }
+}

@@ -1,0 +1,40 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest35 {
+    private String s1;
+    private String s2;
+    private String s3;
+    private String s4;
+    private String s5;
+    private String s6;
+    private String s7;
+    private String s8;
+    private String s9;
+    private String s10;
+    private String s11;
+    private String s12;
+    private String s13;
+    private String s14;
+    private String s15;
+    private String s16;
+    private String s17;
+    private String s18;
+    private String s19;
+
+    private int addHashCode(int n, Object object) {
+        int n2 = n * 29;
+        int n3 = object == null ? 0 : object.hashCode();
+        return n3 + n2;
+    }
+
+    public int hashCode() {
+        return this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(this.addHashCode(0, this.s1), this.s2), this.s3), this.s4), this.s5), this.s6), this.s7), this.s8), this.s9), this.s10), this.s11), this.s12), this.s13), this.s14), this.s15), this.s16), this.s17), this.s18), this.s19);
+    }
+
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+}

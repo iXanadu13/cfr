@@ -1,0 +1,53 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.regex.Pattern;
+
+public class TypeTest31 {
+    char[] value;
+
+    public String[] split(String regex, int limit) {
+        char ch = '\u0000';
+        if ((regex.toCharArray().length == 1 && ".$|()[{^?*+\\".indexOf(ch = regex.charAt(0)) == -1 || regex.length() == 2 && regex.charAt(0) == '\\' && ((ch = regex.charAt(1)) - 48 | 57 - ch) < 0 && (ch - 97 | 122 - ch) < 0 && (ch - 65 | 90 - ch) < 0) && (ch < '\ud800' || ch > '\udfff')) {
+            int resultSize;
+            int off = 0;
+            int next = 0;
+            boolean limited = limit > 0;
+            ArrayList<String> list = new ArrayList<String>();
+            while ((next = this.indexOf(ch, off)) != -1) {
+                if (!limited || list.size() < limit - 1) {
+                    list.add(this.substring(off, next));
+                    off = next + 1;
+                    continue;
+                }
+                list.add(this.substring(off, this.value.length));
+                off = this.value.length;
+                break;
+            }
+            if (off == 0) {
+                return new String[]{this.toString()};
+            }
+            if (!limited || list.size() < limit) {
+                list.add(this.substring(off, this.value.length));
+            }
+            if (limit == 0) {
+                for (resultSize = list.size(); resultSize > 0 && ((String)list.get(resultSize - 1)).length() == 0; --resultSize) {
+                }
+            }
+            String[] result = new String[resultSize];
+            return list.subList(0, resultSize).toArray(result);
+        }
+        return Pattern.compile(regex).split(this.toString(), limit);
+    }
+
+    int indexOf(int a, int b) {
+        return b;
+    }
+
+    String substring(int a, int b) {
+        return "";
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest46 {
+
+    private class T {
+        private T() {
+        }
+
+        void test() {
+            new Object(){
+
+                class Inner {
+                    Inner() {
+                    }
+                }
+            }.new Inner().hashCode();
+        }
+    }
+}

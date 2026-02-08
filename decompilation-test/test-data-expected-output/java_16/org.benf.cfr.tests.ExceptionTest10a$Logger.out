@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+
+class ExceptionTest10a.Logger {
+    private ExceptionTest10a.Logger() {
+    }
+
+    public void error(String s, IOException ex) {
+    }
+
+    public void error(String s, Exception ex) {
+    }
+
+    public void info(String s) {
+    }
+}

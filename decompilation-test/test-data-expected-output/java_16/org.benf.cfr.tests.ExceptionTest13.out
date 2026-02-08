@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class ExceptionTest13 {
+    public abstract void bar();
+
+    public void foo() {
+        while (true) {
+            try {
+                try {
+                    this.bar();
+                } catch (IllegalStateException illegalStateException) {}
+            } catch (RuntimeException runtimeException) {
+                // empty catch block
+            }
+            System.out.print(1);
+        }
+    }
+}

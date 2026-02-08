@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class AnnotationTestM1b {
+    AnnotationTestM1b() {
+    }
+
+    public List test() {
+        ArrayList<Integer> f2 = new ArrayList<Integer>();
+        f2.add(1);
+        return f2;
+    }
+}

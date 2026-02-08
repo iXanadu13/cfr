@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest4;
+import org.benf.cfr.tests.support.SetFactory;
+
+public class InnerClassTest11 {
+    private int a;
+
+    public void foo() {
+        Inner1 i = new Inner1(5);
+        System.out.println(i.x);
+    }
+
+    public class Inner1 {
+        private int x;
+
+        public Inner1(int x) {
+            InnerClassTest11.this.a += x;
+            this.x = x + 1 + InnerClassTest11.this.a;
+        }
+
+        public InnerClassTest4.InnerBase tweak(int y) {
+            return new InnerClassTest4.InnerBase(SetFactory.newSet(y));
+        }
+    }
+}

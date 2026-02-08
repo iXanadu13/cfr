@@ -1,0 +1,49 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Second {
+    static Object obj = "test";
+
+    Second() {
+    }
+
+    public static void main(String[] args) {
+        Second.test1();
+        try {
+            Second.test2();
+        } catch (NullPointerException npe) {
+            System.out.println("success!");
+            npe.printStackTrace();
+        }
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    static void test1() {
+        int num;
+        Object object = obj;
+        synchronized (object) {
+            obj = 0;
+        }
+        do {
+            num = (Integer)obj;
+            System.out.println(++num);
+            obj = num;
+        } while (num != 10);
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    static void test2() {
+        obj = null;
+        Object var0 = null;
+        synchronized (null) {
+            // ** MonitorExit[var0] (shouldn't be in output)
+            return;
+        }
+    }
+}

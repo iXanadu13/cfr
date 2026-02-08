@@ -1,0 +1,60 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest6 {
+    private void IntegerF(Integer I) {
+        this.IntegerF(I);
+        this.intF(I);
+        this.doubleF(I.intValue());
+        this.DoubleF((double)I);
+        this.ShortF((short)I.intValue());
+        this.shortF((short)I.intValue());
+    }
+
+    private void intF(int i) {
+        this.IntegerF(i);
+        this.intF(i);
+        this.doubleF(i);
+        this.DoubleF(Double.valueOf(i));
+        this.ShortF((short)i);
+        this.shortF((short)i);
+    }
+
+    private void doubleF(double d) {
+        this.IntegerF((int)d);
+        this.intF((int)d);
+        this.doubleF(d);
+        this.DoubleF(d);
+        this.ShortF((short)d);
+        this.shortF((short)d);
+    }
+
+    private void DoubleF(Double D) {
+        this.IntegerF((int)D.doubleValue());
+        this.intF((int)D.doubleValue());
+        this.doubleF(D);
+        this.DoubleF(D);
+        this.ShortF((short)D.doubleValue());
+        this.shortF((short)D.doubleValue());
+    }
+
+    private void ShortF(Short S) {
+        this.IntegerF((int)S);
+        this.intF(S.shortValue());
+        this.doubleF(S.shortValue());
+        this.DoubleF((double)S);
+        this.ShortF(S);
+        this.shortF(S);
+    }
+
+    private void shortF(short s) {
+        this.IntegerF(Integer.valueOf(s));
+        this.intF(s);
+        this.doubleF(s);
+        this.DoubleF(Double.valueOf(s));
+        this.ShortF(s);
+        this.shortF(s);
+    }
+}

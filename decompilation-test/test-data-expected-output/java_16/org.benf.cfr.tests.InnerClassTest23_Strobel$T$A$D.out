@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Objects;
+import org.benf.cfr.tests.InnerClassTest23_Strobel;
+
+public class InnerClassTest23_Strobel.T.A.D
+extends InnerClassTest23_Strobel.T.A.B.C {
+    public InnerClassTest23_Strobel.T.A.D(InnerClassTest23_Strobel.T.A a, InnerClassTest23_Strobel.T.A.B b) {
+        InnerClassTest23_Strobel.T.A.B b2 = b;
+        Objects.requireNonNull(b2);
+        super(b2, a);
+    }
+}

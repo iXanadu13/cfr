@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class UntypedMapTest {
+    private Map memberMap = new TreeMap();
+
+    public void test() {
+        HashMap<Object, Object> m = new HashMap<Object, Object>();
+        m.put("fred", 1);
+        m.put(2, "fred");
+        this.memberMap.putAll(m);
+    }
+}

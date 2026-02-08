@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MemberTest4 {
+    private Map<String, String> m3 = new HashMap<String, String>();
+}

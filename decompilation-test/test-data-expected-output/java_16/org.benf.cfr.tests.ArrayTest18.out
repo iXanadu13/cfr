@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest18 {
+    public void test(String[] args) {
+        Object[] array = new Object[]{new int[]{1}, new String[]{"", ""}, 1, ""};
+    }
+}

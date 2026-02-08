@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest32.Bob {
+    private InnerClassTest32.Bob() {
+    }
+
+    private int get() {
+        return 1;
+    }
+}

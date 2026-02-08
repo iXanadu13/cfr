@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.RecordTest2;
+
+record RecordTest7(String firstName, String lastName, RecordTest2 child) {
+    public RecordTest7 {
+        firstName = "fred";
+        if (firstName.equals("bob")) {
+            lastName = null;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22g {
+    public void test(int x) {
+        try {
+            try {
+                System.out.println("a");
+                return;
+            } finally {
+                try {
+                    System.out.println("b");
+                    if (x == 1) {
+                        throw new IllegalStateException();
+                    }
+                } catch (Throwable t) {
+                    System.out.println("c");
+                    throw t;
+                }
+            }
+        } finally {
+            System.out.println("d");
+        }
+    }
+}

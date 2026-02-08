@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import java.util.Map;
+
+public abstract class AbstractTest2<T> {
+    public abstract T create(List<String> var1, Map<String, String> var2);
+}

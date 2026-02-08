@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest10;
+
+final class EnumTest10.1
+extends EnumTest10 {
+    private EnumTest10.1(int code) {
+        System.out.println(this + ": " + this.code);
+    }
+}

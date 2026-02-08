@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ShortNameTest5 {
+    void test() {
+        class Foo {
+            ShortNameTest5.Foo foo3;
+
+            Foo() {
+            }
+        }
+        Foo x = new Foo();
+    }
+
+    public class Foo {
+    }
+}

@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest50.1Bug {
+    Object o = new Object(){
+        {
+            System.out.println("Hello");
+        }
+    };
+
+    InnerClassTest50.1Bug() {
+    }
+
+    InnerClassTest50.1Bug(int x) {
+    }
+}

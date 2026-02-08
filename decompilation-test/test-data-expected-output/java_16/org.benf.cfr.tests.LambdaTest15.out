@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.security.SecureRandom;
+
+public class LambdaTest15 {
+    public static void main(String ... arguments) {
+        String[] res = (String[])new SecureRandom().longs().limit(10L).parallel().mapToObj(String::valueOf).map(String::intern).toArray(String[]::new);
+        boolean x = true;
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class XorTest1 {
+    public static int encXORPass(byte[] raw, int pos, int size, int key) {
+        int ecx = key;
+        int edx = pos;
+        ecx += (edx |= pos << 24);
+        return edx ^= ecx;
+    }
+}

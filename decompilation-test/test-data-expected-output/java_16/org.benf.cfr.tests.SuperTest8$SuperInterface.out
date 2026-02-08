@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface SuperTest8.SuperInterface {
+    default public void foo() {
+        System.out.println("Secret");
+    }
+}

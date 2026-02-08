@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty.sable;
+
+public interface Drawable {
+    public void draw();
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+final class AssertTest10.Inner {
+    private AssertTest10.Inner() {
+    }
+
+    public void test() {
+        assert (false);
+    }
+}

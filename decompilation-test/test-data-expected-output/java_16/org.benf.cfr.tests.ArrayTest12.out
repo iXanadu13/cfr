@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest12 {
+    private static final Short s1 = 2;
+    private static final Short s2 = 2;
+    private static final short[] data = new short[]{s1, 98, s2, 99, 12};
+}

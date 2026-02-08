@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally20a {
+    public void callWhichMightThrow() throws NoSuchFieldException {
+    }
+
+    public void test1(int x) {
+        while (true) {
+            try {
+                try {
+                    System.out.print(3);
+                    this.callWhichMightThrow();
+                } catch (NoSuchFieldException e) {
+                    System.out.println("Damn");
+                }
+                System.out.println("Oops");
+                continue;
+            } finally {
+                System.out.println("IN FINALLY");
+                if (x == 3) break;
+                continue;
+            }
+            break;
+        }
+        System.out.print(5);
+    }
+}

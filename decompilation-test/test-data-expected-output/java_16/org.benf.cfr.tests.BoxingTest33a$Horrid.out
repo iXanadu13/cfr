@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest33a.Horrid<T> {
+    boolean foo(int i) {
+        return false;
+    }
+
+    boolean foo(T t) {
+        return false;
+    }
+
+    boolean foo(Number i) {
+        return true;
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondJumpTest9 {
+    public boolean test(int a, int b) {
+        if (a == b) {
+            // empty if block
+        }
+        return true;
+    }
+}

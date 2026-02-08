@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest23_Strobel;
+
+class InnerClassTest23_Strobel.D.1
+extends InnerClassTest23_Strobel.D {
+    final /* synthetic */ int val$n;
+
+    InnerClassTest23_Strobel.D.1(int k, int n) {
+        this.val$n = n;
+        super(k);
+    }
+
+    int get() {
+        return this.k + this.val$n;
+    }
+}

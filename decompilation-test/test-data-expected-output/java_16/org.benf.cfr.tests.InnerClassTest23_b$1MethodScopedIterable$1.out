@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Iterator;
+
+class InnerClassTest23_b.1MethodScopedIterable.1
+implements Iterator<String> {
+    InnerClassTest23_b.1MethodScopedIterable.1() {
+    }
+
+    @Override
+    public boolean hasNext() {
+        return y;
+    }
+
+    @Override
+    public String next() {
+        return null;
+    }
+
+    @Override
+    public void remove() {
+    }
+}

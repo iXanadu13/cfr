@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest49.1HelloWorld {
+    InnerClassTest49.1HelloWorld() {
+    }
+}

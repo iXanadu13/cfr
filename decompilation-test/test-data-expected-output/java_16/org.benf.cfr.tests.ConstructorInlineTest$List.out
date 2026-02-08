@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ConstructorInlineTest.List {
+    int value;
+    ConstructorInlineTest.List next;
+    static ConstructorInlineTest.List head = new ConstructorInlineTest.List(0);
+
+    ConstructorInlineTest.List(int n) {
+        this.value = n;
+        this.next = head;
+        head = this;
+    }
+}

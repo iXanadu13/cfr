@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CastTest7 {
+    public void t1() {
+        int s = 2;
+        this.call(s);
+    }
+
+    public void call(long l) {
+    }
+}

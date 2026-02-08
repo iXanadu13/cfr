@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoolTernaryTest2a {
+    protected boolean b1;
+    protected boolean isValid;
+
+    private static boolean isValid(String string) {
+        return false;
+    }
+
+    public BoolTernaryTest2a() {
+        this.isValid = this.b1 && BoolTernaryTest2a.isValid("test");
+        System.out.println("Here");
+    }
+}

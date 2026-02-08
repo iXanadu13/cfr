@@ -1,0 +1,38 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Locale;
+
+public class LoopTest46 {
+    char[] value;
+
+    public LoopTest46 toUpperCase(Locale locale) {
+        int firstUpper;
+        int len;
+        block5: {
+            len = this.value.length;
+            firstUpper = 0;
+            while (firstUpper < len) {
+                char c = this.value[firstUpper];
+                if (c >= '\ud800' && c <= '\udbff') {
+                    int supplChar = firstUpper;
+                    if (supplChar == Character.toLowerCase(supplChar)) {
+                        firstUpper += Character.charCount(supplChar);
+                        continue;
+                    }
+                } else if (c == Character.toLowerCase(c)) {
+                    ++firstUpper;
+                    continue;
+                }
+                break block5;
+            }
+            return this;
+        }
+        char[] result = new char[len];
+        boolean resultOffset = false;
+        System.arraycopy(this.value, 0, result, 0, firstUpper);
+        return null;
+    }
+}

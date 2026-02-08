@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MapFactory {
+    public static <X, Y> Map<X, Y> newMap() {
+        return new HashMap();
+    }
+
+    public static <X, Y> TreeMap<X, Y> newTreeMap() {
+        return new TreeMap();
+    }
+
+    public static <X, Y> Map<X, Y> newOrderedMap() {
+        return new LinkedHashMap();
+    }
+}

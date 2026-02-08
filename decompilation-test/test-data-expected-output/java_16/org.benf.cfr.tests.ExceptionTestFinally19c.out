@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class ExceptionTestFinally19c {
+    public void callWhichMightThrow() {
+        throw new IllegalStateException();
+    }
+
+    public void test1() {
+        block2: for (int y = 0; y < 10; ++y) {
+            while (true) {
+                try {
+                    while (true) {
+                        this.callWhichMightThrow();
+                    }
+                } catch (RuntimeException t) {
+                    if (y >= 100) continue;
+                    System.out.print(y);
+                    continue block2;
+                }
+                break;
+            }
+        }
+        System.out.println("FIN");
+    }
+}

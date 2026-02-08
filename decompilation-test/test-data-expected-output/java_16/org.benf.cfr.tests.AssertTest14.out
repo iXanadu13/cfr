@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssertTest14 {
+    public static void main(String[] args) {
+        assert (false) : Double.POSITIVE_INFINITY;
+    }
+}

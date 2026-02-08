@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest27.1Integer {
+    private final Integer inner;
+
+    InnerClassTest27.1Integer(Integer inner) {
+        this.inner = inner;
+    }
+}

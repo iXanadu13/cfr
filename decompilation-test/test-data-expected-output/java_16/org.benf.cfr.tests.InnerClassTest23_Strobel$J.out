@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Function;
+
+class InnerClassTest23_Strobel.J {
+    private InnerClassTest23_Strobel.J() {
+    }
+
+    Integer f(int x, Function<Integer, Integer> h) {
+        return h.apply(x);
+    }
+
+    private static final class F
+    implements Function<Integer, Integer> {
+        private F() {
+        }
+
+        @Override
+        public Integer apply(Integer x) {
+            return x * 3;
+        }
+    }
+}

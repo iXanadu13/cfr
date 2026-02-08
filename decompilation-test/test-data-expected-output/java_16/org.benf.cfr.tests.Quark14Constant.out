@@ -1,0 +1,43 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.reflect.Field;
+
+public class Quark14Constant {
+    final int instanceInit;
+    final int fieldInit = 42;
+    final int constructorInit;
+    final int cmpFieldInit1 = 42;
+    final int cmpFieldInit2 = Quark14Constant.fn();
+
+    public static int fn() {
+        return 42;
+    }
+
+    public Quark14Constant() {
+        this.instanceInit = 42;
+        this.constructorInit = 42;
+    }
+
+    static void set(Quark14Constant p, String field) throws Exception {
+        Field f = Quark14Constant.class.getDeclaredField(field);
+        f.setAccessible(true);
+        f.setInt(p, 9000);
+    }
+
+    public String toString() {
+        return "Quark14Constant{instanceInit=" + this.instanceInit + ", fieldInit=42, constructorInit=" + this.constructorInit + ", cmpFieldInit1=42, cmpFieldInit2=" + this.cmpFieldInit2 + "}";
+    }
+
+    public static void main(String ... args) throws Exception {
+        Quark14Constant q = new Quark14Constant();
+        Quark14Constant.set(q, "fieldInit");
+        Quark14Constant.set(q, "instanceInit");
+        Quark14Constant.set(q, "constructorInit");
+        Quark14Constant.set(q, "cmpFieldInit1");
+        Quark14Constant.set(q, "cmpFieldInit2");
+        System.out.println(q);
+    }
+}

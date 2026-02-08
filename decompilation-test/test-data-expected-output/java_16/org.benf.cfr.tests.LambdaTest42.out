@@ -1,0 +1,82 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.DoubleBinaryOperator;
+import java.util.function.Function;
+import java.util.function.IntBinaryOperator;
+import java.util.function.IntFunction;
+import java.util.function.LongToDoubleFunction;
+
+class LambdaTest42 {
+    LambdaTest42() {
+    }
+
+    void use(IntFunction<?> factory) {
+    }
+
+    void use(IntBinaryOperator factory) {
+    }
+
+    void use(DoubleBinaryOperator factory) {
+    }
+
+    void use(LongToDoubleFunction factory) {
+    }
+
+    Object use(Function<String, ?> factory) {
+        return null;
+    }
+
+    void use(IntFunction<?> factory, int x) {
+    }
+
+    void use(IntBinaryOperator factory, int x) {
+    }
+
+    void use(DoubleBinaryOperator factory, int x) {
+    }
+
+    void use(LongToDoubleFunction factory, int x) {
+    }
+
+    Object use(Function<String, ?> factory, int x) {
+        return null;
+    }
+
+    int consume(int i, int j) {
+        return i;
+    }
+
+    double consume(double i, double j) {
+        return i;
+    }
+
+    Object consume(int i) {
+        return null;
+    }
+
+    double consume(long i) {
+        return i;
+    }
+
+    Object consume(String s) {
+        return null;
+    }
+
+    void test() {
+        this.use((String s) -> null);
+        this.use((String s) -> this.consume((String)s));
+        this.use((int s) -> this.consume(s));
+        this.use((long s) -> this.consume(s));
+        this.use((int a, int b) -> this.consume(a, b));
+        this.use((double a, double b) -> this.consume(a, b));
+        this.use((String s) -> null, 1);
+        this.use((String s) -> this.consume((String)s), 2);
+        this.use((int s) -> this.consume(s), 3);
+        this.use((long s) -> this.consume(s), 4);
+        this.use((int a, int b) -> this.consume(a, b), 5);
+        this.use((double a, double b) -> this.consume(a, b), 6);
+    }
+}

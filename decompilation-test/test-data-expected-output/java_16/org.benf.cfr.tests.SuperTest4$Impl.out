@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperTest4;
+
+class SuperTest4.Impl<J>
+extends SuperTest4.Abstract<J> {
+    private SuperTest4.Impl() {
+        super(SuperTest4.this);
+    }
+
+    @Override
+    public void doStuff(J arg) {
+    }
+}

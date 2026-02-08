@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.Singleton;
+
+public class Singleton.One
+implements Singleton {
+    public static final Singleton INSTANCE = new Singleton.One();
+
+    @Override
+    public int getInt() {
+        return 1;
+    }
+}

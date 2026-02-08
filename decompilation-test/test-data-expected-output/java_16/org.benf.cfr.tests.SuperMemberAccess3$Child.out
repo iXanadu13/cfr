@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperMemberAccess3;
+
+public class SuperMemberAccess3.Child
+extends SuperMemberAccess3 {
+    private int a;
+
+    private int test() {
+        return 1;
+    }
+}

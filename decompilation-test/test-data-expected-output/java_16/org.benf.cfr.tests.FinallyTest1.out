@@ -1,0 +1,53 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FinallyTest1 {
+    /*
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    public int ft1(int x) {
+        try {
+            switch (x) {
+                case 1: {
+                    int n = 1;
+                    return n;
+                }
+                case 2: {
+                    int n = 1;
+                    return n;
+                }
+                case 3: {
+                    int n = 1;
+                    return n;
+                }
+                case 4: {
+                    int n = 1;
+                    return n;
+                }
+                case 5: {
+                    int n = 1;
+                    return n;
+                }
+                case 6: {
+                    int n = 1;
+                    return n;
+                }
+                case 7: {
+                    int n = 1;
+                    return n;
+                }
+                case 8: {
+                    int n = 1;
+                    return n;
+                }
+            }
+            return 2;
+        } finally {
+            System.out.println("HERE");
+        }
+    }
+}

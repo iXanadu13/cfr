@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class MalformedBlockTest1b {
+    MalformedBlockTest1b() {
+    }
+
+    void useInt(int i) {
+    }
+
+    void useBoolean(boolean b) {
+    }
+
+    void testBoolean() {
+        int n = Short.MAX_VALUE;
+        this.useInt(n);
+        boolean bl = true;
+        this.useBoolean(bl);
+    }
+}

@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest25 {
+    public void f1(short s) {
+    }
+
+    public void f1(int i) {
+    }
+
+    void test(short s, int i) {
+        this.f1(s);
+        this.f1((int)s);
+        this.f1(i);
+        this.f1((short)i);
+    }
+}

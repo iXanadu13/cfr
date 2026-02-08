@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class AnonymousInnerClassTest15 {
+    public static Object test(int x) {
+        Priv p = new Priv(x);
+        return new UnaryFunction<Priv, Integer>(){
+
+            @Override
+            public Integer invoke(Priv arg) {
+                return arg.x;
+            }
+        }.invoke(p);
+    }
+
+    private static class Priv {
+        private int x;
+
+        public Priv(int x) {
+            this.x = x;
+        }
+    }
+}

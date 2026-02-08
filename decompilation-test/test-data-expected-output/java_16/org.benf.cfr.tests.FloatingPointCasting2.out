@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class FloatingPointCasting2 {
+    private static final long l = 0x7FFFFFFFFFFFFFFEL;
+
+    FloatingPointCasting2() {
+    }
+
+    void test() {
+        long b = Long.MAX_VALUE;
+        System.out.println(b == 0x7FFFFFFFFFFFFFFEL);
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Predicate;
+
+public class LambdaTest29a {
+    public static void main(String[] args) {
+        Predicate<Double> predicate = p -> p == null;
+        Predicate<Double> predicate2 = p -> p == null;
+    }
+}

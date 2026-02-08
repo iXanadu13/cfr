@@ -1,0 +1,43 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IncrTest5 {
+    public static void main(String ... args) {
+        int a = 0;
+        IncrTest5.testParam(a++);
+        IncrTest5.testParam(++a);
+        IncrTest5.testParam(a++, a++);
+        IncrTest5.testParam(a++, ++a);
+        IncrTest5.testParam(++a, a++);
+        IncrTest5.testParam(++a, ++a);
+        IncrTest5.testParam(a++, a++, a++);
+        IncrTest5.testParam(a++, a++, ++a);
+        IncrTest5.testParam(a++, ++a, a++);
+        IncrTest5.testParam(a++, ++a, ++a);
+        IncrTest5.testParam(++a, a++, a++);
+        IncrTest5.testParam(++a, a++, ++a);
+        IncrTest5.testParam(++a, ++a, a++);
+        IncrTest5.testParam(++a, ++a, ++a);
+        IncrTest5.testParam(IncrTest5.testParam(a++, ++a, IncrTest5.testParam(a++, ++a)));
+        IncrTest5.testParam(IncrTest5.testParam(a++, ++a, IncrTest5.testParam(++a, a++)));
+        IncrTest5.testParam(IncrTest5.testParam(a++, ++a), IncrTest5.testParam(++a, a++));
+        IncrTest5.testParam(IncrTest5.testParam(a++), ++a, IncrTest5.testParam(a++, ++a));
+    }
+
+    private static int testParam(int a) {
+        System.out.println("" + a);
+        return a;
+    }
+
+    private static int testParam(int a, int b) {
+        System.out.println(a + "," + b);
+        return a + b;
+    }
+
+    private static int testParam(int a, int b, int c) {
+        System.out.println(a + "," + b + "," + c);
+        return a + b + c;
+    }
+}

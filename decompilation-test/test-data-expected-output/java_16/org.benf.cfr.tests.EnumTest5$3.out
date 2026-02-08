@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest5;
+
+final class EnumTest5.3
+extends EnumTest5 {
+    public String toString() {
+        return "OVERRIDE";
+    }
+}

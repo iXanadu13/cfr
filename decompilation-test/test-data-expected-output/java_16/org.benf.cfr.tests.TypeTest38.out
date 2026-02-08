@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.TreeMap;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class TypeTest38 {
+    public static <Y, X> List<Y> groupBy(List<X> input, Comparator<? super X> comparator, UnaryFunction<List<X>, Y> gf) {
+        TreeMap<X, ArrayList<X>> temp = new TreeMap<X, ArrayList<X>>(comparator);
+        for (X x : input) {
+            List<Object> lx = (ArrayList<X>)temp.get(x);
+            if (lx == null) {
+                lx = new ArrayList<X>();
+                temp.put(x, (ArrayList<X>)lx);
+            }
+            lx.add(x);
+        }
+        ArrayList<Y> res = new ArrayList<Y>();
+        for (List<Object> lx : temp.values()) {
+            res.add(gf.invoke(lx));
+        }
+        return res;
+    }
+}

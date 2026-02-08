@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ArrayTest10b;
+
+class ArrayTest10b.CC
+extends ArrayTest10b.CA {
+    private ArrayTest10b.CC() {
+    }
+}

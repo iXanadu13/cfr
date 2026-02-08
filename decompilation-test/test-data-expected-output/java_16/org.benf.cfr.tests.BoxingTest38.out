@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest38 {
+    public static void main(String[] args) {
+        boolean b1 = true;
+        Object[] arr = new Object[]{(byte)1};
+    }
+}

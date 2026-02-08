@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class GenericInnerTest1a {
+    Inner test() {
+        return null;
+    }
+
+    class Inner {
+        Inner() {
+        }
+    }
+}

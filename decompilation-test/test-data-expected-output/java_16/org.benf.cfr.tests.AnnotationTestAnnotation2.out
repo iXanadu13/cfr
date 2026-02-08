@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public @interface AnnotationTestAnnotation2 {
+    public static final int x = 3;
+    public static final int y = 3;
+    public static final Map<String, Integer> z = new HashMap<String, Integer>();
+
+    public String value() default "wibble";
+
+    public static class fred {
+        private static final int TEST = 3;
+        private int y;
+
+        public fred(int y) {
+            this.y = y;
+        }
+    }
+}

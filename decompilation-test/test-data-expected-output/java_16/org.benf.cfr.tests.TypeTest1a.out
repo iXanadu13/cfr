@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest1a {
+    public void test1() {
+        int x = 3;
+        char y = '3';
+        short z = 3;
+        boolean a = true;
+        String res = "Res : " + a + x + y + z;
+        System.out.println(res);
+    }
+
+    public static void main(String ... args) {
+        new TypeTest1a().test1();
+    }
+}

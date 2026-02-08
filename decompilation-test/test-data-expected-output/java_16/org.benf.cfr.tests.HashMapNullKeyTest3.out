@@ -1,0 +1,42 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+
+public class HashMapNullKeyTest3 {
+    public static void test1() {
+        HashMap<HashThis, Integer> map = new HashMap<HashThis, Integer>();
+        map.put(new HashThis(0), 1);
+        map.put(new HashThis(32), null);
+        map.put(null, null);
+    }
+
+    public static void test2() {
+        HashMap<HashThis, Integer> map = new HashMap<HashThis, Integer>();
+        map.put(new HashThis(32), null);
+        map.put(new HashThis(0), 1);
+        map.put(null, null);
+    }
+
+    private static class HashThis {
+        private final int hascode;
+
+        public HashThis(int hash) {
+            this.hascode = hash;
+        }
+
+        public int hashCode() {
+            return this.hascode;
+        }
+
+        public boolean equals(Object obj) {
+            if (!(obj instanceof HashThis)) {
+                return false;
+            }
+            HashThis other = (HashThis)obj;
+            return other.hascode == this.hascode;
+        }
+    }
+}

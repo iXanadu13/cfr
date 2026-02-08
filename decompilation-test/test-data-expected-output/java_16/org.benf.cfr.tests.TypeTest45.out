@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.support.ListFactory;
+
+public class TypeTest45 {
+    public void test(List<Integer> list) {
+        Integer best = null;
+        List res = ListFactory.newList();
+        for (Integer i : list) {
+            if (best != null && best.byteValue() >= i.byteValue()) continue;
+            best = i;
+        }
+        if (best != null) {
+            res.add(best);
+        }
+        System.out.print(best);
+    }
+}

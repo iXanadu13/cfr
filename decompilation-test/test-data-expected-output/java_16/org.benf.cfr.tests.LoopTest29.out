@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest29 {
+    public void candoit(Integer[] l2) {
+        for (Integer i : l2) {
+            System.out.println(i);
+        }
+    }
+}

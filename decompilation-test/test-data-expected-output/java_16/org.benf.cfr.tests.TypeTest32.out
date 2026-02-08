@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest32 {
+    char[] value;
+
+    public void split(String regex, int limit) {
+        char ch = '\u0000';
+        ch = regex.charAt(1);
+        if ((ch - 48 | 57 - ch) < 0 && ch > '\udfff') {
+            System.out.println("foo");
+        }
+    }
+}

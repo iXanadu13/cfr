@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationTestAnnotation;
+import org.benf.cfr.tests.support.Nullable;
+
+public class AnnotationTest1 {
+    @Deprecated
+    void foo(int x) {
+    }
+
+    @AnnotationTestAnnotation(value={"fred", "jim"}, fred=1)
+    void foo(int x, @Nullable Double y) {
+        System.out.println("Foo!");
+    }
+
+    @AnnotationTestAnnotation(value={"fred", "jim"})
+    static void foo2(int x, @Deprecated @Nullable Double y) {
+        System.out.println("Foo!");
+    }
+}

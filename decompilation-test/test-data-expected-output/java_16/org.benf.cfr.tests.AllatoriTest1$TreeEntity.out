@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+interface AllatoriTest1.TreeEntity<T> {
+    public String getIdColumnName();
+
+    public String getIdAttrName();
+}

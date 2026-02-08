@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ShortNameTest2.Foo {
+    private ShortNameTest2.Foo() {
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AbeOperation {
+    public static void main(String[] args) {
+        while (true) {
+            int n = 0;
+            n = -0;
+        }
+    }
+}

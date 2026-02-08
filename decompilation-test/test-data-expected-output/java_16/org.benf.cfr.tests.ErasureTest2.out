@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ErasureTest1;
+
+public class ErasureTest2 {
+    public ErasureTest2() {
+        ErasureTest1.make().test("foo");
+    }
+}

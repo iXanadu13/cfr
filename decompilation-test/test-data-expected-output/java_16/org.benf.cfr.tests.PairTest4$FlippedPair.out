@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Pair;
+
+class PairTest4.FlippedPair<X, Y>
+extends Pair<Y, X> {
+    private PairTest4.FlippedPair(X x, Y y) {
+        super(y, x);
+    }
+}

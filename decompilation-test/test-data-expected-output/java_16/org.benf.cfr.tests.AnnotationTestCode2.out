@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationCode;
+
+public class AnnotationTestCode2 {
+    public void foo() {
+        @AnnotationCode(name="fred") String[][] a = new String[1][1];
+        String @AnnotationCode(name="jim") [][] b = new String[1][1];
+        String[] @AnnotationCode(name="bob") [] c = new String[1][1];
+        System.out.println(a);
+    }
+}

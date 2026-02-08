@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class NestedInnerClasses2.A.B.C {
+    NestedInnerClasses2.A.B.C() {
+    }
+
+    class D {
+        D() {
+        }
+
+        String doSomething() {
+            return B.this.this$1.this$0.str;
+        }
+    }
+}

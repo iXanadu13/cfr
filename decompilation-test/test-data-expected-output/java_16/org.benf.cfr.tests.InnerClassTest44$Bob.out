@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest44.Bob {
+    protected InnerClassTest44.Bob() {
+    }
+
+    protected class Jim {
+        protected Jim() {
+        }
+    }
+}

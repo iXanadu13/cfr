@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest36 {
+    private void t(boolean b) {
+        Integer i = new Integer(12);
+        this.fn(i, (int)i);
+    }
+
+    private boolean fn(Integer i2, Integer i1) {
+        return i1 == i2;
+    }
+}

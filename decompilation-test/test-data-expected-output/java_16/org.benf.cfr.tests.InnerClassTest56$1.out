@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest56.1 {
+    int f = 0;
+
+    InnerClassTest56.1() {
+    }
+
+    class Foo {
+        public Foo() {
+            ++InnerClassTest56.this.f;
+        }
+    }
+}

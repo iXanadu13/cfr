@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest57.Foo {
+    public InnerClassTest57.Foo() {
+        g = 0;
+    }
+}

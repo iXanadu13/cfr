@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.StaticInitTest5;
+
+public class StaticInitTest6
+extends StaticInitTest5 {
+    static int x;
+
+    static {
+        int b;
+        int a = System.getProperties().hashCode();
+        x = a < (b = System.identityHashCode(StaticInitTest6.class)) ? a : ((a += b) < b ? a : b);
+    }
+}

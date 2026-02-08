@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class HexTest1 {
+    public long foo(long x) {
+        x &= 0xFFL;
+        x &= 0xFFFFFFFFFFF0FFFFL;
+        x &= 0xFFFFFFFFFFF0FFFFL;
+        x &= 0xFFFFFFFFFFF0FFFFL;
+        x &= 0xFF0FFFFFFFF0FFFFL;
+        x |= 0xAE00AEL;
+        x = 0xAE0FFF0L | x;
+        return x;
+    }
+
+    public long foo(int x) {
+        x &= 0xFF;
+        x &= 0xFFF0FFFF;
+        x &= 0xFFF0FFFF;
+        x |= 0xAE00AE;
+        x = 0xAE0FFF0 | x;
+        return x;
+    }
+}

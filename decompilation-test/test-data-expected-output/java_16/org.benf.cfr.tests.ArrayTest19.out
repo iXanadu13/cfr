@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest19 {
+    public static void test(int ... args) {
+    }
+
+    public static void main(String ... args) {
+        ArrayTest19.test(1, 2, 3, 4, 5, 6);
+    }
+}

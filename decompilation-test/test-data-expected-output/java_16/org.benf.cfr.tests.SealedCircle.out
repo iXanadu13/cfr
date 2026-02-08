@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SealedShape;
+
+public final class SealedCircle
+extends SealedShape {
+}

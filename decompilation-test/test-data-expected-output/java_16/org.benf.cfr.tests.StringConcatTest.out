@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class StringConcatTest {
+    public String test(boolean flag, String arg) {
+        return "foo" + (String)(flag ? "bar" + arg : "baz");
+    }
+}

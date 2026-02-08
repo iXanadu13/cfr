@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class CatchScopeTest1 {
+    abstract void foo();
+
+    void test1(int a, int b) {
+        try {
+            this.foo();
+        } catch (UnsupportedOperationException e) {
+            System.out.println("Dynamic");
+        } catch (Throwable e) {
+            System.out.println("Static");
+        }
+    }
+}

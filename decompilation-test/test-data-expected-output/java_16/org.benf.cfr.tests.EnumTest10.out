@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+enum EnumTest10 {
+    VALUE(1){
+        {
+            System.out.println(this + ": " + this.code);
+        }
+    };
+
+    public final int code;
+
+    private EnumTest10(int code) {
+        this.code = code;
+    }
+}

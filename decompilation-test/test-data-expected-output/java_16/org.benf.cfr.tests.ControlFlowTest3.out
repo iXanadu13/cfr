@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ControlFlowTest3 {
+    public int foo(int i, int j) {
+        while (true) {
+            System.out.println("b");
+            if (i++ < 5) break;
+            if (i >= 10) continue;
+            System.out.println("F");
+        }
+        System.out.println("a");
+        System.out.println("Fred");
+        return j;
+    }
+}

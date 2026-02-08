@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BaseTypeInferTest1;
+
+public class BaseTypeInferTest1.Child
+extends BaseTypeInferTest1.Base {
+    public int getFoo() {
+        return 3;
+    }
+}

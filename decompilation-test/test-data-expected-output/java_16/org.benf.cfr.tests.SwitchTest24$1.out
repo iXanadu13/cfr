@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SwitchTest24;
+
+class SwitchTest24.1 {
+    static final /* synthetic */ int[] $SwitchMap$org$benf$cfr$tests$SwitchTest24$Something;
+
+    static {
+        $SwitchMap$org$benf$cfr$tests$SwitchTest24$Something = new int[SwitchTest24.Something.values().length];
+        try {
+            SwitchTest24.1.$SwitchMap$org$benf$cfr$tests$SwitchTest24$Something[SwitchTest24.Something.ONE.ordinal()] = 1;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
+}

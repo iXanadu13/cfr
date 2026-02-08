@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class NameTest1.Static {
+    private NameTest1.Static() {
+    }
+}

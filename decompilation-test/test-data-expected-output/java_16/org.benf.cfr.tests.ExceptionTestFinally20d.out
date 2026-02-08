@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally20d {
+    public int test1(int x) {
+        do {
+            try {
+                if (x == 1) {
+                    int n = 1;
+                    return n;
+                }
+                System.out.println("Oops");
+                if (x == 23) {
+                    int n = 1;
+                    return n;
+                }
+                System.out.println("Oops");
+                if (x == 25) {
+                    int n = 1;
+                    return n;
+                }
+            } finally {
+                if (x == 3) break;
+            }
+        } while (x < 45);
+        System.out.print(5);
+        return 1;
+    }
+}

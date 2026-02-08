@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest12 {
+    public int test(int x) {
+        return x;
+    }
+
+    public int foo(int i) {
+        int a = this.test(i);
+        a = this.test(a);
+        ++a;
+        ++a;
+        for (int x = 0; x < 3; ++x) {
+            for (int y = 0; y < 12; ++y) {
+                ++a;
+                ++a;
+            }
+        }
+        ++a;
+        ++a;
+        a = this.test(a);
+        a = this.test(a);
+        return a;
+    }
+}

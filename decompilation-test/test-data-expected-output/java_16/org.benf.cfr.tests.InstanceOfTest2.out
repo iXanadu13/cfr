@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InstanceOfTest1;
+
+public class InstanceOfTest2 {
+    public int test(Object i) {
+        if (i instanceof Integer) {
+            return 1;
+        }
+        if (i instanceof java.lang.Integer) {
+            return 2;
+        }
+        if (i instanceof InstanceOfTest1.Integer) {
+            return 3;
+        }
+        return 0;
+    }
+
+    private static class Integer {
+        private Integer() {
+        }
+    }
+}

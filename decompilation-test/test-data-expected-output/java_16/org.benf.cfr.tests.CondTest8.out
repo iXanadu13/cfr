@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondTest8 {
+    public boolean test(boolean a, boolean b, boolean c) {
+        System.out.println(c ? (b ? a : c) : b);
+        return c;
+    }
+}

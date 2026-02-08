@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest6 {
+    public boolean test1(int x) {
+        return x == 6;
+    }
+
+    public boolean test2(int x) {
+        return x == 6;
+    }
+}

@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class InnerClassTest35 {
+    public static int foo(List<String> list) {
+        return new Bob(list).get();
+    }
+
+    private static class Bob {
+        private Bob(List<String> lst) {
+        }
+
+        private int get() {
+            return 1;
+        }
+    }
+}

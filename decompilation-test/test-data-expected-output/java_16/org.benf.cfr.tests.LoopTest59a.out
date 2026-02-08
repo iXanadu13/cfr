@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class LoopTest59a {
+    public void cannotMoveIteratorVariableDeclaration(List<Integer> l2) {
+        for (Integer i2 : l2) {
+            if (i2 == null) break;
+            System.out.println(i2);
+        }
+    }
+}

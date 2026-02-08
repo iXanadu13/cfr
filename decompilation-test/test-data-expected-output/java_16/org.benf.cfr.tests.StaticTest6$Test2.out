@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class StaticTest6.Test2 {
+    final StaticTest6.Test2 a = this;
+    static int PINEAPPLE = 123;
+
+    StaticTest6.Test2() {
+    }
+
+    static int random() {
+        return 4;
+    }
+}

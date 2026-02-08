@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface MethodReferenceTest3.ItfPrint {
+    public void print(String var1, String var2);
+}

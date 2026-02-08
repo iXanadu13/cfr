@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public enum InnerClassTest7.bar {
+    JENNIFER,
+    JAMES;
+
+}

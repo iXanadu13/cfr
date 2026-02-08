@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class PrecedenceTest8 {
+    public int test1(Object[] fred, int x) {
+        return ((Inner)fred[x]).value;
+    }
+
+    public class Inner {
+        public int value;
+    }
+}

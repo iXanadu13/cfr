@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IntOverflowTest3 {
+    public static void main(String ... args) {
+        try {
+            int x = Integer.MAX_VALUE;
+            x <<= -1;
+            System.out.println(x >>= -1);
+        } catch (Exception e) {
+            System.out.println("Here.");
+        }
+    }
+}

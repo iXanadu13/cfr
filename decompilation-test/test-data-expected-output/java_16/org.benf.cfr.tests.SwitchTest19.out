@@ -1,0 +1,32 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest19 {
+    public String test1(String s) {
+        int x;
+        if (s.contains("ABC")) {
+            switch (s) {
+                case "A": {
+                    x = 1;
+                    break;
+                }
+                case "B": {
+                    x = 2;
+                    break;
+                }
+                case "C": {
+                    x = 3;
+                    break;
+                }
+                default: {
+                    throw new AssertionError((Object)"FOO");
+                }
+            }
+        } else {
+            x = 3;
+        }
+        return Integer.toBinaryString(x);
+    }
+}

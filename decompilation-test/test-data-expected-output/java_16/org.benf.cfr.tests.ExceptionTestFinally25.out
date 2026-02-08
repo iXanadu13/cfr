@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally25 {
+    public void fn() {
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test(int x) {
+        try {
+            System.out.println("A");
+            if (x == 3) {
+                return;
+            }
+            this.fn();
+        } finally {
+            try {
+                System.out.println("BEE");
+                this.fn();
+            } finally {
+                System.out.println("C");
+            }
+        }
+    }
+}

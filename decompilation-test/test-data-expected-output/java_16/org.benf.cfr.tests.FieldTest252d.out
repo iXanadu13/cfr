@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FieldTest252d<T extends Comparable<T>> {
+    public static final String CONSTANT = "test";
+
+    private static class Inner {
+        private final T t;
+        final /* synthetic */ FieldTest252d this$0;
+
+        Inner(T t) {
+            this.this$0 = var1_1;
+            this.t = t;
+        }
+    }
+}

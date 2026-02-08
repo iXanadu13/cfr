@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally10a {
+    void test1(String path) {
+        try {
+            int n = 3;
+        } finally {
+            throw new IllegalStateException();
+        }
+    }
+}

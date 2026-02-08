@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest21 {
+    Integer y;
+
+    public void test1(Integer end) {
+        Integer y = 0;
+        while (y < end) {
+            System.out.println(y);
+            y = y + 1;
+        }
+    }
+
+    public void test2(Integer end) {
+        if (Integer.valueOf(this.y) == null) {
+            return;
+        }
+        this.y = 0;
+        while (this.y < end) {
+            System.out.println(this.y);
+            this.y = this.y + 1;
+        }
+    }
+}

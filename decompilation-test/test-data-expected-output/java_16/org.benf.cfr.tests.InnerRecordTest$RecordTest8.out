@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyField;
+
+record InnerRecordTest.RecordTest8(@MyField String firstName, String lastName) {
+}

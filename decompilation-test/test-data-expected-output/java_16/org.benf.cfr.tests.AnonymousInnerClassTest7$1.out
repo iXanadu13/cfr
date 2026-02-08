@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnonymousInnerClassTest7;
+
+class AnonymousInnerClassTest7.1
+extends AnonymousInnerClassTest7.Inner1 {
+    final /* synthetic */ Integer val$x;
+
+    AnonymousInnerClassTest7.1(int a, Integer n) {
+        this.val$x = n;
+        super(a);
+    }
+
+    @Override
+    public Integer invoke(Integer arg) {
+        return arg * 3 + this.val$x + this.a;
+    }
+}

@@ -1,0 +1,42 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class VarTypeTest3 {
+    public static void test1() {
+        var x = new Fred(){
+            int foo = 3;
+        };
+        System.out.println(x.foo);
+    }
+
+    public static void test2() {
+        Fred x = new Fred(){
+            int foo = 3;
+        };
+        System.out.println(((Bob)x).foo);
+    }
+
+    public static void test3() {
+        Fred x = new Fred(){
+            int foo = 3;
+        };
+        System.out.println(x.foo);
+    }
+
+    private static class Bob {
+        public int foo;
+
+        private Bob() {
+        }
+    }
+
+    private static class Fred
+    extends Bob {
+        public int foo;
+
+        private Fred() {
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest18 {
+    private void t(Integer[] x) {
+        for (Integer i : x) {
+            i = x[i];
+        }
+    }
+}

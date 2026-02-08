@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+final class UsingTest13.NotCloseable {
+    UsingTest13.NotCloseable() {
+    }
+
+    public final void doSomething() {
+    }
+
+    public final void close() {
+    }
+}

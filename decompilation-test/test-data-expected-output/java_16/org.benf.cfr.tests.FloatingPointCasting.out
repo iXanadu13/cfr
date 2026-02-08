@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class FloatingPointCasting {
+    FloatingPointCasting() {
+    }
+
+    long getLong() {
+        return 0x7FFFFFFFFFFFFFFEL;
+    }
+
+    void test() {
+        long b = (long)((double)this.getLong());
+        System.out.println(b == this.getLong());
+    }
+}

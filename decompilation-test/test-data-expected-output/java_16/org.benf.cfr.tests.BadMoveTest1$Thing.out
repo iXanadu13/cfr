@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+class BadMoveTest1.Thing {
+    private BadMoveTest1.Thing() {
+    }
+
+    public List<Object> getTargets() {
+        return null;
+    }
+}

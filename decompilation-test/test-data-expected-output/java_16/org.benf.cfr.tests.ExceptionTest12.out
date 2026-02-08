@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTest12 {
+    public static void foo() {
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            String string = e.getMessage();
+            return;
+        }
+    }
+}

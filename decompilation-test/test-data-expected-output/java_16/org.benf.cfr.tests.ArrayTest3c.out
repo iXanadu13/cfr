@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest3c {
+    int x;
+    int y;
+    int z;
+
+    void test1(int a, int b) {
+        String[] tmp = new String[]{"a", "b", "c"};
+        String[] arr$ = tmp;
+        int len$ = arr$.length;
+        int i$ = 0;
+        while (true) {
+            if (i$ >= len$) {
+                return;
+            }
+            String s = arr$[i$];
+            System.out.println(s);
+            if (s == null) break;
+            ++i$;
+        }
+        System.out.println("fred");
+    }
+}

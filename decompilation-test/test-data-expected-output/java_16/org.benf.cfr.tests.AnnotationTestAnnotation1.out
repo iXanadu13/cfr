@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.annotation.Annotation;
+
+public interface AnnotationTestAnnotation1
+extends Annotation {
+    public String[] value();
+
+    public int fred();
+}

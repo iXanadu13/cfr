@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest51.1Bug.1 {
+    InnerClassTest51.1Bug.1() {
+    }
+}

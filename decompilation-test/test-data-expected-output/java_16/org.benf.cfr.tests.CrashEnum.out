@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public enum CrashEnum {
+    SAMPLE;
+
+
+    public CrashEnum[] cloneValues() {
+        return (CrashEnum[])((CrashEnum[])null).clone();
+    }
+}

@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface Singleton {
+    public int getInt();
+
+    public static class Two
+    implements Singleton {
+        public static final Singleton INSTANCE = new Two();
+
+        @Override
+        public int getInt() {
+            return 2;
+        }
+    }
+
+    public static class One
+    implements Singleton {
+        public static final Singleton INSTANCE = new One();
+
+        @Override
+        public int getInt() {
+            return 1;
+        }
+    }
+}

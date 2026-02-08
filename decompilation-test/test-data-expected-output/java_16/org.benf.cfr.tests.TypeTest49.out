@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest49 {
+    public static void main(String[] args) {
+        byte b1 = -2;
+        System.out.println("foo " + b1 + "false");
+    }
+}

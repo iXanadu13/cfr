@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public strictfp class ConstantNameTest5 {
+    static final double dx = Math.PI * 2;
+    static final float fx = (float)Math.PI * 2;
+    static final float fx4 = (float)Math.PI * 4;
+    static final double dx2 = 6.2831854820251465;
+    static final float fx2 = (float)Math.PI * 2;
+    static final double dfx = 0.0;
+
+    public static void main(String ... args) {
+        double dx = Math.PI * 2;
+        float fx = (float)Math.PI * 2;
+        float fx4 = (float)Math.PI * 4;
+        double dx2 = 6.2831854820251465;
+        float fx2 = (float)Math.PI * 2;
+    }
+}

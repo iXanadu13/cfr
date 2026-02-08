@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class UnicodeTest2 {
+    public static void foo() {
+        System.out.println("\t\n\\u000d");
+        System.out.println("\t\n\\ufe0d");
+        System.out.println("\t\n\ufe0d");
+    }
+}

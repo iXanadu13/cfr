@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Predicate;
+
+class InnerClassTest26b.2Bob
+implements Predicate<Double> {
+    final /* synthetic */ int val$j;
+
+    InnerClassTest26b.2Bob() {
+        this.val$j = n;
+    }
+
+    @Override
+    public boolean test(Double in) {
+        return in == (double)this.val$j;
+    }
+}

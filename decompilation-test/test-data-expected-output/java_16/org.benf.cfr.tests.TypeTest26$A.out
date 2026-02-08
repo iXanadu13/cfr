@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest26.A {
+    public void f1(short s) {
+    }
+
+    public void f1(int i) {
+    }
+}

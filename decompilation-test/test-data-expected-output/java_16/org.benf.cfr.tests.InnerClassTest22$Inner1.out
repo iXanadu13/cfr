@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest22.Inner1 {
+
+    public class Inner2 {
+        private int x;
+
+        public void foo() {
+            System.out.println(this.x);
+        }
+
+        private int getX(int a, int b, int c) {
+            return a + b + c + this.x;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally28 {
+    boolean a;
+
+    public Object test(int x) {
+        try {
+            Object var2_2 = null;
+            return var2_2;
+        } finally {
+            this.a = true;
+        }
+    }
+}

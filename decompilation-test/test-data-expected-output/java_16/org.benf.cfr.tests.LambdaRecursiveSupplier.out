@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+
+@FunctionalInterface
+public interface LambdaRecursiveSupplier
+extends Supplier<LambdaRecursiveSupplier> {
+}

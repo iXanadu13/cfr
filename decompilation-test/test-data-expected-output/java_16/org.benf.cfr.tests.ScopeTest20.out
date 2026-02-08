@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ScopeTest20 {
+    public static int foo(boolean b) {
+        int x = new Object[0].length;
+        x = new Object[0].length;
+        Object[] foo = new Object[]{};
+        int y = foo.length;
+        return x + y;
+    }
+}

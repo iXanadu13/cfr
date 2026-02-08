@@ -1,0 +1,32 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Arrays;
+import java.util.function.Consumer;
+import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
+import org.benf.cfr.tests.LambdaUtilities;
+
+@FunctionalInterface
+public interface LambdaUtilities3 {
+    public boolean isLoggingEnabled();
+
+    @SafeVarargs
+    public static <INPUT> UnaryOperator<INPUT> andThenReturn(Consumer<INPUT> ... consumers) {
+        return input -> {
+            LambdaUtilities3.andThen(consumers).accept(input);
+            return input;
+        };
+    }
+
+    @SafeVarargs
+    public static <INPUT> Consumer<INPUT> andThen(Consumer<INPUT> ... consumers) {
+        return ((Stream)Arrays.stream(consumers).parallel()).map(LambdaUtilities::proxy).reduce(Consumer::andThen).orElse(LambdaUtilities3.nullConsumer());
+    }
+
+    public static <INPUT> Consumer<INPUT> nullConsumer() {
+        return i -> {};
+    }
+}

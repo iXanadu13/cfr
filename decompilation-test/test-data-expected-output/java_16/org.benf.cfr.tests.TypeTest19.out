@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TypeTest19 {
+    public void test3(List b) {
+        ArrayList bcopy = new ArrayList(b);
+        for (Boolean b2 : bcopy) {
+            System.out.println(b);
+        }
+    }
+}

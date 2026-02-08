@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.support.ListFactory;
+
+public class ScopeTest15 {
+    public static void test(char[] chars) {
+        List<Object> set = ListFactory.newList();
+        set.add(1);
+        set.add(2);
+        for (Object i : set) {
+            System.out.print(i);
+        }
+        set = ListFactory.newList();
+        set.add("A");
+        set.add("B");
+        for (Object i : set) {
+            System.out.print((String)i);
+        }
+    }
+}

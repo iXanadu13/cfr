@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldTest252d;
+
+class FieldTest252d.Inner {
+    private final T t;
+    final /* synthetic */ FieldTest252d this$0;
+
+    FieldTest252d.Inner(T t) {
+        this.this$0 = var1_1;
+        this.t = t;
+    }
+}

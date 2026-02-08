@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface LambdaIntersectTrait.Thong {
+    default public void doThang() {
+        System.out.println("thong");
+    }
+}

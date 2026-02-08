@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ArrayTest1;
+
+public class ExtendTest1
+extends ArrayTest1 {
+    void test4(int a) {
+        String[] r = new String[a];
+    }
+}

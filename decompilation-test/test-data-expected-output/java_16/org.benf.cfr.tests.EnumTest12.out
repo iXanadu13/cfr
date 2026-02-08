@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+enum EnumTest12 {
+    ONE(1),
+    TWO(2, "Two"),
+    THREE(3){
+
+        public String toString() {
+            return "THREE";
+        }
+    };
+
+    public final int code;
+    public final String name;
+
+    private EnumTest12(int code) {
+        this(code, "NoName");
+    }
+
+    private EnumTest12(int code, String name) {
+        this.code = code;
+        this.name = name;
+    }
+}

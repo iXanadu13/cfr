@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyParam4;
+
+class AnnotationTestM6a2 {
+    AnnotationTestM6a2() {
+    }
+
+    @Deprecated
+    @MyParam4
+    static void foo() {
+    }
+}

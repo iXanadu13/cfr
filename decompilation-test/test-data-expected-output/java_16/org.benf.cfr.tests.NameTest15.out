@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest15 {
+    public int foo(Goto f) {
+        f.foo();
+        return 1;
+    }
+
+    private static class Goto {
+        private Goto() {
+        }
+
+        void foo() {
+        }
+    }
+}

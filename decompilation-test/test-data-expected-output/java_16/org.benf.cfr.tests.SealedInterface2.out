@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ImplSealedInterface;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+public sealed interface SealedInterface2
+permits ImplSealedInterface {
+    public void doIt();
+}

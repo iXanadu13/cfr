@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest4 {
+    public void foo(int i) {
+        int a = 3;
+        System.out.println(a);
+        String a2 = "Hello";
+        System.out.println(a2);
+    }
+}

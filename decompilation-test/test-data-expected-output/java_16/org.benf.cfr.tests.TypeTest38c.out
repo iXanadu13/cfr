@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import java.util.Map;
+
+public class TypeTest38c {
+    public static <X> void test(Map<X, List<X>> temp) {
+        for (X object : temp.keySet()) {
+        }
+        for (List list : temp.values()) {
+        }
+    }
+}

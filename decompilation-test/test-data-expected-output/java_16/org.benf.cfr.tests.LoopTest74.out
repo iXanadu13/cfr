@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest74 {
+    public static void main(String[] args) {
+        System.out.println("foo1");
+        LoopTest74.foo1();
+        System.out.println("foo2");
+        LoopTest74.foo2();
+    }
+
+    public static void foo1() {
+        int n = 15;
+        float i = 10.0f;
+        while (i < (float)n) {
+            System.out.println(i);
+            i -= 2.0f;
+            i = (float)((double)i * 1.5);
+        }
+    }
+
+    public static void foo2() {
+        int n = 15;
+        for (float i = 10.0f; i < (float)n; i -= 2.0f) {
+            System.out.println(i);
+            i = (float)((double)i * 1.5);
+        }
+    }
+}

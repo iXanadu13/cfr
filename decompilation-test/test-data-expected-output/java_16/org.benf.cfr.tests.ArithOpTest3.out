@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArithOpTest3 {
+    public void test1(int a, Integer b) {
+        Integer n = b;
+        b = b + 1;
+        ++a;
+    }
+
+    public void test2(int a, Integer b) {
+        b = b + 1;
+        ++a;
+    }
+}

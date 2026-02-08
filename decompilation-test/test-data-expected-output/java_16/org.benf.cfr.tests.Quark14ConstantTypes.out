@@ -1,0 +1,51 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.reflect.Field;
+
+public class Quark14ConstantTypes {
+    final Integer fieldInit2 = 42;
+    final int fieldInit = 42;
+    final String fieldInit3 = "42";
+    final String fieldInit4;
+
+    public Quark14ConstantTypes() {
+        this.fieldInit4 = "42";
+    }
+
+    static void call(Excepting x) {
+        try {
+            x.doit();
+        } catch (Exception exception) {
+            // empty catch block
+        }
+    }
+
+    static void set(Quark14ConstantTypes p, String field) throws Exception {
+        Field f = Quark14ConstantTypes.class.getDeclaredField(field);
+        f.setAccessible(true);
+        Quark14ConstantTypes.call(() -> f.setInt(p, 9000));
+        Quark14ConstantTypes.call(() -> f.set(p, "FOO"));
+        Quark14ConstantTypes.call(() -> f.set(p, 9002L));
+        Quark14ConstantTypes.call(() -> f.set(p, 9001));
+    }
+
+    public String toString() {
+        return "Quark14ConstantTypes{fieldInit2=" + this.fieldInit2 + ", fieldInit=42, fieldInit3='42', fieldInit4='" + this.fieldInit4 + "'}";
+    }
+
+    public static void main(String ... args) throws Exception {
+        Quark14ConstantTypes q = new Quark14ConstantTypes();
+        Quark14ConstantTypes.set(q, "fieldInit");
+        Quark14ConstantTypes.set(q, "fieldInit2");
+        Quark14ConstantTypes.set(q, "fieldInit3");
+        Quark14ConstantTypes.set(q, "fieldInit4");
+        System.out.println(q);
+    }
+
+    private static interface Excepting {
+        public void doit() throws Exception;
+    }
+}

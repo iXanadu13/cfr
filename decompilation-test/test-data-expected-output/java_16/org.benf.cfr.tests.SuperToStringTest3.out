@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperToStringTest2;
+
+public class SuperToStringTest3
+extends SuperToStringTest2 {
+    public SuperToStringTest3(int x) {
+        super(x);
+    }
+
+    public String toString() {
+        if (this.x < 3) {
+            return "SuperToStringTest{x=" + this.x + "}";
+        }
+        return super.toString();
+    }
+}

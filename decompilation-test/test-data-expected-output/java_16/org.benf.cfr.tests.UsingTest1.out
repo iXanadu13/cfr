@@ -1,0 +1,40 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.nio.file.FileVisitOption;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class UsingTest1 {
+    private static Stream<Path> getPathStream(Path path) {
+        Stream<Path> stream;
+        block8: {
+            Stream<Path> paths = Files.walk(path, new FileVisitOption[0]);
+            try {
+                stream = paths.collect(Collectors.toList()).stream();
+                if (paths == null) break block8;
+            } catch (Throwable throwable) {
+                try {
+                    if (paths != null) {
+                        try {
+                            paths.close();
+                        } catch (Throwable throwable2) {
+                            throwable.addSuppressed(throwable2);
+                        }
+                    }
+                    throw throwable;
+                } catch (IOException e) {
+                    throw new UncheckedIOException(e);
+                }
+            }
+            paths.close();
+        }
+        return stream;
+    }
+}

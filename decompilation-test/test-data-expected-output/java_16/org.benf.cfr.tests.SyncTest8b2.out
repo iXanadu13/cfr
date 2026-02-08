@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest8b2 {
+    public int test(Object a, Object b, Object c, Object d) throws Exception {
+        Object object = a;
+        synchronized (object) {
+            return 1;
+        }
+    }
+}

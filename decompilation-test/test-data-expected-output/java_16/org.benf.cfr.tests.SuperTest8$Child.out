@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperTest8;
+
+public class SuperTest8.Child
+extends SuperTest8.Super
+implements SuperTest8.SuperInterface,
+SuperTest8.SuperInterface2 {
+    @Override
+    public void foo() {
+        super.foo();
+    }
+
+    public void fooOther() {
+        SuperTest8.SuperInterface.super.foo();
+    }
+
+    public void fooOther2() {
+        SuperTest8.SuperInterface2.super.foo();
+    }
+}

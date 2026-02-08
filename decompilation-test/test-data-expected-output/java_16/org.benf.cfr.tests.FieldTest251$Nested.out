@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldTest251;
+
+class FieldTest251.Nested {
+    FieldTest251.Nested() {
+    }
+
+    public String toString() {
+        return FieldTest251.CONSTANT;
+    }
+}

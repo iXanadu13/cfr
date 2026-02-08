@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest49 {
+    public static void main(String[] args) {
+        class HelloWorld {
+            HelloWorld() {
+            }
+        }
+        System.out.println(HelloWorld.class);
+        System.out.println(new HelloWorld().getClass());
+    }
+}

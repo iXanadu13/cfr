@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class LoopTestTyped5a.Container<X> {
+    Object contained;
+
+    LoopTestTyped5a.Container() {
+    }
+}

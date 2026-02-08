@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest13 {
+    private void t(Integer v, Integer v2) {
+        if (v == v2) {
+            throw new IllegalStateException();
+        }
+        System.out.println("A");
+    }
+
+    private void t2(Integer v, Integer v2) {
+        if (v.intValue() == v2.intValue()) {
+            throw new IllegalStateException();
+        }
+        System.out.println("A");
+    }
+
+    private void t(int v, Integer v2) {
+        if (v != v2) {
+            throw new IllegalStateException();
+        }
+        System.out.println("A");
+    }
+}

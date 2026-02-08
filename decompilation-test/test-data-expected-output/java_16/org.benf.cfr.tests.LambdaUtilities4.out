@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+
+public class LambdaUtilities4 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public <OBJECT> OBJECT benchmark(Supplier<OBJECT> supplier, long sleepTime) {
+        try {
+            OBJECT OBJECT = null;
+            return OBJECT;
+        } finally {
+            new Thread(() -> {
+                try {
+                    Thread.sleep(sleepTime);
+                } catch (Throwable throwable) {
+                    // empty catch block
+                }
+            }).start();
+        }
+    }
+}

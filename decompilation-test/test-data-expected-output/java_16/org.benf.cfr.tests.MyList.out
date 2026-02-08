@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyList {
+    public static List<String> provider() {
+        return new ArrayList<String>();
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Set;
+import java.util.stream.Stream;
+import org.benf.cfr.tests.support.SetFactory;
+
+public class LambdaTest23 {
+    public void test(Stream<String> in) {
+        Set s = SetFactory.newSet();
+        Stream<Boolean> numbers = in.map(s::contains);
+    }
+}

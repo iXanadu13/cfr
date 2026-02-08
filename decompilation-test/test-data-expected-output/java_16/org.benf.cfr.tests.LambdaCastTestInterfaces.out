@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+interface LambdaCastTestInterfaces {
+
+    public static interface B {
+    }
+
+    public static interface A {
+        public void doit();
+    }
+}

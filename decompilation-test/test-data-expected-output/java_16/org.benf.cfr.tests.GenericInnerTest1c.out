@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.GenericInnerTest1;
+
+public class GenericInnerTest1c {
+    void test2(GenericInnerTest1.Inner x) {
+        Integer iv = (Integer)x.getOuterT();
+    }
+
+    void test() {
+        GenericInnerTest1 x = new GenericInnerTest1();
+        this.test2(x.test());
+    }
+}

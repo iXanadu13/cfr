@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+@AnnotatedPackage
+@AnnotationInvis(name="GoesHere")
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotatedPackage;
+import org.benf.cfr.tests.AnnotationInvis;
+

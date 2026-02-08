@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SealedInterface;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+public non-sealed class SealedInterface.B
+implements SealedInterface {
+    @Override
+    public void doIt() {
+    }
+}

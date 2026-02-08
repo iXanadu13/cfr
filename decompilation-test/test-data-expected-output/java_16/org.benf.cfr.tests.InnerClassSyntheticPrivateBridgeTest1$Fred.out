@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.UnaryFunction;
+
+class InnerClassSyntheticPrivateBridgeTest1.Fred
+implements UnaryFunction<Integer, Integer> {
+    private InnerClassSyntheticPrivateBridgeTest1.Fred() {
+    }
+
+    @Override
+    public Integer invoke(Integer arg) {
+        return arg * 3;
+    }
+}

@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest32 {
+    public int foo() {
+        return new Bob().get();
+    }
+
+    private class Bob {
+        private Bob() {
+        }
+
+        private int get() {
+            return 1;
+        }
+    }
+}

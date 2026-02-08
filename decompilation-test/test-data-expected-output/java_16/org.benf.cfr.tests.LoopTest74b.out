@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest74b {
+    public static void foo1() {
+        for (double i = 10.0; i < 15.0; i *= 1.5) {
+            i -= 2.0;
+        }
+    }
+}

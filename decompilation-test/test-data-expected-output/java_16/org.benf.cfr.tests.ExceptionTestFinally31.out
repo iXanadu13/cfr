@@ -1,0 +1,37 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally31 {
+    public int foo(int x) {
+        try {
+            System.out.println(1);
+        } catch (Exception exception) {
+            // empty catch block
+        }
+        try {
+            switch (x) {
+                case 1: {
+                    int n = 2;
+                    return n;
+                }
+                case 2: {
+                    int n = 3;
+                    return n;
+                }
+                case 3: {
+                    int n = 4;
+                    return n;
+                }
+                case 4: {
+                    int n = 5;
+                    return n;
+                }
+                default: 
+            }
+        } finally {
+            return 1;
+        }
+    }
+}

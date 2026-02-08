@@ -1,0 +1,39 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Iterator;
+import org.benf.cfr.tests.support.NotNull;
+
+abstract class InnerClassTest23_b.1MethodScopedIterable
+implements Iterable<String> {
+    private final boolean y;
+    final /* synthetic */ boolean val$b;
+
+    InnerClassTest23_b.1MethodScopedIterable() {
+        this.val$b = bl;
+        this.y = this.val$b;
+    }
+
+    @Override
+    @NotNull
+    public Iterator<String> iterator() {
+        return new Iterator<String>(){
+
+            @Override
+            public boolean hasNext() {
+                return y;
+            }
+
+            @Override
+            public String next() {
+                return null;
+            }
+
+            @Override
+            public void remove() {
+            }
+        };
+    }
+}

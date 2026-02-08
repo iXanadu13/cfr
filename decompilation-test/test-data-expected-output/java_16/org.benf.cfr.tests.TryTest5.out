@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TryTest5 {
+    public void functionWhichMightThrow() {
+    }
+
+    public boolean test() {
+        return false;
+    }
+
+    public void foo() {
+        while (true) {
+            block3: {
+                try {
+                    this.functionWhichMightThrow();
+                } catch (Exception e) {
+                    break block3;
+                }
+                if (this.test()) continue;
+            }
+            System.out.println("A");
+        }
+    }
+}

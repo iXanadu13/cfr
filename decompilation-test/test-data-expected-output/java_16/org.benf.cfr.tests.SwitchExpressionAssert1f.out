@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class SwitchExpressionAssert1f {
+    SwitchExpressionAssert1f() {
+    }
+
+    void test(Integer i) {
+        assert (switch (i + 1) {
+            default -> {
+                System.out.println("Uh oh");
+                if (i == 3) assert (false);
+                if (i < 10) {
+                    // empty if block
+                }
+                yield true;
+            }
+        });
+    }
+}

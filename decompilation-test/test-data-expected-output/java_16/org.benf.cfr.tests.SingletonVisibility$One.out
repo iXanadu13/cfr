@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class SingletonVisibility.One {
+    private static final Object INSTANCE = new SingletonVisibility.One();
+
+    private SingletonVisibility.One() {
+    }
+}

@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest39 {
+    public Object test1() {
+        Bob bob1 = new Bob();
+        return bob1;
+    }
+
+    public Object test2() {
+        Bob bob1 = new Bob();
+        return bob1;
+    }
+
+    protected class Bob {
+        protected Bob() {
+        }
+    }
+}

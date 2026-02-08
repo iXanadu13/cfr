@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.StaticTest6;
+
+class StaticTest6.Test2b
+extends StaticTest6.Test2 {
+    static int PINEAPPLE = 0;
+    final StaticTest6.Test2b b = this;
+
+    StaticTest6.Test2b() {
+    }
+}

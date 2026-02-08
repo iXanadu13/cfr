@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+/*
+ * Exception performing whole class analysis ignored.
+ */
+public class DolTest2$$dollah$$$$dollah$$dollah$$ {
+
+    /*
+     * Exception performing whole class analysis ignored.
+     */
+    public static class $$$bill$$$yo$$$ {
+        int x = 1;
+    }
+}

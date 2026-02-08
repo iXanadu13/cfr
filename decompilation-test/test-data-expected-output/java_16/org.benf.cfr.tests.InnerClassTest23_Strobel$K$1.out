@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest23_Strobel;
+
+class InnerClassTest23_Strobel.K.1 {
+    InnerClassTest23_Strobel.K.1() {
+    }
+
+    void j() {
+        InnerClassTest23_Strobel.K.f(16);
+        K.this.g(8);
+    }
+}

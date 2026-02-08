@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SuperTest8.Super {
+    public void foo() {
+        System.out.println("Foo");
+    }
+}

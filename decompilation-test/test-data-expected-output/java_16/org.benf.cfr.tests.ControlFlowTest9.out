@@ -1,0 +1,46 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.regex.Matcher;
+
+public class ControlFlowTest9 {
+    private Node next;
+    private Node atom;
+    private int cmax;
+
+    boolean match0(Matcher matcher, int i, int j, CharSequence seq) {
+        int k;
+        int backLimit = j++;
+        if (this.atom.match(matcher, i, seq) && (k = matcher.toString().length() - i) != 0) {
+            i = matcher.toString().length();
+            while (j < this.cmax && this.atom.match(matcher, i, seq)) {
+                if (i + k != matcher.toString().length()) {
+                    if (!this.match0(matcher, matcher.toString().length(), j + 1, seq)) break;
+                    return true;
+                }
+                i += k;
+                ++j;
+            }
+            while (j >= backLimit) {
+                if (this.next.match(matcher, i, seq)) {
+                    return true;
+                }
+                i -= k;
+                --j;
+            }
+            return false;
+        }
+        return this.next.match(matcher, i, seq);
+    }
+
+    private static class Node {
+        private Node() {
+        }
+
+        boolean match(Matcher matcher, int i, CharSequence seq) {
+            return true;
+        }
+    }
+}

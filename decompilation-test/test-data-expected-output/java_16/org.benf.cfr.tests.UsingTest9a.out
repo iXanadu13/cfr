@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.Base64;
+
+public class UsingTest9a {
+    static void test(InputStream in, PrintWriter out) throws IOException {
+        Base64.Decoder decoder = Base64.getDecoder();
+        try (InputStream is = decoder.wrap(in);
+             InputStreamReader isr = new InputStreamReader(is);
+             BufferedReader br = new BufferedReader(isr);){
+            String line;
+            while ((line = br.readLine()) != null) {
+                out.println(line);
+            }
+        }
+    }
+}

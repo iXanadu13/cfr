@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest1b {
+    private int x;
+
+    public int test1() throws Throwable {
+        SyncTest1b syncTest1b = this;
+        synchronized (syncTest1b) {
+            return this.x;
+        }
+    }
+}

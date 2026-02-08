@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest33 {
+    public void test1(Horrid<Integer> h) {
+        h.foo((Number)1);
+        h.foo((Integer)1);
+    }
+
+    public void test(Horrid<String> h) {
+        h.foo((Number)1);
+        h.foo((Number)1);
+    }
+
+    public static class Horrid<T> {
+        boolean foo(int i) {
+            return false;
+        }
+
+        boolean foo(T t) {
+            return false;
+        }
+
+        boolean foo(Number i) {
+            return true;
+        }
+    }
+}

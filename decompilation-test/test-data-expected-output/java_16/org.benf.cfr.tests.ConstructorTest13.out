@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstructorTest13 {
+    protected ConstructorTest13(String s) {
+    }
+
+    private ConstructorTest13(int x) {
+        this("" + x);
+        String s;
+        if (x < 12) {
+            s = "HELLO";
+        } else {
+            System.out.println("here");
+            s = null;
+        }
+        System.out.println(s);
+    }
+}

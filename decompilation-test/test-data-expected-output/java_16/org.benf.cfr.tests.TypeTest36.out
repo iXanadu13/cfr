@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest36 {
+    public static Object createServer() throws Exception {
+        Object newInstance = null;
+        newInstance = Class.forName("com.sun.jdmk.comm.HtmlAdapterServer").newInstance();
+        return newInstance;
+    }
+}

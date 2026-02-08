@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class SafeVarArgsTest {
+    @SafeVarargs
+    public final void test(List<String> ... lists) {
+    }
+
+    void foo() {
+        this.test(new ArrayList(), new LinkedList());
+    }
+}

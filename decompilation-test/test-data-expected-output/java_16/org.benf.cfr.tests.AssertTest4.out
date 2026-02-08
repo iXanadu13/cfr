@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Map;
+import org.benf.cfr.tests.AssertTest2;
+import org.benf.cfr.tests.support.MapFactory;
+
+public class AssertTest4
+extends AssertTest2 {
+    static final Map<String, String> map = MapFactory.newMap();
+    static final Map<String, String> map2 = MapFactory.newMap();
+
+    @Override
+    public void test1(String s) {
+        assert (!s.equals("Fred"));
+        System.out.println(s);
+    }
+}

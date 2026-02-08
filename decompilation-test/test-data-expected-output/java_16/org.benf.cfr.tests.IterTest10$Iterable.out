@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.IterTest10;
+
+public class IterTest10.Iterable<T> {
+    public IterTest10.Iterator<T> iterator() {
+        return null;
+    }
+}

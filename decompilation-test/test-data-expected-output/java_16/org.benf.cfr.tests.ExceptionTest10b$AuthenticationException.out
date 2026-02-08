@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ExceptionTest10b.AuthenticationException
+extends Exception {
+    private ExceptionTest10b.AuthenticationException() {
+    }
+}

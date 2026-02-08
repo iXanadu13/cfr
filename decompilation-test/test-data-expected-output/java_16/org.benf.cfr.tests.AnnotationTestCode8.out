@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnnotationTestCode8 {
+    public void foo() {
+        try {
+            System.out.println("STUFF");
+        } catch (Exception e) {
+            System.out.println("STUFF");
+        }
+        try {
+            System.out.println("STUFF");
+        } catch (Exception e) {
+            System.out.println("STUFF");
+        }
+    }
+}

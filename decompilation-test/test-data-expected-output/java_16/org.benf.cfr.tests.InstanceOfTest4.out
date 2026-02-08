@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class InstanceOfTest4 {
+    protected final void getOverloadMethodSet(Object[] args) {
+        Integer overloadMethodSet = this.hashCode();
+        if (overloadMethodSet == null) {
+            return;
+        }
+        Object objectType = args[0];
+        if (objectType instanceof String) {
+            System.out.println("Here");
+        }
+        System.out.println("test");
+    }
+}

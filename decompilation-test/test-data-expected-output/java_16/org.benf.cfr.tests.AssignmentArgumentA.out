@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class AssignmentArgumentA {
+    private AssignmentArgumentA(int x) {
+    }
+
+    static void testConstructor(int a) {
+        int b = a;
+        AssignmentArgumentA assignmentArgumentA = new AssignmentArgumentA(b);
+        System.out.println(a == b);
+    }
+}

@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CastTest23 {
+    private static final byte FOO = -2;
+    private static final byte BAR = -2;
+}

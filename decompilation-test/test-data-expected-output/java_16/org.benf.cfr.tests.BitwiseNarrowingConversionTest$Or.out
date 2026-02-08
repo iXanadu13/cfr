@@ -1,0 +1,57 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class BitwiseNarrowingConversionTest.Or {
+    BitwiseNarrowingConversionTest.Or() {
+    }
+
+    int byteOr0() {
+        byte b = 0;
+        b = (byte)(b | 0);
+        return b;
+    }
+
+    int shortOr0() {
+        short b = 0;
+        b = (short)(b | 0);
+        return b;
+    }
+
+    int charOr0() {
+        char b = '\u0000';
+        b = (char)(b | 0);
+        return b;
+    }
+
+    long intOr0() {
+        long b = 0L;
+        b = (int)(b | 0L);
+        return b;
+    }
+
+    int byteOr1() {
+        byte b = 0;
+        b = (byte)(b | 1);
+        return b;
+    }
+
+    int shortOr1() {
+        short b = 0;
+        b = (short)(b | 1);
+        return b;
+    }
+
+    int charOr1() {
+        char b = '\u0000';
+        b = (char)(b | 1);
+        return b;
+    }
+
+    long intOr1() {
+        long b = 0L;
+        b = (int)(b | 1L);
+        return b;
+    }
+}

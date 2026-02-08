@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArgTest8 {
+    public void test(int a, double[] b) {
+        if (b.length == 3) {
+            System.out.print(1);
+            a = 12;
+        }
+        if (b == null) {
+            a = 3;
+        }
+        System.out.println("A : " + a);
+    }
+}

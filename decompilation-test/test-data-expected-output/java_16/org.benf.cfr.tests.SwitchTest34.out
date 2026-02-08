@@ -1,0 +1,40 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest34 {
+    public static void foo(int x) {
+        int n;
+        if ((switch (x) {
+            case 2 -> ++x;
+            default -> x;
+        }) > 2) {
+            switch (x) {
+                case 3: {
+                    n = ++x;
+                    break;
+                }
+                default: {
+                    n = x;
+                    break;
+                }
+            }
+        } else {
+            switch (x) {
+                case 3: {
+                    n = x + 10;
+                    break;
+                }
+                default: {
+                    n = x += 10;
+                }
+            }
+        }
+        System.out.println("" + n);
+    }
+
+    public static void main(String ... args) {
+        SwitchTest34.foo(1);
+    }
+}

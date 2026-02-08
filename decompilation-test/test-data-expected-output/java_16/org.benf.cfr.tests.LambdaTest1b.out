@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class LambdaTest1b {
+    private int y;
+
+    static Integer invoker(int arg, UnaryFunction<Integer, Integer> fn) {
+        return fn.invoke(arg);
+    }
+
+    public int test() {
+        return LambdaTest1b.invoker(3, x -> x + this.y);
+    }
+}

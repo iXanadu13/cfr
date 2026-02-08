@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+interface AnonymousInnerClassTest9.Inner1 {
+    public Integer invoke(Integer var1);
+}

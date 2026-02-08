@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest14 {
+    public void test(int j) {
+        ++j;
+        int i = j++;
+        System.out.println(i += j);
+    }
+}

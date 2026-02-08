@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignExprTest {
+    public static int assign2(int a, int b, int c) {
+        int n = a;
+        a += 2;
+        a = n + a;
+        return a;
+    }
+}

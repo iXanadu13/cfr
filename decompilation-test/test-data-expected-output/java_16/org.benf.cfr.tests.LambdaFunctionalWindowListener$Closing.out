@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.awt.event.WindowEvent;
+import org.benf.cfr.tests.LambdaFunctionalWindowListener;
+
+@FunctionalInterface
+public interface LambdaFunctionalWindowListener.Closing
+extends LambdaFunctionalWindowListener {
+    @Override
+    public void windowClosing(WindowEvent var1);
+}

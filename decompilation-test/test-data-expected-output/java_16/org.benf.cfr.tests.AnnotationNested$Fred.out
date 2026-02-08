@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnnotationNested.Fred {
+
+    public class Jim {
+
+        public class Alan {
+        }
+    }
+}

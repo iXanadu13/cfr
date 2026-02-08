@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTest3 {
+    String x() {
+        return null;
+    }
+
+    void test1(String[] path) {
+        String s = this.x();
+        try {
+            String b = this.x();
+            try {
+                System.out.println("S1" + s.length());
+            } catch (NullPointerException e) {
+                System.out.println("NPE1 " + b.length());
+            }
+        } catch (NullPointerException e) {
+            System.out.println("NPE2");
+        }
+    }
+}

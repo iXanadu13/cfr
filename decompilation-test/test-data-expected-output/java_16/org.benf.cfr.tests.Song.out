@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+
+class Song
+extends ClassLoader {
+    ArrayList<Class<?>> list = new ArrayList();
+
+    Song() {
+    }
+
+    void test(String s, byte[] b) {
+        Class<?> c;
+        if (this.getPackage(s) == null) {
+            String s2 = s + ".";
+            System.out.println(s2);
+        }
+        try {
+            c = this.defineClass(s, b, 0, b.length);
+        } catch (ClassFormatError e) {
+            return;
+        }
+        this.list.add(c);
+    }
+}

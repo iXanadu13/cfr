@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class BadDescLegal2.Base {
+    private BadDescLegal2.Base() {
+    }
+
+    public int fob() {
+        return 1;
+    }
+}

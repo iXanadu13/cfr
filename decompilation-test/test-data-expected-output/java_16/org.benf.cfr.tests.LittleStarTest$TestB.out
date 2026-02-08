@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.LittleStarTest;
+
+public class LittleStarTest.TestB
+extends LittleStarTest.TestA {
+    public LittleStarTest.TestB() {
+        super(LittleStarTest.this);
+    }
+
+    @Override
+    public void foo() {
+        System.out.println("bar");
+    }
+
+    public class TestC {
+        public void bar() {
+            LittleStarTest.TestB.super.foo();
+            TestB.this.foo();
+            LittleStarTest.TestB.super.bar();
+            TestB.this.bar();
+        }
+    }
+}

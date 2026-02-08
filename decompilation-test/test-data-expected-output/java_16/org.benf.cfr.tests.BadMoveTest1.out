@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class BadMoveTest1 {
+    private static void extendCatchBlock(Thing catchStart, List<Object> in) {
+        Object next;
+        int idx = in.indexOf(catchStart);
+        if ((next = in.get(++idx)) != catchStart.getTargets().get(0)) {
+            return;
+        }
+        int tot = in.size();
+        while (idx < tot && in.get(idx).hashCode() == 12) {
+            ++idx;
+        }
+    }
+
+    private static class Thing {
+        private Thing() {
+        }
+
+        public List<Object> getTargets() {
+            return null;
+        }
+    }
+}

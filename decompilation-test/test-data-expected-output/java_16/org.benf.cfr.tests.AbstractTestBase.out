@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class AbstractTestBase {
+    public void test1() {
+        System.out.println("TEST1");
+    }
+
+    public abstract void test2();
+}

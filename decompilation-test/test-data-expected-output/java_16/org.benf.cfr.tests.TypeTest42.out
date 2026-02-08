@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Set;
+import org.benf.cfr.tests.support.SetFactory;
+
+public class TypeTest42 {
+    public void test2(Set<String> strings) {
+    }
+
+    public void test() {
+        this.test2(SetFactory.newSet());
+    }
+}

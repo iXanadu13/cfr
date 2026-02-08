@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest54.1Mess {
+    String a = "hello world";
+
+    InnerClassTest54.1Mess() {
+    }
+}

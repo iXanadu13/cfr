@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Set;
+
+public class InnerClassTest4.InnerBase {
+    private final Set s;
+
+    public InnerClassTest4.InnerBase(Set s) {
+        this.s = s;
+    }
+}

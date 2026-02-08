@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Pair;
+
+public class InnerClassTest41 {
+    public Object test1(InnerClassTest41 other) {
+        Bob bob1 = new Bob();
+        Bob bob2 = other.new Bob();
+        return new Pair<Bob, Bob>(bob1, bob2);
+    }
+
+    protected class Bob {
+        protected Bob() {
+        }
+    }
+}

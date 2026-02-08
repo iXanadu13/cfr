@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CastTest19 {
+    public int foo(char c, int a, int b) {
+        int x = a + b + c;
+        return x;
+    }
+}

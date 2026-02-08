@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.LoadOrder2;
+
+public class LoadOrder1 {
+    static String doSomething() {
+        System.out.println("Hello");
+        return "Hello";
+    }
+
+    public static void main(String ... args) {
+        LoadOrder2.CONSTANT.doSomething();
+    }
+}

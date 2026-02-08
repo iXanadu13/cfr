@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Collection;
+import java.util.Map;
+
+public class TypeTest39d {
+    Map<String, Wildcard<Integer>> m1;
+    Map<Object, BoundWildcard> m2;
+
+    private <T> void reset(Collection<? extends Wildcard<T>> coll) {
+    }
+
+    public void reset() {
+        this.reset(this.m1.values());
+        this.reset(this.m2.values());
+    }
+
+    private class BoundWildcard
+    implements Wildcard<Integer> {
+        private BoundWildcard() {
+        }
+    }
+
+    private static interface Wildcard<X> {
+    }
+}

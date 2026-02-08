@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestFred2;
+
+class VarTypeTest5.1
+extends VarTypeTestFred2 {
+    VarTypeTest5.1() {
+    }
+}

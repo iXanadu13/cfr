@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BridgeTest1b;
+
+public class BridgeTest1b.B
+extends BridgeTest1b.A<String> {
+    @Override
+    public Object getT(String s) {
+        return null;
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class BoxingTest11b {
+    private void t(int v, List<Integer> is) {
+        System.out.println("here");
+        Iterator<Integer> i$ = is.iterator();
+        while (i$.hasNext()) {
+            Integer i = i$.next();
+            if (i == v) {
+                throw new IllegalStateException();
+            }
+            System.out.println("A");
+        }
+        return;
+    }
+}

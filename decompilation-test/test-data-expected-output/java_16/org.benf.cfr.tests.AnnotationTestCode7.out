@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.AnnotationCode;
+import org.benf.cfr.tests.AnnotationNested;
+import org.benf.cfr.tests.support.ListFactory;
+
+public class AnnotationTestCode7 {
+    public void test(AnnotationNested n) {
+        @AnnotationCode(name="a") List<@AnnotationCode(name="b") Object @AnnotationCode(name="c") [] @AnnotationCode(name="d") [] @AnnotationCode(name="e") []> var = ListFactory.newList();
+        this.test(var);
+    }
+
+    public void test(List<Object[][][]> foo) {
+    }
+}

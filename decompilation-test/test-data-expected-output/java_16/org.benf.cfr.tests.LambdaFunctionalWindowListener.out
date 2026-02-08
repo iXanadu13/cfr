@@ -1,0 +1,45 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+public interface LambdaFunctionalWindowListener
+extends WindowListener {
+    @Override
+    default public void windowClosing(WindowEvent event) {
+    }
+
+    @Override
+    default public void windowActivated(WindowEvent event) {
+    }
+
+    @Override
+    default public void windowClosed(WindowEvent event) {
+    }
+
+    @Override
+    default public void windowDeactivated(WindowEvent event) {
+    }
+
+    @Override
+    default public void windowIconified(WindowEvent event) {
+    }
+
+    @Override
+    default public void windowDeiconified(WindowEvent event) {
+    }
+
+    @Override
+    default public void windowOpened(WindowEvent event) {
+    }
+
+    @FunctionalInterface
+    public static interface Closing
+    extends LambdaFunctionalWindowListener {
+        @Override
+        public void windowClosing(WindowEvent var1);
+    }
+}

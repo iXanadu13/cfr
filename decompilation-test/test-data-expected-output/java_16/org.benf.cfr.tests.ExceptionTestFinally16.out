@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally16 {
+    public void test1() {
+        try {
+            try {
+                System.out.print(3);
+                throw new NoSuchFieldException();
+            } catch (NoSuchFieldException e) {
+                System.out.println("Damn");
+                System.out.print("Finally!");
+            }
+        } catch (Throwable throwable) {
+            System.out.print("Finally!");
+            throw throwable;
+        }
+        System.out.print(5);
+    }
+}

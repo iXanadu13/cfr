@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnonymousInnerClassTest8 {
+    Integer invoker(int arg, Inner1 fn) {
+        return fn.invoke(arg);
+    }
+
+    public int doit(final Integer x, Integer y) {
+        return this.invoker(x, new Inner1(){
+
+            @Override
+            public Integer invoke(Integer arg) {
+                return arg * 3 + x + this.a;
+            }
+        });
+    }
+
+    private static abstract class Inner1 {
+        protected int a = 3;
+
+        protected Inner1() {
+        }
+
+        public abstract Integer invoke(Integer var1);
+    }
+}

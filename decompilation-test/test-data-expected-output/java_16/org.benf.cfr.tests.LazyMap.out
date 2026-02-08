@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Map;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public abstract class LazyMap<A, B>
+implements Map<A, B> {
+    private final Map<A, B> inner;
+    private final UnaryFunction<A, B> factory;
+
+    public LazyMap(Map<A, B> inner, UnaryFunction<A, B> factory) {
+        this.inner = inner;
+        this.factory = factory;
+    }
+
+    @Override
+    public B get(Object o) {
+        B res = this.inner.get(o);
+        if (res == null) {
+            Object x = o;
+            res = this.factory.invoke(x);
+            this.inner.put(x, res);
+        }
+        return res;
+    }
+}

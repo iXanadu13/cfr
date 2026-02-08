@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestBob;
+
+public class VarTypeTestFred
+extends VarTypeTestBob {
+    public int foo;
+
+    @Override
+    public String twoString() {
+        return "VarTypeTestFred{}";
+    }
+}

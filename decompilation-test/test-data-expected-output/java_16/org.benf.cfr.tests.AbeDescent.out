@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.IntMarker;
+import org.benf.cfr.tests.Marker;
+
+class AbeDescent {
+    AbeDescent() {
+    }
+
+    @Marker(value=true)
+    public static void boolMark(String[] args) {
+    }
+
+    @IntMarker(value=1)
+    public static void intMark(String[] args) {
+    }
+}

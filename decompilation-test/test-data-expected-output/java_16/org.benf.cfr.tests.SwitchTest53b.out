@@ -1,0 +1,42 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest53b {
+    static void foo(int n) {
+        try {
+            AutoCloseable x;
+            switch (n) {
+                case 3: {
+                    AutoCloseable autoCloseable = () -> System.out.println("FOO");
+                    break;
+                }
+                case 4: {
+                    AutoCloseable autoCloseable = () -> System.out.println("what");
+                    break;
+                }
+                case 5: {
+                    AutoCloseable autoCloseable = () -> System.out.println("grrrr");
+                    break;
+                }
+                default: {
+                    AutoCloseable autoCloseable = x = () -> System.out.println("lolwut");
+                }
+            }
+            if (x != null) {
+                x.close();
+            }
+        } catch (Throwable throwable) {
+            // empty catch block
+        }
+    }
+
+    public static void main(String[] args) {
+        SwitchTest53b.foo(1);
+        SwitchTest53b.foo(2);
+        SwitchTest53b.foo(3);
+        SwitchTest53b.foo(4);
+        SwitchTest53b.foo(5);
+    }
+}

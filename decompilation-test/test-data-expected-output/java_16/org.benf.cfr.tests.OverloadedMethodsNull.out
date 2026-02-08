@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class OverloadedMethodsNull {
+    OverloadedMethodsNull() {
+    }
+
+    void use(Object o) {
+    }
+
+    void use(Number n) {
+    }
+
+    void use(Integer n) {
+    }
+
+    void test() {
+        Object o = null;
+        this.use((Integer)o);
+    }
+}

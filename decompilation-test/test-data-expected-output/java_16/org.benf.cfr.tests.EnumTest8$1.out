@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest8;
+
+final class EnumTest8.1
+extends EnumTest8 {
+    private EnumTest8.1(String s) {
+    }
+
+    @Override
+    public void f() {
+        System.out.println(x);
+    }
+}

@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest3a {
+    int x;
+    int y;
+    int z;
+
+    void test3(int a) {
+        this.x = ++a;
+        this.z = a;
+    }
+
+    void test3b(int a) {
+        this.x = a++;
+        this.z = a;
+    }
+}

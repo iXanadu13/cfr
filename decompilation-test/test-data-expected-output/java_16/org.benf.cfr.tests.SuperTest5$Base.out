@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SuperTest5.Base {
+    public SuperTest5.Base(int x) {
+    }
+
+    private int x() {
+        return 3;
+    }
+}

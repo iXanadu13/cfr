@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.TypeTest20;
+
+public abstract class TypeTest20.Impl2
+implements TypeTest20<String, Double> {
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class MemberInitOrderTest4 {
+    private final int a = 1;
+    private final int y = MemberInitOrderTest4.thing("Hello", 1);
+    private final int x = MemberInitOrderTest4.thing("Bye", 2);
+
+    private static int thing(String s, int y) {
+        System.out.println(s);
+        return y;
+    }
+}

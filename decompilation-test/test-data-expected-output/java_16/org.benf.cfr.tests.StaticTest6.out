@@ -1,0 +1,53 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class StaticTest6 {
+
+    static class Test2s {
+        Test2s() {
+        }
+
+        int test2a(Test2 a) {
+            Test2 test2 = a;
+            return test2.a.random();
+        }
+
+        int test2b(Test2 a) {
+            Test2 cfr_ignored_0 = a.a;
+            return Test2.PINEAPPLE;
+        }
+
+        int test2c(Test2b b) {
+            Test2b test2b = b;
+            return test2b.b.random();
+        }
+
+        int test2d(Test2b b) {
+            Test2b cfr_ignored_0 = b.b;
+            return Test2.random();
+        }
+    }
+
+    static class Test2b
+    extends Test2 {
+        static int PINEAPPLE = 0;
+        final Test2b b = this;
+
+        Test2b() {
+        }
+    }
+
+    static class Test2 {
+        final Test2 a = this;
+        static int PINEAPPLE = 123;
+
+        Test2() {
+        }
+
+        static int random() {
+            return 4;
+        }
+    }
+}

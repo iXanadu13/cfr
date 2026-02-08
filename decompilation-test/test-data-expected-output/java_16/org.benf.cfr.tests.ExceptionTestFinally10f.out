@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally10f {
+    void callWhichMightThrow() {
+    }
+
+    int test1(boolean a) {
+        block2: {
+            try {
+                this.callWhichMightThrow();
+            } catch (Exception e) {
+                if (a) break block2;
+                System.out.println("Foo");
+            }
+            System.out.println("ooooh");
+        }
+        System.out.println("BAR");
+        return 1;
+    }
+}

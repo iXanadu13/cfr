@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest5b {
+    int x;
+    int y;
+    int z;
+
+    void test3(int a, int b) {
+        int x = new int[1].length + new int[1][0].length;
+    }
+}

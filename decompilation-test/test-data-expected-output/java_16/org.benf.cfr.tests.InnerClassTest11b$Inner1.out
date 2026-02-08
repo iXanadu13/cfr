@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest11b.Inner1 {
+    public InnerClassTest11b.Inner1(int x) {
+        InnerClassTest11b.this.a += x;
+        InnerClassTest11b.this.a *= x;
+        InnerClassTest11b.this.a /= x;
+        InnerClassTest11b.this.a -= x;
+        InnerClassTest11b.this.a %= x;
+        InnerClassTest11b.this.a ^= x;
+        InnerClassTest11b.this.a %= 3;
+        InnerClassTest11b.this.a /= 3;
+    }
+}

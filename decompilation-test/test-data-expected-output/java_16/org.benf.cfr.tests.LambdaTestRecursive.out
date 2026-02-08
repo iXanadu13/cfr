@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Collection;
+
+public interface LambdaTestRecursive {
+    public Integer summation(Collection<Integer> var1);
+
+    public static class Foo
+    implements LambdaTestRecursive {
+        @Override
+        public Integer summation(Collection<Integer> i) {
+            return ((LambdaTestRecursive)x -> this.summation(i)).summation(i);
+        }
+    }
+}

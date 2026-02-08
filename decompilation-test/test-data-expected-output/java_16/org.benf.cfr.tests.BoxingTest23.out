@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest23 {
+    private void t(boolean b) {
+        int i = 4;
+        Integer I = 3;
+        Integer n = i;
+    }
+}

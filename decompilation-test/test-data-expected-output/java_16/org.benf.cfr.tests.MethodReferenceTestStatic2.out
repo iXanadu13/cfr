@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MethodReferenceTestStatic1;
+
+public class MethodReferenceTestStatic2
+extends MethodReferenceTestStatic1 {
+    public static void main(String[] args) {
+        new MethodReferenceTestStatic2().start();
+    }
+
+    @Override
+    public void start() {
+        this.invokeInterface(MethodReferenceTestStatic1::printMyShit);
+    }
+
+    private void invokeInterface(ItfPrint t) {
+        t.print("hello", "world");
+    }
+
+    public static interface ItfPrint {
+        public void print(String var1, String var2);
+    }
+}

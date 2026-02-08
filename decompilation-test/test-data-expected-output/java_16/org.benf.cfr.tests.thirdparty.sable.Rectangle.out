@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty.sable;
+
+import org.benf.cfr.tests.thirdparty.sable.Drawable;
+
+public class Rectangle
+implements Drawable {
+    public short height;
+    public short width;
+
+    public Rectangle(short h, short w) {
+        this.height = h;
+        this.width = w;
+    }
+
+    public boolean isFat() {
+        return this.width > this.height;
+    }
+
+    @Override
+    public void draw() {
+    }
+}

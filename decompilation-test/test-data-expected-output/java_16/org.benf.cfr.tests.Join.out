@@ -1,0 +1,46 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class Join {
+    public static void main(String[] args) throws Throwable {
+        try {
+            Join.test(args);
+        } catch (Throwable t) {
+            System.out.println("three");
+        }
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    static void test(Object o) throws Throwable {
+        try {
+            try {
+                throw new Exception();
+            } catch (Throwable t2) {
+                System.out.println("one");
+                Object t2 = o;
+                synchronized (t2) {
+                }
+                try {
+                    throw new Exception();
+                } catch (Throwable t22) {
+                    System.out.println("two");
+                    throw t22;
+                }
+            }
+        } catch (Throwable throwable) {
+            Object object = o;
+            synchronized (object) {
+            }
+            try {
+                throw new Exception();
+            } catch (Throwable t) {
+                System.out.println("two");
+                throw t;
+            }
+        }
+    }
+}

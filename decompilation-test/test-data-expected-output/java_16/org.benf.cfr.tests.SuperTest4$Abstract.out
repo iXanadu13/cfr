@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperTest4;
+
+abstract class SuperTest4.Abstract<X>
+implements SuperTest4.Interface<X> {
+    private SuperTest4.Abstract() {
+    }
+
+    @Override
+    public X copy(X arg) {
+        return arg;
+    }
+}

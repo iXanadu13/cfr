@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BridgeTest1c {
+    public static void main(String ... args) {
+        B b = new B();
+        b.getT("hello");
+        B a1 = b;
+        ((A)a1).getT("hello");
+        B a2 = b;
+        ((A)a2).getT("hello");
+    }
+
+    public static class B
+    extends A<String> {
+        @Override
+        public Object getT(String s) {
+            return null;
+        }
+    }
+
+    public static class A<T> {
+        public Object getT(T t) {
+            return null;
+        }
+    }
+}

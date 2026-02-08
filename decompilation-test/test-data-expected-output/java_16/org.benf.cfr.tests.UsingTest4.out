@@ -1,0 +1,44 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.io.StringWriter;
+
+public class UsingTest4 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     * Loose catch block
+     */
+    public void testEnhancedTryEmpty() throws IOException {
+        block18: {
+            try {
+                StringWriter writer = new StringWriter();
+                writer.write("This is only a test 1.");
+                try (StringWriter writer20 = new StringWriter();){
+                    writer.write("This is only a test 2.");
+                }
+                writer.close();
+                break block18;
+                {
+                    catch (Throwable throwable) {
+                        writer.close();
+                        System.out.println("ARGH");
+                        break block18;
+                        catch (Throwable throwable2) {
+                            try {
+                                writer.close();
+                            } catch (Throwable throwable3) {
+                                throwable2.addSuppressed(throwable3);
+                            }
+                            throw throwable2;
+                        }
+                    }
+                }
+            } finally {
+                System.out.println("ARGH");
+            }
+        }
+    }
+}

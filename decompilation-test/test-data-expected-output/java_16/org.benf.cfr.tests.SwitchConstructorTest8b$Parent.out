@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class SwitchConstructorTest8b.Parent {
+    SwitchConstructorTest8b.Parent(int i) {
+    }
+}

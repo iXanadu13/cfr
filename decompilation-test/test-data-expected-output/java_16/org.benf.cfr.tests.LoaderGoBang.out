@@ -1,0 +1,70 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
+
+public class LoaderGoBang {
+    private final ClassLoader platformClassLoader;
+
+    public LoaderGoBang() {
+        ClassLoader cl = ClassLoader.getSystemClassLoader();
+        while (cl.getParent() != null) {
+            cl = cl.getParent();
+        }
+        this.platformClassLoader = cl;
+    }
+
+    public static void main(String ... args) {
+        try {
+            new LoaderGoBang().getContentByFromReflectedClass("javafx/scene/control/ContextMenu.class");
+        } catch (Exception e) {
+            System.out.println("Caught");
+        }
+    }
+
+    private byte[] getContentByFromReflectedClass(String inputPath) {
+        URL url = this.platformClassLoader.getResource(inputPath);
+        if (url == null) {
+            return null;
+        }
+        return this.getUrlContent(url);
+    }
+
+    private byte[] getUrlContent(URL url) {
+        InputStream is;
+        String protocol = url.getProtocol();
+        if (!protocol.equals("jrt")) {
+            return null;
+        }
+        int len = -1;
+        try {
+            URLConnection uc = url.openConnection();
+            uc.connect();
+            is = uc.getInputStream();
+            len = uc.getContentLength();
+        } catch (IOException ioe) {
+            return null;
+        }
+        try {
+            if (len >= 0) {
+                byte[] b = new byte[len];
+                int i = len;
+                while (i > 0) {
+                    if (i >= (i -= is.read(b, len - i, i))) continue;
+                    i = -1;
+                }
+                if (i == 0) {
+                    return b;
+                }
+            }
+        } catch (IOException iOException) {
+            // empty catch block
+        }
+        return null;
+    }
+}

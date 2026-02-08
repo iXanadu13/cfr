@@ -1,0 +1,96 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.FileVisitOption;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.stream.BaseStream;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Grep {
+    private static void printUsageAndExit(String ... str) {
+        System.out.println("Usage: " + Grep.class.getSimpleName() + " [OPTION]... PATTERN FILE...");
+        System.out.println("Search for PATTERN in each FILE. If FILE is a directory then whole file tree of the directory will be processed.");
+        System.out.println("Example: grep -m 100 'hello world' menu.h main.c");
+        System.out.println("Options:");
+        System.out.println("    -m NUM: stop analysis after NUM matches");
+        Arrays.asList(str).forEach(System.out::println);
+        System.exit(1);
+    }
+
+    public static void main(String[] args) throws IOException {
+        long maxCount = Long.MAX_VALUE;
+        if (args.length < 2) {
+            Grep.printUsageAndExit(new String[0]);
+        }
+        try {
+            int i = 0;
+            while (args[i].startsWith("-")) {
+                switch (args[i]) {
+                    case "-m": {
+                        maxCount = Long.parseLong(args[++i]);
+                        break;
+                    }
+                    default: {
+                        Grep.printUsageAndExit("Unexpected option " + args[i]);
+                    }
+                }
+                ++i;
+            }
+            Pattern pattern = Pattern.compile(args[i++]);
+            if (i == args.length) {
+                Grep.printUsageAndExit("There are no files for input");
+            }
+            List<Stream> files = Arrays.stream(args, i, args.length).map(x$0 -> Paths.get(x$0, new String[0])).flatMap(Grep::getPathStream).filter(x$0 -> Files.isRegularFile(x$0, new LinkOption[0])).map(Grep::path2Lines).collect(Collectors.toList());
+            files.stream().flatMap(file -> file).filter(pattern.asPredicate()).limit(maxCount).forEach(System.out::println);
+            files.forEach(BaseStream::close);
+        } catch (Exception ex) {
+            Grep.printUsageAndExit(ex.toString());
+        }
+    }
+
+    private static Stream<Path> getPathStream(Path path) {
+        Stream<Path> stream;
+        block8: {
+            Stream<Path> paths = Files.walk(path, new FileVisitOption[0]);
+            try {
+                stream = paths.collect(Collectors.toList()).stream();
+                if (paths == null) break block8;
+            } catch (Throwable throwable) {
+                try {
+                    if (paths != null) {
+                        try {
+                            paths.close();
+                        } catch (Throwable throwable2) {
+                            throwable.addSuppressed(throwable2);
+                        }
+                    }
+                    throw throwable;
+                } catch (IOException e) {
+                    throw new UncheckedIOException(e);
+                }
+            }
+            paths.close();
+        }
+        return stream;
+    }
+
+    private static Stream<String> path2Lines(Path path) {
+        try {
+            return Files.lines(path, StandardCharsets.ISO_8859_1);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    }
+}

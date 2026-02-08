@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Blah;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class BoxingTest37a {
+    public void test1() {
+        switch ((Integer)((Object)((UnaryFunction<Object, Object>)Blah::new))) {
+            case 0: {
+                System.out.println("A");
+                break;
+            }
+            default: {
+                System.out.println("C");
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnonymousInnerClassTest18 {
+    Object o;
+
+    AnonymousInnerClassTest18() {
+        this.o = new Object(){};
+    }
+
+    AnonymousInnerClassTest18(int x) {
+        this.o = new Object(){};
+    }
+
+    AnonymousInnerClassTest18(long x) {
+        this.o = new Object(){};
+    }
+}

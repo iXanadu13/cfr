@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class FieldTest237.Test1 {
+    final int eight = 8;
+
+    FieldTest237.Test1() {
+    }
+}

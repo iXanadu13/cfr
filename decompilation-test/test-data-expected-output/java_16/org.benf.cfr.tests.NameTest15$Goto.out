@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class NameTest15.Goto {
+    private NameTest15.Goto() {
+    }
+
+    void foo() {
+    }
+}

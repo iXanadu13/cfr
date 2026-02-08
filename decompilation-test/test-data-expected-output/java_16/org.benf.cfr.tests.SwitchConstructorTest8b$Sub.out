@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SwitchConstructorTest8b;
+
+class SwitchConstructorTest8b.Sub
+extends SwitchConstructorTest8b.Parent {
+    SwitchConstructorTest8b.Sub(Byte b) {
+        super(switch (b) {
+            default -> 1;
+        });
+    }
+}

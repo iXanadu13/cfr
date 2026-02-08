@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest50b;
+
+class InnerClassTest50b.1
+extends InnerClassTest50b.1Bug {
+    InnerClassTest50b.1() {
+        class Bug {
+            final /* synthetic */ InnerClassTest50b this$0;
+
+            Bug(InnerClassTest50b this$0) {
+                this.this$0 = this$0;
+            }
+
+            void foo() {
+                System.out.println("Bob");
+            }
+        }
+        super(InnerClassTest50b.this);
+    }
+
+    @Override
+    void foo() {
+        System.out.println("Bar");
+    }
+}

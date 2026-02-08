@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest15 {
+    private static final int[] MY_ARRAY = new int[]{1, 2, 3};
+}

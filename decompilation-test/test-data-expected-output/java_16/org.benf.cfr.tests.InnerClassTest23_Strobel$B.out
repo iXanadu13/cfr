@@ -1,0 +1,48 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Iterator;
+import org.benf.cfr.tests.support.NotNull;
+
+class InnerClassTest23_Strobel.B {
+    private boolean x;
+
+    private InnerClassTest23_Strobel.B() {
+    }
+
+    public Iterable<String> test(final boolean b) {
+        final class MethodScopedIterable
+        implements Iterable<String> {
+            private final boolean y;
+
+            MethodScopedIterable() {
+                this.y = b;
+            }
+
+            @Override
+            @NotNull
+            public Iterator<String> iterator() {
+                return new Iterator<String>(){
+
+                    @Override
+                    public boolean hasNext() {
+                        return B.this.x && y;
+                    }
+
+                    @Override
+                    public String next() {
+                        return null;
+                    }
+
+                    @Override
+                    public void remove() {
+                    }
+                };
+            }
+        }
+        System.out.println(new MethodScopedIterable());
+        return new MethodScopedIterable();
+    }
+}

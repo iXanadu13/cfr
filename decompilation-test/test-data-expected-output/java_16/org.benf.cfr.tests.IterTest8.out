@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IterTest8 {
+    void foo(VIT i) {
+        for (String s : i) {
+            System.out.println(s);
+        }
+    }
+
+    private static interface VIT
+    extends Iterable<String> {
+    }
+}

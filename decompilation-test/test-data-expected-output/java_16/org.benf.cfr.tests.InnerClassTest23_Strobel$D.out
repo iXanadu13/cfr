@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest23_Strobel.D {
+    final int k;
+
+    InnerClassTest23_Strobel.D(int k) {
+        this.k = k;
+    }
+
+    public static void test() {
+        final int n = 3;
+        int value = new InnerClassTest23_Strobel.D(2 + 3){
+
+            int get() {
+                return this.k + n;
+            }
+        }.get();
+        if (value != 8) {
+            throw new Error("value = " + value);
+        }
+    }
+}

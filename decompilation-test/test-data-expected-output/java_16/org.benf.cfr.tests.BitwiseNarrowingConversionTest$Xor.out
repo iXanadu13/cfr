@@ -1,0 +1,57 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class BitwiseNarrowingConversionTest.Xor {
+    BitwiseNarrowingConversionTest.Xor() {
+    }
+
+    int byteXor0() {
+        byte b = 0;
+        b = (byte)(b ^ 0);
+        return b;
+    }
+
+    int shortXor0() {
+        short b = 0;
+        b = (short)(b ^ 0);
+        return b;
+    }
+
+    int charXor0() {
+        char b = '\u0000';
+        b = (char)(b ^ 0);
+        return b;
+    }
+
+    long intXor0() {
+        long b = 0L;
+        b = (int)(b ^ 0L);
+        return b;
+    }
+
+    int byteXor1() {
+        byte b = 0;
+        b = (byte)(b ^ 1);
+        return b;
+    }
+
+    int shortXor1() {
+        short b = 0;
+        b = (short)(b ^ 1);
+        return b;
+    }
+
+    int charXor1() {
+        char b = '\u0000';
+        b = (char)(b ^ 1);
+        return b;
+    }
+
+    long intXor1() {
+        long b = 0L;
+        b = (int)(b ^ 1L);
+        return b;
+    }
+}

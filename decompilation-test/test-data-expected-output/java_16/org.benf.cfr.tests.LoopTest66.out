@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest66 {
+    void foo(int x) {
+        int y = 3;
+        do {
+            try {
+                System.out.println(x + y);
+                if (y % ++x == 3) continue;
+                System.out.println("There");
+            } catch (Exception exception) {
+                // empty catch block
+            }
+            System.out.println("Here");
+            break;
+        } while (x < 20);
+    }
+}

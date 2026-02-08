@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Function;
+
+class LambdaTest43 {
+    LambdaTest43() {
+    }
+
+    Object use(Function<String, ?> factory) {
+        return null;
+    }
+
+    Object use(Function<String, ?> factory, int x) {
+        return null;
+    }
+
+    Object consume(String s) {
+        return null;
+    }
+
+    void test() {
+        this.use(s -> this.consume((String)s));
+        this.use(s -> this.consume((String)s), 2);
+    }
+}

@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+public class Blah {
+    public Blah(Object o) {
+    }
+}

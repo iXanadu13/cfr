@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally1 {
+    void test1(String path) {
+        try {
+            int n = 3;
+        } catch (Throwable t) {
+            System.out.println("File Not found");
+        } finally {
+            System.out.println("Fred");
+        }
+    }
+}

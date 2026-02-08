@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class LambdaTest5a {
+    static <T, R> void map(UnaryFunction<T, R> function, List<T> source) {
+        ArrayList<R> destiny = new ArrayList<R>();
+        for (T item : source) {
+            R value = function.invoke(item);
+            destiny.add(value);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest12;
+
+final class EnumTest12.1
+extends EnumTest12 {
+    private EnumTest12.1(int code) {
+    }
+
+    public String toString() {
+        return "THREE";
+    }
+}

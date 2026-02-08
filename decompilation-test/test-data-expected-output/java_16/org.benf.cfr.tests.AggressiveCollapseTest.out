@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AggressiveCollapseTestCommon;
+
+public class AggressiveCollapseTest {
+    void test3a(AggressiveCollapseTestCommon a) {
+        a.a[0] = a.a[0] | 0xFF;
+    }
+
+    void test3b(AggressiveCollapseTestCommon a) {
+        a.a[0] = a.a[0] | 0xFF;
+    }
+
+    void test3c(AggressiveCollapseTestCommon a) {
+        int[] nArray = a.a();
+        nArray[0] = nArray[0] | 0xFF;
+    }
+
+    void test3d(AggressiveCollapseTestCommon a) {
+        a.a()[0] = a.a()[0] | 0xFF;
+    }
+}

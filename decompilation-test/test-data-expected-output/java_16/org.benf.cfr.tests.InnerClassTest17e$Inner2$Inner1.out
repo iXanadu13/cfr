@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest17e;
+
+public class InnerClassTest17e.Inner2.Inner1<E> {
+    public int getX(int y) {
+        InnerClassTest17e cfr_ignored_0 = Inner2.this.this$0;
+        return 2 + y + InnerClassTest17e.getX(y, 1, y);
+    }
+}

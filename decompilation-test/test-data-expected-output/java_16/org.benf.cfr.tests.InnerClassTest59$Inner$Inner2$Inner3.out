@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest59.Inner.Inner2.Inner3 {
+    private InnerClassTest59.Inner.Inner2.Inner3() {
+    }
+
+    private static class Inner4 {
+        private Inner4() {
+        }
+    }
+}

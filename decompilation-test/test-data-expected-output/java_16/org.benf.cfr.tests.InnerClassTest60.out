@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest60 {
+    public static Foo runner(final Bip runner) {
+        return new Foo(){
+
+            @Override
+            public Bip getBip() {
+                return runner;
+            }
+        };
+    }
+
+    private static interface Bip {
+    }
+
+    private static class Foo {
+        private Foo() {
+        }
+
+        Bip getBip() {
+            return null;
+        }
+    }
+}

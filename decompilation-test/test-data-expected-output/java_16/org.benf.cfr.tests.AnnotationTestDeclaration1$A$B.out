@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationTestDeclaration1;
+
+class AnnotationTestDeclaration1.A.B {
+    AnnotationTestDeclaration1.A.B() {
+    }
+
+    class C {
+        C() {
+        }
+
+        void test(@AnnotationTestDeclaration1.Parameter C c, C c2) {
+        }
+    }
+}

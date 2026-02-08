@@ -1,0 +1,53 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstantFolding3 {
+    static final double a = 1.01;
+    static final double b = 2.02;
+    static final double c = 3.03;
+
+    public double test1() {
+        return 21.21;
+    }
+
+    public strictfp double test1b() {
+        return 21.21;
+    }
+
+    public double test2() {
+        return Double.POSITIVE_INFINITY;
+    }
+
+    public double test3() {
+        return 16.435454545454544;
+    }
+
+    public strictfp double test3b() {
+        return 16.435454545454544;
+    }
+
+    public strictfp double test3c() {
+        double a = 1.01;
+        double b = 2.02;
+        double c = 3.03;
+        return a + b + c;
+    }
+
+    public double test3dd() {
+        return this.test3d(1.01, 2.02, 3.03);
+    }
+
+    public double test3d(double a, double b, double c) {
+        return a + b + c;
+    }
+
+    public double test3e() {
+        return 6.0600000000000005;
+    }
+
+    public static void main(String ... args) {
+        System.out.println(new ConstantFolding3().test2());
+    }
+}

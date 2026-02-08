@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest23_Strobel.G.A {
+    private int z;
+
+    public InnerClassTest23_Strobel.G.A(int z) {
+        this.z = z + 1 + G.this.y;
+        G.this.y += this.z * (x += this.z * G.this.y);
+    }
+}

@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest1;
+
+public class SwitchTest2 {
+    public int test0(EnumTest1 e) {
+        switch (e) {
+            case FOO: {
+                return 1;
+            }
+            case BAP: {
+                return 2;
+            }
+        }
+        return 0;
+    }
+}

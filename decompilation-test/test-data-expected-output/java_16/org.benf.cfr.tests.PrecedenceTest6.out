@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class PrecedenceTest6 {
+    public int test1(Object[] fred, int x) {
+        return ((String)fred[x]).length();
+    }
+}

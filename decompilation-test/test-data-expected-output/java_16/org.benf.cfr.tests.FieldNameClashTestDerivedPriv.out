@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldNameClashTestPriv;
+
+public class FieldNameClashTestDerivedPriv
+extends FieldNameClashTestPriv {
+    public static void main(String[] a) {
+        FieldNameClashTestPriv.greet();
+    }
+}

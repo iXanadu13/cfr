@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class StaticImportTest.org.benf.cfr.tests {
+    StaticImportTest.org.benf.cfr.tests() {
+    }
+
+    static class StaticImport {
+        StaticImport() {
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationInvis;
+import org.benf.cfr.tests.AnnotationVisible;
+
+@AnnotationVisible
+@AnnotationInvis
+public class AnnotationTestRuntimeVisibleAndInvisible {
+    @AnnotationVisible
+    @AnnotationInvis
+    int x;
+
+    @AnnotationVisible
+    @AnnotationInvis
+    public void foo() {
+        @AnnotationVisible @AnnotationInvis String a = "Hello";
+        System.out.println(a);
+    }
+}

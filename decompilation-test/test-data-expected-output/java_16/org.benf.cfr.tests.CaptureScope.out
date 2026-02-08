@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class CaptureScope {
+    public void foo(List<String> args) {
+        class Foo {
+            Foo() {
+            }
+        }
+        HashMap<String, Foo> map = new HashMap<String, Foo>();
+        for (String arg : args) {
+            map.put(arg, new Foo());
+        }
+    }
+}

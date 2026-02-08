@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class VarArgsTest1e2 {
+    public void x(int a, Integer b) {
+    }
+
+    public void x(int a, Integer ... bs) {
+    }
+
+    public void x(int a, int b1) {
+    }
+
+    public void t() {
+        Integer a = 2;
+        this.x(3, new Integer[]{a});
+    }
+}

@@ -1,0 +1,35 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BreakTest1 {
+    boolean testA(int a, int b) {
+        return a < b;
+    }
+
+    boolean testB(int a, int b) {
+        return a < b;
+    }
+
+    boolean testC(int a, int b) {
+        return a < b;
+    }
+
+    public int doIt(int a, int b) {
+        boolean x = true;
+        block0: do {
+            System.out.println("A");
+            do {
+                System.out.println("B");
+                System.out.println("C");
+                if (this.testA(a, b)) break block0;
+                if (this.testB(a, b)) continue;
+                if (this.testC(a, b)) break;
+                return 3;
+            } while (x);
+            System.out.println("Leaving b");
+        } while (x);
+        return 1;
+    }
+}

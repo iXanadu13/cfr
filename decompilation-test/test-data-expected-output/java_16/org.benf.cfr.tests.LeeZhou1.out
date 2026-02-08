@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class LeeZhou1 {
+    public abstract boolean test();
+
+    public void foo() {
+        int i = this.test() ? 999 : -1;
+        C1 x = new C1(i);
+    }
+
+    private static class C1 {
+        private final int x;
+
+        private C1(int x) {
+            this.x = x;
+        }
+    }
+}

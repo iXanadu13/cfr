@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import org.benf.cfr.tests.LambdaUtilities;
+
+public interface LambdaUtilities5 {
+    @SafeVarargs
+    public static <INPUT> Predicate<INPUT> nonNull(Function<INPUT, ?> ... functions) {
+        return Arrays.stream(functions).map(f -> i -> Objects.nonNull(f.apply(i))).reduce(Predicate::and).orElse(LambdaUtilities.falsePredicate());
+    }
+}

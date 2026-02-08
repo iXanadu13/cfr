@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ArrayTest10.CA {
+    private ArrayTest10.CA() {
+    }
+}

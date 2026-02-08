@@ -1,0 +1,34 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class MalformedBlockTest1e {
+    MalformedBlockTest1e() {
+    }
+
+    static int getInt() {
+        return 323231456;
+    }
+
+    static boolean getBoolean() {
+        return false;
+    }
+
+    static void uses(short s) {
+    }
+
+    static void usei(int i) {
+    }
+
+    static void useb(boolean b) {
+    }
+
+    void testBoolean(int j) {
+        int i = MalformedBlockTest1e.getBoolean();
+        MalformedBlockTest1e.useb(i != 0);
+        i = MalformedBlockTest1e.getInt();
+        MalformedBlockTest1e.usei(i);
+        MalformedBlockTest1e.uses((short)i);
+    }
+}

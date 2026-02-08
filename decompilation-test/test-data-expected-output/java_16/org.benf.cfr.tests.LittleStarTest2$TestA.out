@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LittleStarTest2.TestA {
+    public void foo(int x) {
+        System.out.println("foo");
+    }
+
+    public void bar(int x) {
+        System.out.println("foo");
+    }
+}

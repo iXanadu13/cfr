@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class LambdaTest2b {
+    public Integer test(List<Integer> stuff, int y, boolean b) {
+        return stuff.stream().filter(b ? x -> x > y : x -> x < 3).findFirst().orElse(null);
+    }
+}

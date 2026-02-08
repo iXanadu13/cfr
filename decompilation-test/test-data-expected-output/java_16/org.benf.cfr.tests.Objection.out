@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class Objection {
+    public static int test() {
+        byte[] blah = new byte[12];
+        int n = blah.length;
+        blah = null;
+        return n;
+    }
+}

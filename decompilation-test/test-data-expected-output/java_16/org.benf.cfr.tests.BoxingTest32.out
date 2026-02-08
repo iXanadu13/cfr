@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Set;
+
+public class BoxingTest32 {
+    void test(Object i) {
+    }
+
+    private void t(String i, Set<Integer> s) {
+        s.add(Integer.parseInt(i));
+    }
+}

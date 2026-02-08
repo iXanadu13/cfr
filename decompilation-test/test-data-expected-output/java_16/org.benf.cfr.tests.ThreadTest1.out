@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadTest1 {
+    public static void main(String ... args) {
+        ExecutorService tpe = Executors.newCachedThreadPool();
+    }
+}

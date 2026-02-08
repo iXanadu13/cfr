@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.nio.file.FileVisitOption;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class UsingTest1d {
+    private static Stream<Path> getPathStream(Path path) throws IOException {
+        try (Stream<Path> paths = Files.walk(path, new FileVisitOption[0]);){
+            Stream<Path> stream = paths.collect(Collectors.toList()).stream();
+            return stream;
+        }
+    }
+}

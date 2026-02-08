@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.awt.Robot;
+import java.awt.Window;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+import org.benf.cfr.tests.LambdaUtilities;
+
+@FunctionalInterface
+public interface LambdaRobotTest
+extends Consumer<Collection<Consumer<Robot>>> {
+    public static LambdaRobotTest new_() {
+        return keyEvents -> SwingUtilities.invokeLater(() -> LambdaUtilities.andThen(frame -> frame.setDefaultCloseOperation(3), frame -> frame.addKeyListener(keyEvent -> keyEvents.add(robot -> robot.keyPress(keyEvent.getKeyCode()))), frame -> frame.addKeyListener(keyEvent -> keyEvents.add(robot -> robot.keyRelease(keyEvent.getKeyCode()))), frame -> frame.addWindowListener(event -> LambdaUtilities.delayedConsumer(3L, TimeUnit.SECONDS, Robot.class).andThen(((Stream)keyEvents.stream().parallel()).reduce(Consumer::andThen).orElse(LambdaUtilities.nullConsumer())).accept((Robot)LambdaUtilities.andThenReturn(robot -> robot.setAutoDelay(1)).apply(LambdaUtilities.supplier(Robot::new).get()))), Window::pack, frame -> frame.setVisible(true)).accept(new JFrame("RobotTest")));
+    }
+
+    public static void main(String ... arguments) {
+        LambdaRobotTest.new_().accept(new ArrayList());
+    }
+}

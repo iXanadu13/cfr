@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class IntWidenTest3 {
+    static int n;
+    static Long o;
+
+    IntWidenTest3() {
+    }
+
+    public static void main(String[] args) {
+        o = n;
+        System.out.println(o.getClass());
+        System.out.println(o);
+    }
+}

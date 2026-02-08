@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoolTernaryTest3 {
+    public static boolean c(String ... values) {
+        return false;
+    }
+
+    public boolean isValid(int x) {
+        return false;
+    }
+
+    protected int broken(int x) {
+        int i = 0;
+        boolean a = this.isValid(x) && BoolTernaryTest3.c("test");
+        boolean b = this.isValid(x + 1);
+        if (a) {
+            i = 0;
+        } else if (b) {
+            i = 1;
+        }
+        return i;
+    }
+}

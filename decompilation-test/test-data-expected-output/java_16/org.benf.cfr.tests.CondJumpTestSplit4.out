@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CondJumpTestSplit4 {
+    public boolean test(boolean a, boolean b) {
+        if (a) {
+            System.out.println("true");
+            boolean c = true;
+        } else {
+            System.out.println("false");
+            boolean c = false;
+        }
+        return b;
+    }
+}

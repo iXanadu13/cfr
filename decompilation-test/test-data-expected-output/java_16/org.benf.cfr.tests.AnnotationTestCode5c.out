@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationCode2;
+import org.benf.cfr.tests.AnnotationNested;
+
+public class AnnotationTestCode5c {
+    public void test(AnnotationNested n) {
+        AnnotationNested.Fred. @AnnotationCode2(name="c") Jim. @AnnotationCode2(name="d") Alan alan3 = n.getAlan();
+        System.out.println(alan3);
+    }
+}

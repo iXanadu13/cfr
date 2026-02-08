@@ -1,0 +1,174 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.Closeable;
+import java.util.Objects;
+
+class EmptyStatementsTest {
+    EmptyStatementsTest() {
+    }
+
+    void emptySwitch(int i) {
+    }
+
+    void emptySwitchWithOperation(int i) {
+        int cfr_ignored_0 = i + 1;
+    }
+
+    void emptySwitch(Integer i) {
+        i.intValue();
+    }
+
+    void emptySwitch(TestEnum e) {
+        switch (e) {
+            // Empty switch
+        }
+    }
+
+    void emptySwitch(String s) {
+        Objects.requireNonNull(s);
+    }
+
+    void emptyIf(int i) {
+        if (i == 1) {
+            // empty if block
+        }
+        if (i == 2) {
+            // empty if block
+        }
+    }
+
+    void emptyWhile(int i) {
+        while (i == 1) {
+        }
+        while (i == 2) {
+        }
+    }
+
+    void emptyDoWhile(int i) {
+        while (i == 1) {
+        }
+        while (i == 2) {
+        }
+    }
+
+    int emptyFor(int i) {
+        for (i = 1; i == 1; ++i) {
+        }
+        for (i = 2; i == 2; ++i) {
+        }
+        return i;
+    }
+
+    void emptyEnhancedFor(int[] array) {
+        for (int n : array) {
+        }
+        for (int n : array) {
+        }
+    }
+
+    void emptyEnhancedFor(Iterable<Integer> iterable) {
+        for (Integer n : iterable) {
+        }
+        for (Integer n : iterable) {
+        }
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    void emptySynchronized(Object o) {
+        Object object = o;
+        synchronized (object) {
+        }
+    }
+
+    void emptyTryCatch() {
+    }
+
+    void emptyTryFinally() {
+    }
+
+    void emptyTryCatchFinally() {
+    }
+
+    void emptyTryWithResources(Closeable closeable) throws Exception {
+        Closeable c = closeable;
+        if (c != null) {
+            c.close();
+        }
+    }
+
+    void emptyTryWithResourcesAccess(Closeable closeable) throws Exception {
+        Closeable closeable2 = closeable;
+        if (closeable2 != null) {
+            closeable2.close();
+        }
+    }
+
+    void emptyTryWithResourcesCatch(Closeable closeable) throws Exception {
+        try {
+            Closeable c = closeable;
+            if (c != null) {
+                c.close();
+            }
+        } catch (Exception exception) {
+            // empty catch block
+        }
+    }
+
+    void emptyTryWithResourcesAccessCatch(Closeable closeable) throws Exception {
+        try {
+            Closeable closeable2 = closeable;
+            if (closeable2 != null) {
+                closeable2.close();
+            }
+        } catch (Exception exception) {
+            // empty catch block
+        }
+    }
+
+    void emptyTryWithResourcesFinally(Closeable closeable) throws Exception {
+        Closeable c = closeable;
+        if (c != null) {
+            c.close();
+        }
+    }
+
+    void emptyTryWithResourcesAccessFinally(Closeable closeable) throws Exception {
+        Closeable closeable2 = closeable;
+        if (closeable2 != null) {
+            closeable2.close();
+        }
+    }
+
+    void emptyTryWithResourcesCatchFinally(Closeable closeable) throws Exception {
+        try {
+            Closeable c = closeable;
+            if (c != null) {
+                c.close();
+            }
+        } catch (Exception exception) {
+        } catch (Throwable throwable) {
+            throw throwable;
+        }
+    }
+
+    void emptyTryWithResourcesAccessCatchFinally(Closeable closeable) throws Exception {
+        try {
+            Closeable closeable2 = closeable;
+            if (closeable2 != null) {
+                closeable2.close();
+            }
+        } catch (Exception exception) {
+        } catch (Throwable throwable) {
+            throw throwable;
+        }
+    }
+
+    static enum TestEnum {
+
+    }
+}

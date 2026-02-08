@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public enum EnumTest1 {
+    FOO,
+    BAR,
+    BAP;
+
+}

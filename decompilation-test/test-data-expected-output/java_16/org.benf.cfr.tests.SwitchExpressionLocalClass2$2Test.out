@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class SwitchExpressionLocalClass2.2Test {
+    SwitchExpressionLocalClass2.2Test() {
+    }
+}

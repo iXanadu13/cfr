@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest11 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test(Object a, int b, int c, int d) {
+        Object object = a;
+        synchronized (object) {
+            if (b > d) {
+                return;
+            }
+            d = b / c;
+            System.out.println(d);
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InheritedMethodOverloadTest1b {
+    InheritedMethodOverloadTest1b() {
+    }
+
+    public static void main(String ... args) {
+        new Nested().test();
+    }
+
+    static class Nested
+    extends Base {
+        int i = 1;
+        String s = "";
+
+        Nested() {
+        }
+
+        void inherited(long n) {
+            System.out.println("inherited");
+        }
+
+        void inheritedObj(Object o) {
+            System.out.println("inheritedObj");
+        }
+
+        void test() {
+            this.inherited(this.i);
+            this.inherited(this.i);
+            this.inheritedObj(this.s);
+            this.inheritedObj(this.s);
+        }
+    }
+
+    static class Base {
+        Base() {
+        }
+
+        private void inherited(int i) {
+        }
+
+        private void inheritedObj(String s) {
+        }
+    }
+}

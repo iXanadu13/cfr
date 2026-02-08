@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CallTest2 {
+    public static void main(String[] args) {
+        B b = new B();
+        b.foo();
+        ((A)b).foo();
+    }
+
+    public static class B
+    extends A {
+        @Override
+        public void foo() {
+            System.out.println("B");
+        }
+    }
+
+    private static class A {
+        private A() {
+        }
+
+        void foo() {
+            System.out.println("A");
+        }
+    }
+}

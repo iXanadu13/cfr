@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest40c {
+    public void test(int[] xs) {
+        for (int y = 0; y < 12; ++y) {
+            int x;
+            int[] arr$ = xs;
+            int len$ = arr$.length;
+            int i$ = 0;
+            while (true) {
+                if (i$ >= len$) {
+                    return;
+                }
+                x = arr$[i$];
+                if ((i$ = x) == 12) break;
+                System.out.println(x);
+                ++i$;
+            }
+            System.out.println("Fred");
+            for (x = 0; x < 12; ++x) {
+                System.out.println("x");
+            }
+        }
+    }
+}

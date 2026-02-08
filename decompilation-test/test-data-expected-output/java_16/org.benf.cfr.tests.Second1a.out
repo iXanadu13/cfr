@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Second1a {
+    static Object obj = "test";
+
+    Second1a() {
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    static void test1() {
+        Object object = obj;
+        synchronized (object) {
+            obj = 0;
+        }
+        while (true) {
+            int num = (Integer)obj;
+            ++num;
+        }
+    }
+}

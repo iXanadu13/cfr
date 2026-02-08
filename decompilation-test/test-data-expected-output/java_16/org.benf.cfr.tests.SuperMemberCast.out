@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SuperMemberCast {
+    public static void main(String ... args) {
+        new Bop().test();
+    }
+
+    public static class Bop
+    extends Foo {
+        private int bar() {
+            return 1;
+        }
+
+        public void test() {
+            String s1 = super.bar();
+            String s2 = this.bar();
+            int i1 = this.bar();
+            int i2 = this.bar();
+            System.out.println(s1 + "," + s2 + "," + i1 + "," + i2);
+        }
+    }
+
+    public static class Foo {
+        private String bar() {
+            return "hello";
+        }
+    }
+}

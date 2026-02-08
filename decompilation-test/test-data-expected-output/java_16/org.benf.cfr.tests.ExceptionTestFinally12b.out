@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally12b {
+    void test1(String path) {
+        try {
+            int n = 3;
+        } catch (RuntimeException t) {
+            System.out.println("Fred");
+            throw t;
+        }
+        System.out.println("Fred");
+    }
+}

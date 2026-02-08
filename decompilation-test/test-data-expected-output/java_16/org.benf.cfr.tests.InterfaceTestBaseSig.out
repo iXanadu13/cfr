@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Map;
+
+public interface InterfaceTestBaseSig<A, B, T extends Map<A, B>> {
+    public T test2(T var1);
+}

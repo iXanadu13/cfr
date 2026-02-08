@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class SwitchConstructorTest5c {
+    SwitchConstructorTest5c(int i, int j, int k) {
+    }
+
+    SwitchConstructorTest5c(Byte b) {
+        this(switch (b) {
+            case 1 -> 11;
+            default -> b > 3 ? 3 : 2;
+        }, switch (b) {
+            default -> b > 3 ? 3 : 2;
+        }, switch (b) {
+            case 1 -> 14;
+            default -> b > 3 ? 5 : 4;
+        });
+    }
+}

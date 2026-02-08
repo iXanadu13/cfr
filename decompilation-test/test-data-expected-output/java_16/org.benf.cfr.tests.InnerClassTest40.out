@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest40 {
+    public Object test2(InnerClassTest40 other) {
+        Bob bob1 = other.new Bob();
+        return bob1;
+    }
+
+    protected class Bob {
+        protected Bob() {
+        }
+    }
+}

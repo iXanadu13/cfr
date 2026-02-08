@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.TypeTest40;
+
+public class TypeTest40.Instance
+implements TypeTest40.Base {
+}

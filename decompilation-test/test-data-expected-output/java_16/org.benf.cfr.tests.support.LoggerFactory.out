@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+import org.benf.cfr.tests.support.Logger;
+
+public class LoggerFactory {
+    public static <T> Logger create(Class<T> clazz) {
+        return new Logger();
+    }
+}

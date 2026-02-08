@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+abstract class AnonymousInnerClassTest5.UF {
+    private final int x;
+
+    public AnonymousInnerClassTest5.UF(int x) {
+        this.x = x;
+    }
+
+    public int getX() {
+        return this.x;
+    }
+
+    abstract int invoke(int var1);
+}

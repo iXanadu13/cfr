@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest39.Bob {
+    protected InnerClassTest39.Bob() {
+    }
+}

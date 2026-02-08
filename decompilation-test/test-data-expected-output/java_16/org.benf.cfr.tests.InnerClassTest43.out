@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest43 {
+    private void foo(Object ... args) {
+    }
+
+    public void test2(InnerClassTest43 other) {
+        Object[] objectArray = new Object[4];
+        objectArray[0] = other.new Bob();
+        objectArray[1] = other.new Bob();
+        objectArray[2] = other.new Bob();
+        objectArray[3] = other.new Bob();
+        this.foo(objectArray);
+    }
+
+    protected class Bob {
+        protected Bob() {
+        }
+    }
+}

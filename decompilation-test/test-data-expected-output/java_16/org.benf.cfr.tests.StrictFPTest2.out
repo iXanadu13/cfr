@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class StrictFPTest2 {
+    public double test1(double a, double b) {
+        return a + b;
+    }
+
+    public strictfp double test2(double a, double b) {
+        return a + b;
+    }
+}

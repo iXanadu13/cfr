@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnonymousInnerClassTest15;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+class AnonymousInnerClassTest15.1
+implements UnaryFunction<AnonymousInnerClassTest15.Priv, Integer> {
+    AnonymousInnerClassTest15.1() {
+    }
+
+    @Override
+    public Integer invoke(AnonymousInnerClassTest15.Priv arg) {
+        return arg.x;
+    }
+}

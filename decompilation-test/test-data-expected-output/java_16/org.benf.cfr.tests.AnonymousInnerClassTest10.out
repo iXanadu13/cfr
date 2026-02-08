@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnonymousInnerClassTest10 {
+    final int k;
+
+    AnonymousInnerClassTest10(int k) {
+        this.k = k;
+    }
+
+    public static void test() {
+        final int n = 3;
+        int value = new AnonymousInnerClassTest10(2 + 3){
+
+            int get() {
+                return this.k + n;
+            }
+        }.get();
+        if (value != 8) {
+            throw new Error("value = " + value);
+        }
+    }
+}

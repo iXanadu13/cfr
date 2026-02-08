@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchExpressionLocalClass {
+    /*
+     * Inner class renamed, behaviour may change
+     */
+    void test() {
+        switch (0) {
+            default: 
+        }
+        class Test {
+            Test(int i) {
+            }
+        }
+        new Test(1);
+        class Test2 {
+            Test2() {
+            }
+        }
+        new Test2();
+    }
+}

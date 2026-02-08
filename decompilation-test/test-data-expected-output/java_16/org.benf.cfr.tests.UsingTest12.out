@@ -1,0 +1,35 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintWriter;
+
+public class UsingTest12 {
+    /*
+     * Enabled aggressive exception aggregation
+     */
+    public static String decompileFail2(Throwable t) throws Exception {
+        try (ByteArrayOutputStream stream = new ByteArrayOutputStream(1024);){
+            PrintWriter writer = new PrintWriter(stream);
+            try {
+                t.printStackTrace(writer);
+                writer.flush();
+                stream.flush();
+                String string = stream.toString();
+                writer.close();
+                return string;
+            } catch (Throwable throwable) {
+                try {
+                    writer.close();
+                } catch (Throwable throwable2) {
+                    throwable.addSuppressed(throwable2);
+                }
+                throw throwable;
+            }
+        } catch (NullPointerException ignored) {
+            return t.toString();
+        }
+    }
+}

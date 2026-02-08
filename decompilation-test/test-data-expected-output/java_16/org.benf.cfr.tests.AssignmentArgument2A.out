@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignmentArgument2A {
+    AssignmentArgument2A(int a) {
+    }
+
+    static int testConstructor2(int a) {
+        try {
+            int n = switch (a) {
+                case 1 -> 1;
+                case 2 -> 2;
+                default -> 3;
+            };
+            a = n;
+            new AssignmentArgument2A(n);
+        } catch (OutOfMemoryError outOfMemoryError) {
+            // empty catch block
+        }
+        return a;
+    }
+}

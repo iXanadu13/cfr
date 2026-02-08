@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IncrTest4a {
+    public static void main(String ... args) {
+        int a = 0;
+        IncrTest4a.testParam(++a, ++a, a++);
+    }
+
+    private static void testParam(int a, int b, int c) {
+    }
+}

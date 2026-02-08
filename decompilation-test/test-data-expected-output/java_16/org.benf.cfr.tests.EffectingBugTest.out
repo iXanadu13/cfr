@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class EffectingBugTest {
+    public static void test(int[] x, int i) {
+        int n = EffectingBugTest.foo(i);
+        x[n] = x[n] + i;
+    }
+
+    public static int foo(int i) {
+        return i;
+    }
+}

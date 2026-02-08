@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.time.DayOfWeek;
+import java.util.EnumMap;
+import java.util.Map;
+
+public class EnumMapTest {
+    private static Map<DayOfWeek, Integer> foo = new EnumMap<DayOfWeek, Integer>(DayOfWeek.class){
+        {
+            this.put(DayOfWeek.MONDAY, 1);
+            this.put(DayOfWeek.TUESDAY, 2);
+        }
+    };
+}

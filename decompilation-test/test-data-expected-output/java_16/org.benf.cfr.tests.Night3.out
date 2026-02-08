@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class Night3 {
+    public void main(String[] args, List<? extends String> list) {
+        list.add("hi");
+        System.out.println(list.get(0));
+    }
+}

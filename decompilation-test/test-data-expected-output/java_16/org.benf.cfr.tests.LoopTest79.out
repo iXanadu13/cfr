@@ -1,0 +1,35 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest79 {
+    /*
+     * Unable to fully structure code
+     */
+    public void loopTest(int a) {
+        switch (a) {
+            case 1: {
+                val = this.getValue();
+                do {
+                    if (val != 0) continue;
+                    this.doSomething();
+                    ** GOTO lbl10
+                } while (val == 1);
+                val = this.getValue();
+lbl10:
+                // 2 sources
+
+                this.doSomething();
+                break;
+            }
+        }
+    }
+
+    private void doSomething() {
+    }
+
+    private int getValue() {
+        return 0;
+    }
+}

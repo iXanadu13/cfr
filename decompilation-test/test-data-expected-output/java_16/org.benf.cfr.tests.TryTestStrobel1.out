@@ -1,0 +1,34 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TryTestStrobel1 {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public String test(int x) {
+        try {
+            if (x < 0) {
+                String string = "negative";
+                return string;
+            }
+            if (x > 0) {
+                String string = "positive";
+                return string;
+            }
+            if (x == 0) {
+                String string = "zero";
+                return string;
+            }
+            String string = "unreachable";
+            return string;
+        } catch (RuntimeException e) {
+            System.out.println("catch");
+            String string = "error";
+            return string;
+        } finally {
+            System.out.println("finally");
+        }
+    }
+}

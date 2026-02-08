@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class TryWithResourcesTest {
+    /*
+     * Enabled aggressive exception aggregation
+     */
+    public int test() {
+        try (InputStream is = this.getClass().getResourceAsStream("file");){
+            int n;
+            try (InputStreamReader r = new InputStreamReader(is);){
+                n = this.doSomething();
+            }
+            return n;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private int doSomething() {
+        return 1;
+    }
+}

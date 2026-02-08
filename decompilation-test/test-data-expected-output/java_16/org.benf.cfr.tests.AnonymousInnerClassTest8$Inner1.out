@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+abstract class AnonymousInnerClassTest8.Inner1 {
+    protected int a = 3;
+
+    protected AnonymousInnerClassTest8.Inner1() {
+    }
+
+    public abstract Integer invoke(Integer var1);
+}

@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest57 {
+    public void get() {
+        boolean f = false;
+        new Object(){
+            int g;
+
+            class Foo {
+                public Foo() {
+                    g = 0;
+                }
+            }
+        };
+    }
+}

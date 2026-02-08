@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationTestM;
+
+class AnnotationTestM.1
+extends AnnotationTestM {
+    AnnotationTestM.1() {
+    }
+}

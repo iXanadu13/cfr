@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BridgeTest1b.A<T> {
+    public Object getT(T t) {
+        return null;
+    }
+}

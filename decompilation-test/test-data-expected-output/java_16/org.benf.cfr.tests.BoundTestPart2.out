@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.BoundTestPart1;
+
+public interface BoundTestPart2<X, Y>
+extends BoundTestPart1<Y, X> {
+}

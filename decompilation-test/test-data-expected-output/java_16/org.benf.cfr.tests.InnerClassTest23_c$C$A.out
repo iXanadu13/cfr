@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest23_c.C.A {
+    int j;
+
+    InnerClassTest23_c.C.A(int j) {
+        this.j = j;
+    }
+}

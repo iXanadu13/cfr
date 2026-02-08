@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest24 {
+    public static void main(String[] args) {
+        switch (Something.ONE) {
+            // Empty switch
+        }
+        switch (Something.ONE) {
+            // Empty switch
+        }
+        switch (Something.ONE) {
+            default: 
+        }
+    }
+
+    static enum Something {
+        ONE;
+
+    }
+}

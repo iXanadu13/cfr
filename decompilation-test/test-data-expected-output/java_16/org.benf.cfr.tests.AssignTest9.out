@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.AbstractList;
+import java.util.ArrayList;
+
+public class AssignTest9 {
+    public void test() {
+        ArrayList l = new ArrayList();
+        l.size();
+        l.size();
+        ((AbstractList)l).size();
+    }
+}

@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally15c {
+    void test1(String path) {
+        try {
+            if (path == null) {
+                return;
+            }
+        } finally {
+            System.out.println("Fred");
+            if (path == null) {
+                throw new IllegalStateException();
+            }
+        }
+    }
+}

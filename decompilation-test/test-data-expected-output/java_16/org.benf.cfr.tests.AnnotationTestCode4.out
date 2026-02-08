@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnnotationTestCode4 {
+    public void foo() {
+        String[][] x = new String[1][1];
+        System.out.println(x);
+    }
+}

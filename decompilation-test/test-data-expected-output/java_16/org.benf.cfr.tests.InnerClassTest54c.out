@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Function;
+
+public class InnerClassTest54c {
+    public void foo(String[] args) {
+        Function<Object, String> f = x -> {
+            class Mess {
+                String a = "hello world";
+
+                Mess() {
+                }
+            }
+            return (InnerClassTest54c)this.new Mess().a;
+        };
+        System.out.println(f.apply(0));
+    }
+}

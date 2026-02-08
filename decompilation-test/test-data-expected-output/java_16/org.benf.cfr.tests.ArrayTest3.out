@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest3 {
+    int x;
+    int y;
+    int z;
+
+    void test1(int a, int b) {
+        String[] tmp;
+        for (String s : tmp = new String[]{"a", "b", "c"}) {
+            System.out.println(s);
+        }
+    }
+}

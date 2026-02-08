@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest9 {
+    public String mkString() {
+        return "Hello";
+    }
+
+    public void foo(int i) {
+        Object a = null;
+        for (int x = 0; x < 12 && a == null || a != null; ++x) {
+            a = 3;
+            System.out.println(a);
+            if (x != 0) continue;
+            a = this.mkString();
+        }
+        a = "Hello";
+        System.out.println(a);
+    }
+}

@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationInvis;
+
+@AnnotationInvis
+public class AnnotationTestRuntimeInvisible {
+    @AnnotationInvis
+    int x;
+
+    @AnnotationInvis
+    public void foo() {
+        @AnnotationInvis String a = "Hello";
+        System.out.println(a);
+    }
+}

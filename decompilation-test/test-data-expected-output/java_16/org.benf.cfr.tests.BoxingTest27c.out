@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest27c {
+    private void t(short s) {
+        this.fn((long)s);
+    }
+
+    private void fn(long i) {
+    }
+
+    private void fn(Short n) {
+    }
+}

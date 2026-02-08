@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Tower5c {
+    Tower5c() {
+    }
+
+    void test(final String[] args) {
+        final int x = args.length;
+        class Height {
+            private Height(long l) {
+                ++l;
+            }
+
+            void test() {
+                System.out.println(args.length + x);
+            }
+        }
+        new Height(1L).test();
+    }
+}

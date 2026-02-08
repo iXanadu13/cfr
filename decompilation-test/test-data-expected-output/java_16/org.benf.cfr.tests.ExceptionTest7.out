@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTest7 {
+    void test1(String path) {
+        try {
+            boolean bl = true;
+            System.out.println("Fred");
+        } catch (NullPointerException t) {
+            System.out.println("Fred");
+        }
+    }
+}

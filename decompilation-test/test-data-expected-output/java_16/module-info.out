@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+import java.util.List;
+import org.benf.cfr.tests.MyList;
+
+/*
+ * Exception performing whole class analysis.
+ */
+@Deprecated
+module test {
+    requires transitive java.desktop; // version: 16.0.1
+    requires java.management; // version: 16.0.1
+    requires static java.sql; // version: 16.0.1
+
+    uses List;
+
+    provides List with MyList;
+}

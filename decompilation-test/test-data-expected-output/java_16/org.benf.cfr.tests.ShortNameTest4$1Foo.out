@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ShortNameTest4;
+import org.benf.cfr.tests.pack1.Foo;
+
+class ShortNameTest4.1Foo {
+    Foo foo1;
+    org.benf.cfr.tests.pack2.Foo foo2;
+    ShortNameTest4.Foo foo3;
+
+    ShortNameTest4.1Foo() {
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InstanceOfPatternTest1.Person {
+    public InstanceOfPatternTest1.Person(int x) {
+    }
+
+    public int getAge() {
+        return 3;
+    }
+}

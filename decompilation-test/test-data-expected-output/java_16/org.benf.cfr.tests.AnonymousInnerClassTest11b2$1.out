@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnonymousInnerClassTest11b2;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+class AnonymousInnerClassTest11b2.1
+implements UnaryFunction<Integer, Integer> {
+    final /* synthetic */ AnonymousInnerClassTest11b2 val$x;
+
+    AnonymousInnerClassTest11b2.1(AnonymousInnerClassTest11b2 anonymousInnerClassTest11b2) {
+        this.val$x = anonymousInnerClassTest11b2;
+    }
+
+    @Override
+    public Integer invoke(final Integer arg) {
+        int y = arg * this.val$x.z;
+        UnaryFunction<Integer, Integer> t = new UnaryFunction<Integer, Integer>(){
+
+            @Override
+            public Integer invoke(Integer arg2) {
+                return arg * arg2 * val$x.z;
+            }
+        };
+        return (Integer)t.invoke(y);
+    }
+}

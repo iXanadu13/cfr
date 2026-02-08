@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest30 {
+
+    public static class C
+    implements I {
+        @Override
+        public Double get(Object o) {
+            return 2.0;
+        }
+    }
+
+    public static interface I {
+        public Object get(Object var1);
+    }
+}

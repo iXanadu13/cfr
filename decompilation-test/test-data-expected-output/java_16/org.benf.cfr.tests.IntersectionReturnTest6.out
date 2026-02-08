@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.Closeable;
+import java.util.Iterator;
+
+public class IntersectionReturnTest6 {
+    private static <E, T extends Iterator<E> & Closeable> E firstMatch(T elements) {
+        E e = elements.next();
+        return e;
+    }
+}

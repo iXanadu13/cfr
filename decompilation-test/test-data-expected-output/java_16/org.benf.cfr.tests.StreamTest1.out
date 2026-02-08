@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
+
+public class StreamTest1 {
+    public static <Y extends Integer> void x(List<Y> list) {
+        IntStream s = list.stream().filter(x -> {
+            System.out.println(x);
+            return x / 2 == 0;
+        }).map(x -> x + 2).mapToInt(x -> x);
+        s.toArray();
+    }
+
+    public static void main(String ... args) {
+        StreamTest1.x(new ArrayList<Integer>(){
+            {
+                this.add(1);
+                this.add(2);
+            }
+        });
+    }
+}

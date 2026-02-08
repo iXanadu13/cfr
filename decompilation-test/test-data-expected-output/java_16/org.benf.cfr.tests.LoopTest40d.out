@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest40d {
+    int[] fn(int[] i) {
+        return i;
+    }
+
+    public void test(int[] xs) {
+        for (int i : this.fn(xs)) {
+            System.out.println(i);
+        }
+        this.fn(xs);
+    }
+}

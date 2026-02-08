@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class DoubleNegationTest {
+    Boolean f1(boolean b) {
+        return b;
+    }
+
+    boolean f2(boolean b) {
+        return b;
+    }
+
+    Boolean f3(Boolean b) {
+        return b != false;
+    }
+
+    boolean f4(Boolean b) {
+        return b != false;
+    }
+}

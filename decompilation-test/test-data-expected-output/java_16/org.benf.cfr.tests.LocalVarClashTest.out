@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LocalVarClashTest {
+    public static void foo(int x) {
+        while (true) {
+            Object z;
+            if (x == 0) {
+                z = "bar";
+                System.out.println(((String)z).charAt(1));
+                continue;
+            }
+            z = 1;
+            System.out.println(((Integer)z).byteValue());
+        }
+    }
+}

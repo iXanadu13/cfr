@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperMemberAccess2;
+
+public class SuperMemberAccess2.Child
+extends SuperMemberAccess2 {
+    private int a;
+
+    String doSomething() {
+        return ((SuperMemberAccess2)this).a;
+    }
+}

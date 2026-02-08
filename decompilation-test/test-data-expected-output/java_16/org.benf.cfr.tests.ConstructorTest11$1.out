@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.ConstructorTest11;
+
+class ConstructorTest11.1
+extends ConstructorTest11.Foo {
+    ConstructorTest11.1(int x) {
+        super(x);
+        this.bar();
+        this.bar();
+    }
+}

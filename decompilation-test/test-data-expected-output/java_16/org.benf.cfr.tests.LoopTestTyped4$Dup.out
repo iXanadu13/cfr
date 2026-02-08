@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class LoopTestTyped4.Dup<E> {
+    private LoopTestTyped4.Dup() {
+    }
+
+    E dupIt(E arg) {
+        return arg;
+    }
+}

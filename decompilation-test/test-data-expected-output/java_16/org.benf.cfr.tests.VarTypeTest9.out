@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestBob;
+import org.benf.cfr.tests.VarTypeTestFred;
+
+public class VarTypeTest9 {
+    public static void test1() {
+        VarTypeTestFred x = new VarTypeTestFred(){
+
+            public String toString() {
+                return "HERE";
+            }
+        };
+        System.out.println(x.twoString());
+        System.out.println(x.twoString());
+        System.out.println(((VarTypeTestBob)x).twoString());
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+enum BasicEnumDemo.Color {
+    CYAN,
+    MAGENTA,
+    YELLOW,
+    BLACK;
+
+}

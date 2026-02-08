@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+enum EnumSwitchTest2.enm {
+    ONE,
+    TWO,
+    THREE,
+    FOUR;
+
+}

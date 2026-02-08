@@ -1,0 +1,52 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperBase;
+
+public class SuperTest4
+extends SuperBase {
+    public Object test(String arg) {
+        Impl impl = new Impl();
+        String res = impl.copy(arg);
+        return res;
+    }
+
+    public String test() {
+        String tmp = "TEST";
+        Impl impl = new Impl();
+        return impl.copy(tmp);
+    }
+
+    public Object test(Impl<Integer> arg) {
+        return arg.copy(1);
+    }
+
+    private class Impl<J>
+    extends Abstract<J> {
+        private Impl() {
+        }
+
+        @Override
+        public void doStuff(J arg) {
+        }
+    }
+
+    private abstract class Abstract<X>
+    implements Interface<X> {
+        private Abstract() {
+        }
+
+        @Override
+        public X copy(X arg) {
+            return arg;
+        }
+    }
+
+    private static interface Interface<T> {
+        public T copy(T var1);
+
+        public void doStuff(T var1);
+    }
+}

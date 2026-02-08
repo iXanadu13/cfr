@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IntTest2 {
+    public int plus1(int x) {
+        return 1 + x;
+    }
+
+    public int func2(int x, int y) {
+        return (x > y ? x + 1 : y - 1) + x;
+    }
+}

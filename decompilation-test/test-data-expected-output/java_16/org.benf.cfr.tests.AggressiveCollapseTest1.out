@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AggressiveCollapseTest1 {
+    int[] a;
+
+    void test3a() {
+        this.a[0] = this.a[0] | 0xFF;
+    }
+
+    void test3b() {
+        this.a[0] = this.a[0] | 0xFF;
+    }
+}

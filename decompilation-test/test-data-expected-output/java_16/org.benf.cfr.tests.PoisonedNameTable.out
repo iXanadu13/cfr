@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class PoisonedNameTable {
+    public void test() {
+        System.out.println("Foo");
+    }
+
+    public PoisonedNameTable(int a) {
+        int free = a + 1;
+        int fred = a + 3;
+        int fref = a + 5;
+        System.out.println(free + "," + fred + "," + fref);
+    }
+}

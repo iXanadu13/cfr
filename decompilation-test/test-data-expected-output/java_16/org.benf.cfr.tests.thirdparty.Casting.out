@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.thirdparty;
+
+public class Casting {
+    public static void main(String[] args) {
+        for (char c = '\u0000'; c < '\u0080'; c = (char)(c + '\u0001')) {
+            System.out.println("ascii " + c + " character " + c);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Predicate;
+
+class InnerClassTest25.2Bob
+implements Predicate<Double> {
+    InnerClassTest25.2Bob() {
+    }
+
+    @Override
+    public boolean test(Double in) {
+        return in > (double)InnerClassTest25.this.y;
+    }
+}

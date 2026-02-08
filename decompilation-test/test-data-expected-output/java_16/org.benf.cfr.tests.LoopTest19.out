@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest19 {
+    private static int[] sizeTable;
+
+    static int stringSize(int i) {
+        int n = 0;
+        while (i > sizeTable[n]) {
+            ++n;
+        }
+        return n + 1;
+    }
+}

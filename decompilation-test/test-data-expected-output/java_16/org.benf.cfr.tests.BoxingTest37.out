@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Blah;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class BoxingTest37 {
+    public void test1() {
+        int x = (Integer)((Object)((UnaryFunction<Object, Object>)Blah::new));
+    }
+}

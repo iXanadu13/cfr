@@ -1,0 +1,32 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest78 {
+    private int i;
+
+    /*
+     * Enabled force condition propagation
+     * Lifted jumps to return sites
+     */
+    public int doSomething() {
+        while (true) {
+            if (this.i <= 1) {
+                this.doSomething2();
+                if (this.i == 0) return 0;
+            }
+            if (this.i % 5 == 3) continue;
+            if (this.i >= 41) {
+                this.doSomething2();
+                if (this.i == 42) {
+                    return 1;
+                }
+            }
+            if (this.i == 23) return 0;
+        }
+    }
+
+    private void doSomething2() {
+    }
+}

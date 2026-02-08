@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.Closeable;
+import java.util.Iterator;
+import java.util.function.Predicate;
+
+public class IntersectionReturnTest7 {
+    private static <E, T extends Closeable & Iterator<E>> E firstMatch(T elements, Predicate<? super E> condition) {
+        while (((Iterator<E>)elements).hasNext()) {
+            E e = ((Iterator<E>)elements).next();
+            if (!condition.test(e)) continue;
+            return e;
+        }
+        return null;
+    }
+}

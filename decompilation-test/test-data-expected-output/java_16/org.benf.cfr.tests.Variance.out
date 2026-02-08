@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Variance {
+    Variance() {
+    }
+
+    public static void main(String[] args) {
+        Variance.safe(3, new Object[]{new String[]{"one"}});
+        Variance.safe(3, "one");
+    }
+
+    public static void safe(int i, Object ... args) {
+        System.out.println(((Object[])args[0])[0]);
+    }
+}

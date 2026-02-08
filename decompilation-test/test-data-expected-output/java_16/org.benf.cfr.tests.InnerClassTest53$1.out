@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+import org.benf.cfr.tests.InnerClassTest53;
+
+class InnerClassTest53.1
+implements Supplier<InnerClassTest53.Local> {
+    InnerClassTest53.1() {
+    }
+
+    @Override
+    public InnerClassTest53.Local get() {
+        return new InnerClassTest53.Local(InnerClassTest53.this);
+    }
+}

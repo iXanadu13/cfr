@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldTest237a;
+
+public class FieldTest237c {
+    int foo(FieldTest237a a) {
+        return 11 + 2 < a.x ? a.x : a.y;
+    }
+
+    double foo1(FieldTest237a a) {
+        return 11 + 2 < a.x ? (double)a.x : (double)a.y;
+    }
+
+    String foo2(FieldTest237a a) {
+        return a.f;
+    }
+}

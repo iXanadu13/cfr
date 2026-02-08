@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22c {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public String test(int x) {
+        try {
+            try {
+                if (x % 2 == 1) {
+                    if (x == 1) {
+                        String string = "one";
+                        return string;
+                    }
+                } else if (x == 0) {
+                    String string = "zero";
+                    return string;
+                }
+            } finally {
+                System.out.println("inner finally");
+            }
+        } finally {
+            System.out.println("finally");
+        }
+        return "Done";
+    }
+}

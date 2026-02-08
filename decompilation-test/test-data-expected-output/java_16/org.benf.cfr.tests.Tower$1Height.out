@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.Tower;
+
+class Tower.1Height
+extends Tower.Watch<T> {
+    T obj;
+    final /* synthetic */ String[] val$args;
+    final /* synthetic */ Tower this$0;
+
+    Tower.1Height(T t, long l) {
+        this.this$0 = this$0;
+        this.val$args = var5_4;
+        super(t, l);
+    }
+
+    @Override
+    void test() {
+        System.out.println(this.val$args.length);
+    }
+}

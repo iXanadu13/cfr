@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest0_1.Inner1 {
+    public InnerClassTest0_1.Inner1() {
+        System.out.println(InnerClassTest0_1.this.x);
+    }
+}

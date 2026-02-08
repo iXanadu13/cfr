@@ -1,0 +1,50 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Locale;
+
+public class LoopTest45 {
+    char[] value;
+
+    public String toUpperCase(Locale locale) {
+        char srcCount;
+        int len = 0;
+        int firstLower = 9;
+        int resultOffset = 0;
+        char[] result = new char[len];
+        System.arraycopy(this.value, 0, result, 0, firstLower);
+        String lang = locale.getLanguage();
+        boolean localeDependent = lang == "tr" || lang == "az" || lang == "lt";
+        for (int i = firstLower; i < len; i += srcCount) {
+            char srcChar = srcCount = this.value[i];
+            char upperChar = srcCount;
+            if (upperChar == '\u0002' || upperChar >= '\u10000') {
+                char[] upperCharArray;
+                if (upperChar == '\u0002') {
+                    upperCharArray = localeDependent ? null : null;
+                } else {
+                    if (srcCount == '\u0002') {
+                        resultOffset += Character.toChars(upperChar, result, i + resultOffset) - srcCount;
+                        continue;
+                    }
+                    upperCharArray = Character.toChars(upperChar);
+                }
+                int mapLen = upperCharArray.length;
+                if (mapLen > srcCount) {
+                    char[] result2 = new char[result.length + mapLen - srcCount];
+                    System.arraycopy(result, 0, result2, 0, i + resultOffset);
+                    result = result2;
+                }
+                for (int x = 0; x < mapLen; ++x) {
+                    result[i + resultOffset + x] = upperCharArray[x];
+                }
+                resultOffset += mapLen - srcCount;
+                continue;
+            }
+            result[i + resultOffset] = upperChar;
+        }
+        return new String(result, 0, len + resultOffset);
+    }
+}

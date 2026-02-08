@@ -1,0 +1,41 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class LoopTest22 {
+    public void canMoveIteratorVariableDeclaration(List<List<Integer>> lists) {
+        for (List<Integer> list : lists) {
+            for (Integer next : list) {
+                System.out.println(next);
+            }
+            for (Integer next : list) {
+                System.out.println(next);
+            }
+        }
+    }
+
+    private static Iterator<Integer> empty() {
+        return Collections.emptyIterator();
+    }
+
+    public void cannotMoveIteratorVariableDeclaration(List<List<Integer>> lists) {
+        for (List<Integer> list : lists) {
+            Iterator<Integer> it = LoopTest22.empty();
+            System.out.println(it);
+            it = list.iterator();
+            while (it.hasNext()) {
+                Integer next = it.next();
+                System.out.println(next);
+            }
+            System.out.println(it);
+            for (Integer next : list) {
+                System.out.println(next);
+            }
+        }
+    }
+}

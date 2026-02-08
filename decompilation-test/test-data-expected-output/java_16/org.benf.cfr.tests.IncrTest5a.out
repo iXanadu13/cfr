@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IncrTest5a {
+    public static void t1() {
+        int a = 0;
+        IncrTest5a.testParam(IncrTest5a.testParam(a++, ++a), IncrTest5a.testParam(++a, a++));
+    }
+
+    private static int testParam(int a, int b) {
+        System.out.println(a + "," + b);
+        return a + b;
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest5 {
+    private boolean t(Integer f) {
+        try {
+            if (Integer.valueOf(f) == null) {
+                return false;
+            }
+            return false;
+        } catch (NullPointerException e) {
+            return true;
+        }
+    }
+}

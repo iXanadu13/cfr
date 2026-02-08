@@ -1,0 +1,37 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.FileNotFoundException;
+
+public class ExceptionTestFinallyStrobel1 {
+    private static boolean tryEnter(Object o) {
+        return true;
+    }
+
+    private static void exit(Object o) {
+    }
+
+    private static void doSomething() throws FileNotFoundException {
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    boolean test() {
+        boolean result;
+        boolean lockAcquired = ExceptionTestFinallyStrobel1.tryEnter(this);
+        try {
+            ExceptionTestFinallyStrobel1.doSomething();
+            result = true;
+        } catch (FileNotFoundException t) {
+            result = false;
+        } finally {
+            if (lockAcquired) {
+                ExceptionTestFinallyStrobel1.exit(this);
+            }
+        }
+        return result;
+    }
+}

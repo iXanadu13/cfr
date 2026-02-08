@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Function;
+
+class LambdaTest44 {
+    final int x = 123;
+
+    LambdaTest44() {
+    }
+
+    public Function<Integer, Integer> test() {
+        System.out.println(123);
+        return a -> 123 + a;
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest1 {
+    public void test(Static _static) {
+    }
+
+    public void test(Strictfp _static) {
+    }
+
+    private static class Strictfp {
+        private Strictfp() {
+        }
+    }
+
+    private static class Static {
+        private Static() {
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.advent;
+
+public class Eg4 {
+    public static void fn(int a) {
+        for (int x = 0; x < a; ++x) {
+            System.out.println(x);
+        }
+    }
+}

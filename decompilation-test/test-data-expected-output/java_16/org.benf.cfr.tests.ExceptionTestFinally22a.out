@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally22a {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public String test(int x) {
+        try {
+            if (x == 0) {
+                String string = "zero";
+                return string;
+            }
+            try {
+                if (x == 1) {
+                    String string = "one";
+                    System.out.println("inner finally");
+                }
+                System.out.println("inner finally");
+            } catch (Throwable throwable) {
+                System.out.println("inner finally");
+                throw throwable;
+            }
+        } finally {
+            System.out.println("finally");
+            throw new RuntimeException("whoop whoop");
+        }
+    }
+}

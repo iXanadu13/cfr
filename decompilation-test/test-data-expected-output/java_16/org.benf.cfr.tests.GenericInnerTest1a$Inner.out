@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class GenericInnerTest1a.Inner {
+    GenericInnerTest1a.Inner() {
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class NameTest13b {
+    public int foo() {
+        int a = 1;
+        int n = ++a;
+        ++a;
+        a = n;
+        System.out.println(a);
+        return a;
+    }
+}

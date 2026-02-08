@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SyncTest13a {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test(int x) {
+        while (x <= 3) {
+            SyncTest13a syncTest13a = this;
+            synchronized (syncTest13a) {
+            }
+        }
+        return;
+    }
+}

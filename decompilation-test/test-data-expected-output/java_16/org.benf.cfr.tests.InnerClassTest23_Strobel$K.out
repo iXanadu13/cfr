@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest23_Strobel.K {
+    private InnerClassTest23_Strobel.K() {
+    }
+
+    private static int f(int x) {
+        return x / 2;
+    }
+
+    private void g(int x) {
+        InnerClassTest23_Strobel.K.f(x * 2);
+    }
+
+    Object h() {
+        return new Object(){
+
+            void j() {
+                InnerClassTest23_Strobel.K.f(16);
+                this.g(8);
+            }
+        };
+    }
+}

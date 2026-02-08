@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Consumer;
+import org.benf.cfr.tests.MarkerInterface;
+
+@FunctionalInterface
+public interface LambdaTest20a<INPUT>
+extends Consumer<INPUT>,
+MarkerInterface {
+    public void acceptWithThrowing(INPUT var1) throws Throwable;
+
+    @Override
+    default public void accept(INPUT input) {
+        try {
+            this.acceptWithThrowing(input);
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
+    @Override
+    default public LambdaTest20a<INPUT> andThen(LambdaTest20a<INPUT> consumer) {
+        return input -> {
+            this.acceptWithThrowing(input);
+            consumer.acceptWithThrowing(input);
+        };
+    }
+}

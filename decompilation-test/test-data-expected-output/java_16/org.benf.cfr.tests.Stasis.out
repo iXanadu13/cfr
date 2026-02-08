@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Stasis {
+    static final String s;
+    static final String s2;
+
+    Stasis() {
+    }
+
+    static {
+        Object pc = null;
+        s = s2 = pc;
+    }
+}

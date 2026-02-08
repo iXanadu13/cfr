@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface Java9Test1 {
+    default public void validate(int x) {
+        System.out.println(x == 2);
+    }
+
+    default public void validate2(int x) {
+        System.out.println(x == 3);
+    }
+
+    public static String of(String id) {
+        return id;
+    }
+
+    public boolean isHoliday(String var1);
+
+    default public boolean isBusinessDay(String date) {
+        return !this.isHoliday(date);
+    }
+}

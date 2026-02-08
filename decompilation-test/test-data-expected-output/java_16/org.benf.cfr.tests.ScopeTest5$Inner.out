@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ScopeTest5.Inner {
+    private int x;
+
+    public ScopeTest5.Inner() {
+        System.out.println(ScopeTest5.this.func.invoke(this.x, 4.2).toString());
+        System.out.println(func2.invoke(this.x, 4.2).toString());
+    }
+}

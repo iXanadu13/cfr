@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.stream.Stream;
+
+public class LambdaTest17 {
+    public void foo(Stream<String> s) {
+        s.forEach(String::new);
+    }
+}

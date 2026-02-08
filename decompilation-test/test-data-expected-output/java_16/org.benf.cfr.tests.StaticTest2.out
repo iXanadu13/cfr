@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.support.ListFactory;
+
+public class StaticTest2 {
+    private static void inner(List<String> x) {
+    }
+
+    public static void outer() {
+        StaticTest2.inner(ListFactory.newList());
+        StaticTest2.inner(ListFactory.newList());
+    }
+}

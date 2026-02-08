@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class VoidTest {
+    public static Class<?> a() {
+        return Void.TYPE;
+    }
+
+    public static Class<?> b() {
+        return Void.class;
+    }
+}

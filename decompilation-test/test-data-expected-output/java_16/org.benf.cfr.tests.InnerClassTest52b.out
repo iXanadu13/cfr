@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Supplier;
+
+public class InnerClassTest52b {
+    void localBug() {
+        class Local {
+            Local() {
+            }
+        }
+        Supplier<Local> s = () -> new Local();
+    }
+}

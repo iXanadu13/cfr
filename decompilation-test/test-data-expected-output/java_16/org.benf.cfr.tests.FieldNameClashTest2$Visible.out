@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldNameClashTest2;
+
+class FieldNameClashTest2.Visible {
+    String FieldNameClashTest2 = "Foo";
+
+    FieldNameClashTest2.Visible() {
+    }
+
+    public void greet() {
+        System.out.println(this.FieldNameClashTest2);
+    }
+
+    public void main() {
+        org.benf.cfr.tests.FieldNameClashTest2.greet();
+    }
+}

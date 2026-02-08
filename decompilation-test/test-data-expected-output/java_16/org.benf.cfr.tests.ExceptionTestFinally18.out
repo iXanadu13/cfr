@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally18 {
+    public void test1(int x) {
+        try {
+            try {
+                System.out.print(3);
+            } catch (IllegalStateException e) {
+                System.out.println("Damn");
+            }
+            System.out.println("Oops");
+        } catch (Throwable throwable) {
+            // empty catch block
+        }
+        System.out.print(5);
+    }
+}

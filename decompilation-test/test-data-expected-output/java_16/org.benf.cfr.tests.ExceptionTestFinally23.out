@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally23 {
+    public void test(int x) throws Throwable {
+        try {
+            try {
+                try {
+                    System.out.println("A");
+                    throw new Throwable();
+                } catch (Throwable t) {
+                    System.out.println("B");
+                    throw t;
+                }
+            } catch (Throwable throwable) {
+                System.out.println("inner finally");
+                throw throwable;
+            }
+        } catch (Throwable throwable) {
+            System.out.println("finally");
+            throw throwable;
+        }
+    }
+}

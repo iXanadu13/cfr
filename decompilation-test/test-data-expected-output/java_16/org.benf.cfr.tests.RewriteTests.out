@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class RewriteTests {
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return RewriteTests.fibonacci(n - 1) + RewriteTests.fibonacci(n - 2);
+    }
+
+    public static int fibonacci2(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return RewriteTests.fibonacci2(n - 1) + RewriteTests.fibonacci2(n - 2);
+    }
+
+    public static int fibonacci3(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return RewriteTests.fibonacci3(n - 1) + RewriteTests.fibonacci3(n - 2);
+    }
+}

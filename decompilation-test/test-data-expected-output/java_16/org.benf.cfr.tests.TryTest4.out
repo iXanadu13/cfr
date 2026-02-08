@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import java.io.StringWriter;
+
+public class TryTest4 {
+    public void foo() throws IOException {
+        try (StringWriter sw = new StringWriter();){
+            sw.write("test");
+        }
+    }
+}

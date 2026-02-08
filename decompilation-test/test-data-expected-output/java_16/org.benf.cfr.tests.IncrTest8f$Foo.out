@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class IncrTest8f.Foo {
+    private final int x;
+
+    public IncrTest8f.Foo(int x) {
+        this.x = x;
+    }
+
+    public void foo(int y, int z) {
+        System.out.println(this.x + "," + y + "," + z);
+    }
+}

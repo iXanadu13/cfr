@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest13 {
+    public void test5(int end) {
+        int x = 0;
+        while ((x += 2) < end) {
+            System.out.println(x);
+        }
+    }
+}

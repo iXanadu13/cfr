@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AbeImitate {
+    public static void main(String[] args) {
+        while ("" == "") {
+        }
+        System.out.println("hello world");
+    }
+}

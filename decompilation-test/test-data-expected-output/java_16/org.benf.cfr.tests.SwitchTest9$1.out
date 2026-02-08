@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Troolean;
+
+class SwitchTest9.1 {
+    static final /* synthetic */ int[] $SwitchMap$org$benf$cfr$tests$support$Troolean;
+
+    static {
+        $SwitchMap$org$benf$cfr$tests$support$Troolean = new int[Troolean.values().length];
+        try {
+            SwitchTest9.1.$SwitchMap$org$benf$cfr$tests$support$Troolean[Troolean.NEITHER.ordinal()] = 1;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            SwitchTest9.1.$SwitchMap$org$benf$cfr$tests$support$Troolean[Troolean.FIRST.ordinal()] = 2;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            SwitchTest9.1.$SwitchMap$org$benf$cfr$tests$support$Troolean[Troolean.BOTH.ordinal()] = 3;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
+}

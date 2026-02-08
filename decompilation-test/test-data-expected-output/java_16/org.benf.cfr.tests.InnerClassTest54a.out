@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Function;
+
+public class InnerClassTest54a {
+    public static void main(String[] args) {
+        Function<Object, String> f = x -> new Mess().a;
+        System.out.println(f.apply(0));
+    }
+
+    static class Mess {
+        String a = "hello world";
+
+        Mess() {
+        }
+    }
+}

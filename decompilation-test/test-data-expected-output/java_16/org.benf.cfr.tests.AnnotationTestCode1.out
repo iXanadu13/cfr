@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnnotationCode;
+
+public class AnnotationTestCode1 {
+    public void foo() {
+        @AnnotationCode(name="fred") String a = "Hello";
+        System.out.println(a);
+    }
+}

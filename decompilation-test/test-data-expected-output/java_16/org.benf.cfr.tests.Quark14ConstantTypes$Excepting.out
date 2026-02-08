@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+interface Quark14ConstantTypes.Excepting {
+    public void doit() throws Exception;
+}

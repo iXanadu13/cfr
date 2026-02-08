@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FinalBlowup {
+    /*
+     * Exception decompiling
+     */
+    public String foo(int x) {
+        /*
+         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
+         * 
+         * org.benf.cfr.reader.util.ConfusedCFRException: Started 2 blocks at once
+         */
+        throw new IllegalStateException("Decompilation failed");
+    }
+}

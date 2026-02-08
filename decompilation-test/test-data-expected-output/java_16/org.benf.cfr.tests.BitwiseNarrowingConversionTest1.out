@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class BitwiseNarrowingConversionTest1 {
+    BitwiseNarrowingConversionTest1() {
+    }
+
+    int byteAnd0() {
+        byte b = 0;
+        b = (byte)(b & 0);
+        return b;
+    }
+
+    boolean boolAnd0() {
+        boolean b = false;
+        return b &= false;
+    }
+
+    boolean boolAnd1() {
+        boolean b = false;
+        if (b) {
+            // empty if block
+        }
+        b = false;
+        return b;
+    }
+}

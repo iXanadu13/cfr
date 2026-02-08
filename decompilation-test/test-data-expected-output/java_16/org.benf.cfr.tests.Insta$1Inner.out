@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Insta.1Inner {
+    Insta.1Inner() {
+        System.out.println("hello");
+    }
+}

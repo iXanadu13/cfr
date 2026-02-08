@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.support.UnaryFunction;
+
+class AnonymousInnerClassTest16.1
+implements UnaryFunction<List<Integer>, Boolean> {
+    final /* synthetic */ List val$lst;
+
+    AnonymousInnerClassTest16.1(List list) {
+        this.val$lst = list;
+    }
+
+    @Override
+    public Boolean invoke(List<Integer> arg) {
+        return arg.equals(this.val$lst);
+    }
+}

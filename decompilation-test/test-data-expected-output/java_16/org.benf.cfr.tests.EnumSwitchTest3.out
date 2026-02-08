@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.management.MemoryType;
+
+public class EnumSwitchTest3 {
+    public void test(MemoryType m) {
+        switch (m) {
+            case HEAP: {
+                System.out.println("HEAP");
+                break;
+            }
+            case NON_HEAP: {
+                System.out.println("NON");
+                break;
+            }
+            default: {
+                System.out.println("WAH?");
+            }
+        }
+    }
+}

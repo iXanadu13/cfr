@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class UsageTest1 {
+    public String concat(String s) {
+        s = (String)s + "test";
+        return s;
+    }
+}

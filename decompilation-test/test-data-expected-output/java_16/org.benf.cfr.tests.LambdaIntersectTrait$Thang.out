@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.LambdaIntersectTrait;
+
+public interface LambdaIntersectTrait.Thang
+extends LambdaIntersectTrait.Thong {
+    @Override
+    default public void doThang() {
+        System.out.println("thang");
+    }
+}

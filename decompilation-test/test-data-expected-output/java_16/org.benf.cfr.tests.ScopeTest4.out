@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ScopeTest4 {
+    int x;
+    private static int y;
+
+    public void foo(int y) {
+        this.x = y;
+        ScopeTest4.y = y;
+    }
+
+    public void foo2(int x) {
+        this.x = x;
+        y = x;
+    }
+
+    private class Inner {
+        private int x;
+
+        public Inner() {
+            System.out.println(this.x);
+            System.out.println(y);
+        }
+    }
+}

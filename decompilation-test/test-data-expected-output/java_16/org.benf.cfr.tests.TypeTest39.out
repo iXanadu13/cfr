@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Collection;
+import java.util.Map;
+
+public class TypeTest39 {
+    private <T> void reset(Collection<? extends T> coll) {
+    }
+
+    public void reset(Map<String, Integer> m1, Map<Object, Double> m2) {
+        this.reset(m1.values());
+        this.reset(m2.values());
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class Tower6.2Height {
+    Tower6.2Height() {
+    }
+
+    void test() {
+        System.out.println("CHEEEEESE");
+    }
+}

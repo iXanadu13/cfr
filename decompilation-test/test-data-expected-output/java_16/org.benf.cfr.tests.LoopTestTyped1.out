@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+
+public class LoopTestTyped1 {
+    public void test5(String a, String b) {
+        ArrayList<String> lst = new ArrayList<String>();
+        lst.add(a);
+        lst.add(b);
+        for (String s : lst) {
+            System.out.println(s);
+        }
+    }
+}

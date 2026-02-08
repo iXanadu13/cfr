@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class StaticImportTest2b.org.benf.cfr.tests.StaticImport {
+    StaticImportTest2b.org.benf.cfr.tests.StaticImport() {
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest34 {
+    private InnerClassTest34(int x) {
+    }
+
+    public static class Factory {
+        private InnerClassTest34 get(int y) {
+            return new InnerClassTest34(y);
+        }
+    }
+}

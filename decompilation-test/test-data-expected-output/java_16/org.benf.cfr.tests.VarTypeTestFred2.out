@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestBob;
+
+public class VarTypeTestFred2
+extends VarTypeTestBob {
+    public int bar;
+}

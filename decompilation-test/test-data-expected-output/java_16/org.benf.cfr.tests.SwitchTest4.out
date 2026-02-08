@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest4 {
+    public int test0(String s) {
+        switch (s) {
+            default: {
+                System.out.println("Test");
+                break;
+            }
+            case "BB": {
+                return 12;
+            }
+            case "Aa": 
+            case "FRED": {
+                return 13;
+            }
+        }
+        System.out.println("Here");
+        return 0;
+    }
+}

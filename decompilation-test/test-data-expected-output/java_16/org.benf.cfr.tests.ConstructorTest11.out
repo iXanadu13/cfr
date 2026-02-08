@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstructorTest11 {
+    private Foo bob = new Foo(3){
+        {
+            this.bar();
+            this.bar();
+        }
+    };
+
+    private static class Foo {
+        public Foo(int x) {
+        }
+
+        void bar() {
+        }
+    }
+}

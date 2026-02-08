@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import org.benf.cfr.tests.InnerClassTest37;
+
+class InnerClassTest37.Bob {
+    InnerClassTest37 a;
+
+    private InnerClassTest37.Bob(InnerClassTest37 a, List<String> lst) {
+        this.a = a;
+    }
+
+    private int get() {
+        return 1;
+    }
+}

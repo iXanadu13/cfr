@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class VarOrderingTest {
+    public static void main(String ... args) {
+        int z;
+        int y;
+        int x;
+        if (args.length < 3) {
+            x = 1;
+            y = 2;
+            z = 3;
+        } else {
+            z = 4;
+            y = 3;
+            x = 2;
+        }
+        System.out.println("" + x + y + z);
+    }
+}

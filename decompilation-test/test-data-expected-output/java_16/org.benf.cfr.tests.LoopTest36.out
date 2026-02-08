@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LoopTest36 {
+    public boolean test(boolean a, boolean b) {
+        boolean res = true;
+        boolean c = true;
+        do {
+            c = false;
+            System.out.println((Object)res);
+        } while (res = b && a == (c = b) && b && c);
+        return c;
+    }
+}

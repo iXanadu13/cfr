@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArgTest3 {
+    public void test2(int a, int b, double c, int d) {
+        double d2 = c += 1.0;
+        c = d2 + 1.0;
+        if (d2 > (double)b) {
+            System.out.println("A" + a + b + c + d);
+        }
+        if (c < (double)a) {
+            System.out.println("A" + a + b + c + d);
+        }
+    }
+}

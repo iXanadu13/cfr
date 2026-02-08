@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.FieldNameClashTest;
+
+public class FieldNameClashTestDerived
+extends FieldNameClashTest {
+    public static void greet() {
+        System.out.println(FieldNameClashTest);
+    }
+
+    public static void main(String[] a) {
+        org.benf.cfr.tests.FieldNameClashTest.greet();
+    }
+}

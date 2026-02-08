@@ -1,0 +1,8 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+public interface UnaryFunction<X, Y> {
+    public Y invoke(X var1);
+}

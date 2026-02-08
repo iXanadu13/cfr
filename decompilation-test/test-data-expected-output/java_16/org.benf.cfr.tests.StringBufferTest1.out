@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class StringBufferTest1 {
+    public String test1(int a, int b, int c) {
+        return new StringBuffer().append("this ").append(a).append("is").append(b).append(" c? ").append(c).toString();
+    }
+
+    public String test2(int a, int b, int c) {
+        return new StringBuffer("this ").append(a).append("is").append(b).append(" c? ").append(c).toString();
+    }
+
+    public String test3(int a, int b, int c) {
+        return "this " + a + "is" + b + " c? " + c;
+    }
+
+    public String test4(int a, int b, int c) {
+        return "this " + a + "is" + b + " c? " + c;
+    }
+}

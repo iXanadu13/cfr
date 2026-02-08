@@ -1,0 +1,46 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AssignmentArgument;
+
+public class AssignmentArgument2 {
+    static void testConstructor(int a) {
+        int b = a;
+        AssignmentArgument.TestClass testClass = new AssignmentArgument.TestClass(b);
+        System.out.println(a == b);
+    }
+
+    static int testConstructor2(int a) {
+        try {
+            int n = switch (a) {
+                case 1 -> 1;
+                case 2 -> 2;
+                default -> 3;
+            };
+            a = n;
+            new TestClass(n);
+        } catch (OutOfMemoryError outOfMemoryError) {
+            // empty catch block
+        }
+        return a;
+    }
+
+    static void testMethod(int a) {
+        int b = a;
+        AssignmentArgument2.testMethod(b);
+        System.out.println(a == b);
+    }
+
+    static void testArray(int a) {
+        int b = a;
+        int[] o = new int[b];
+        System.out.println(a == b);
+    }
+
+    static class TestClass {
+        TestClass(int i) {
+        }
+    }
+}

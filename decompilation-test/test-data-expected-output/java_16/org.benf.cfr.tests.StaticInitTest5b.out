@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StaticInitTest5b {
+    static int x = 5;
+    static final Map<String, String> map;
+
+    static {
+        System.out.println("Keep static initialiser");
+        map = new HashMap<String, String>(x);
+    }
+}

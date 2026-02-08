@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InheritedMethodOverloadTest3.Base {
+    InheritedMethodOverloadTest3.Base() {
+    }
+
+    void inherited(long i) {
+    }
+
+    void inheritedObj(Object s) {
+    }
+}

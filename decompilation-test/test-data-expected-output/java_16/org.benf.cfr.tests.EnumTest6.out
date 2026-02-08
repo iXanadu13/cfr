@@ -1,0 +1,37 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+/*
+ * Uses preview features.  Disable with feature flag or --previewfeatures false
+ */
+enum EnumTest6 {
+    FOO{
+
+        @Override
+        public void f() {
+            System.out.println(x);
+        }
+    }
+    ,
+    BAR{}
+    ,
+    BAP,
+    BOP{
+
+        public String toString() {
+            return "OVERRIDE";
+        }
+    };
+
+    private static String x;
+
+    public void f() {
+        System.out.println("DEFAULTF");
+    }
+
+    static {
+        x = "BAR";
+    }
+}

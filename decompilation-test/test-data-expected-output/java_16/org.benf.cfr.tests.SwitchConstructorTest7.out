@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class SwitchConstructorTest7 {
+    SwitchConstructorTest7(int i, int j) {
+    }
+
+    SwitchConstructorTest7(Byte b) {
+        this(switch (0) {
+            default -> {
+                byte cfr_switch_hack = switch (0) {
+                    default -> b;
+                };
+                switch (0) {
+                    default: {
+                        System.out.println("HERE");
+                    }
+                }
+                yield cfr_switch_hack;
+            }
+        }, 3);
+    }
+}

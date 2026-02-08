@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ConstructorTest1 {
+    public boolean test(int x) {
+        boolean a = true;
+        a = false;
+        throw new UnsupportedOperationException("" + (false ? 3 : 1));
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class AnonymousInnerClassTest14 {
+    public static Object test(final int x) {
+        UnaryFunction<Integer, Integer> t = new UnaryFunction<Integer, Integer>(){
+
+            @Override
+            public Integer invoke(Integer arg) {
+                int t = arg * x;
+                int t2 = t + t;
+                return arg + x * t + t2;
+            }
+        };
+        System.out.println(t);
+        return t;
+    }
+}

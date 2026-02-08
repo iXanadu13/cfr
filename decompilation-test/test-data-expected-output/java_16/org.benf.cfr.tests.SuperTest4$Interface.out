@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+interface SuperTest4.Interface<T> {
+    public T copy(T var1);
+
+    public void doStuff(T var1);
+}

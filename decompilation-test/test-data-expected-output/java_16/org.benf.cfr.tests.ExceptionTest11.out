@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public abstract class ExceptionTest11 {
+    public String test(boolean b, String in) {
+        String classFile;
+        if (b) {
+            classFile = "TEST";
+        } else {
+            try {
+                classFile = this.getName();
+            } catch (RuntimeException e) {
+                return in;
+            }
+        }
+        if (classFile == null) {
+            return in;
+        }
+        return classFile;
+    }
+
+    abstract String getName();
+}

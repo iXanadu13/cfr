@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FieldTest251 {
+    public static final String CONSTANT = "test";
+    Object o = new Object(){
+
+        public String toString() {
+            return FieldTest251.CONSTANT;
+        }
+    };
+
+    class Nested {
+        Nested() {
+        }
+
+        public String toString() {
+            return FieldTest251.CONSTANT;
+        }
+    }
+}

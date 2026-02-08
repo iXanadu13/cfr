@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InstanceOfPatternTest7 {
+    /*
+     * Enabled aggressive block sorting
+     */
+    public static void test(Object obj, Object obj2) {
+        Object object = obj;
+        if (object instanceof String) {
+            String s = (String)object;
+            object = obj2;
+            if (object instanceof String) {
+                String s2 = (String)object;
+                System.out.println(s + s2);
+                return;
+            }
+        }
+        System.out.println("Foo");
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.StringConcatFactory;
+
+public class ConcatTest3 {
+    public void test1(String a, String b) {
+        CallSite res = StringConcatFactory.makeConcatWithConstants("makeConcatWithConstants", new Object[]{"\u0001\u0002\u0001\u0002", "(\u0002", ")\u0001"}, (String)a, b);
+        System.out.println((String)((Object)res));
+    }
+}

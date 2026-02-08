@@ -1,0 +1,33 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class BitwiseNarrowingConversionTest.Complement {
+    BitwiseNarrowingConversionTest.Complement() {
+    }
+
+    int byteComplement() {
+        int b = 0;
+        b = (byte)(~b);
+        return b;
+    }
+
+    int shortComplement() {
+        int b = 0;
+        b = (short)(~b);
+        return b;
+    }
+
+    int charComplement() {
+        int b = 0;
+        b = (char)(~b);
+        return b;
+    }
+
+    long intComplement() {
+        long b = 0L;
+        b = (int)(b ^ 0xFFFFFFFFFFFFFFFFL);
+        return b;
+    }
+}

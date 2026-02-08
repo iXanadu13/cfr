@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AnnotationTestAnnotation2.fred {
+    private static final int TEST = 3;
+    private int y;
+
+    public AnnotationTestAnnotation2.fred(int y) {
+        this.y = y;
+    }
+}

@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InnerClassTest50.1Bug.1 {
+    InnerClassTest50.1Bug.1() {
+        System.out.println("Hello");
+    }
+}

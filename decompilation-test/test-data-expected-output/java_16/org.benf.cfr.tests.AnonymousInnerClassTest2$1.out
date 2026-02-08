@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.UnaryFunction;
+
+class AnonymousInnerClassTest2.1
+implements UnaryFunction<Integer, Integer> {
+    final /* synthetic */ int val$x;
+    final /* synthetic */ int val$y;
+
+    AnonymousInnerClassTest2.1() {
+        this.val$x = n;
+        this.val$y = n2;
+    }
+
+    @Override
+    public Integer invoke(Integer arg) {
+        return arg * this.hashCode() + this.val$x + this.val$y;
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+public class Logger {
+    public boolean isDebugEnabled() {
+        return false;
+    }
+
+    public void debug(String s) {
+    }
+}

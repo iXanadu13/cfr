@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class AssignmentArgument.TestClass {
+    AssignmentArgument.TestClass(int i) {
+    }
+}

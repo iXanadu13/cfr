@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LoopTestTyped6 {
+    private final List<Boolean> lst = new ArrayList<Boolean>();
+
+    public List<Boolean> foo() {
+        for (Boolean b : this.lst) {
+            System.out.println(b);
+        }
+        return this.lst;
+    }
+}

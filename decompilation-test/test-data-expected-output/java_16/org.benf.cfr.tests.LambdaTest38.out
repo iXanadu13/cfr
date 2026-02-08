@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class LambdaTest38 {
+    public LambdaTest38(int a, String b) {
+    }
+
+    public static void create(Factory factory) {
+    }
+
+    public static void main(String[] args) {
+        LambdaTest38.create(LambdaTest38::new);
+    }
+
+    static interface Factory {
+        public LambdaTest38 create(int var1, String var2);
+    }
+}

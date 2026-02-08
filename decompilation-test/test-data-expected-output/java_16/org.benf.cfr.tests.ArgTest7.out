@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Set;
+import org.benf.cfr.tests.support.SetFactory;
+
+public class ArgTest7 {
+    public void fixArgs(Set<Integer> args) {
+    }
+
+    public void test() {
+        this.fixArgs(SetFactory.newSet());
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class Objection3 {
+    public static int test() {
+        Object blah = new Objection3[12];
+        int n = ((Objection3[])blah).length;
+        blah = null;
+        blah = "Hello";
+        return n;
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.MyParam;
+
+class AnnotationTestM2c.Nested<T, A> {
+    AnnotationTestM2c.Nested() {
+    }
+
+    public String test2(AnnotationTestM2c.Nested<@MyParam T, @MyParam A> this, String b) throws Exception {
+        return null;
+    }
+}

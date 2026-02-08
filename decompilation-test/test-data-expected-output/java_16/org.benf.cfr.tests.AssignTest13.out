@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest13 {
+    public void test(int j) {
+        Object o = j;
+        o = new AssignTest13();
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest20 {
+    static boolean byteArray = true;
+
+    public static void main(String[] args) {
+        Object[] array = null;
+        array = byteArray ? new byte[1] : (Object[])new boolean[1];
+        array[0] = 0;
+        System.out.println(array[0]);
+    }
+}

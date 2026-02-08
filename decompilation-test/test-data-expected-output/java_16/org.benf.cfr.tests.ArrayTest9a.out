@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest9a {
+    int x;
+    int y;
+    int z;
+
+    static void test1(Integer ... a) {
+        System.out.println(a);
+    }
+
+    public static void main(String[] args) {
+        ArrayTest9a.test1(1, 2, 3);
+        ArrayTest9a.test1(1);
+        ArrayTest9a.test1(null);
+        ArrayTest9a.test1(null);
+        ArrayTest9a.test1(new Integer[0]);
+    }
+}

@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class TryTest3 {
+    public void test1(int x, List<Integer> a) {
+        for (Integer y : a) {
+            try {
+                if (x < 3) {
+                    System.out.println("a");
+                    continue;
+                }
+                System.out.println("b");
+            } catch (RuntimeException e) {
+                System.out.println("e");
+            }
+        }
+        System.out.print(5);
+    }
+}

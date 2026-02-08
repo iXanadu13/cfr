@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class FloatTest {
+    public static float a() {
+        float res = 0.0f;
+        for (int x = 1; x <= 1000000; ++x) {
+            res += 1.0f / (float)x;
+        }
+        return res;
+    }
+
+    public static float b() {
+        float res = 0.0f;
+        for (int x = 1000000; x >= 1; --x) {
+            res += 1.0f / (float)x;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(FloatTest.a());
+        System.out.println(FloatTest.b());
+    }
+}

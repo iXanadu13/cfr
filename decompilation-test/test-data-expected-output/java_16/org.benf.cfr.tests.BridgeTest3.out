@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BridgeTest3 {
+    private void doIt() {
+    }
+
+    class D {
+        D() {
+            BridgeTest3.this.doIt();
+        }
+    }
+}

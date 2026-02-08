@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class ConditionalTest {
+    ConditionalTest() {
+    }
+
+    public static void main(String[] args) {
+        ConditionalTest.test(3);
+    }
+
+    static int test(int n) {
+        int n2;
+        byte by = (byte)(n2 + ((n2 = n >> 4) > 9 ? 55 : 48));
+        n2 = n & 0xF;
+        return by + n2;
+    }
+}

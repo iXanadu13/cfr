@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import java.util.Map;
+import org.benf.cfr.tests.AnnotationCode;
+import org.benf.cfr.tests.AnnotationNested;
+
+public class AnnotationTestCode6b {
+    public void test(AnnotationNested n) {
+        @AnnotationCode(name="a") Map<@AnnotationCode(name="b") ? extends @AnnotationCode(name="c") String, @AnnotationCode(name="d") List<@AnnotationCode(name="e") Object>> var = this.test();
+        System.out.print(var);
+    }
+
+    public Map<? extends String, List<Object>> test() {
+        return null;
+    }
+}

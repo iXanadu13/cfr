@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public interface BoundTestPart1<A, B> {
+    public A getA();
+
+    public B getB();
+}

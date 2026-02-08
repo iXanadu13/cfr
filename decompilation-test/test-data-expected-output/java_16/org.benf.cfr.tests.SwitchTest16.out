@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SwitchTest16 {
+    public void test1(int x, int y) {
+        switch (x) {
+            default: {
+                System.out.println("C");
+                break;
+            }
+            case 0: {
+                System.out.println("A");
+                if (x > y) {
+                    System.out.println("B");
+                    break;
+                }
+                System.out.println("B2");
+            }
+        }
+        System.out.println("D");
+    }
+}

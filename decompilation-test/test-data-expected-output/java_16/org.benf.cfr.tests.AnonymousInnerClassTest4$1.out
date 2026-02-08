@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.AnonymousInnerClassTest4;
+
+class AnonymousInnerClassTest4.1
+extends AnonymousInnerClassTest4.UF {
+    AnonymousInnerClassTest4.1(int x) {
+        super(x);
+    }
+
+    @Override
+    int invoke(int y) {
+        return this.getX() + y;
+    }
+}

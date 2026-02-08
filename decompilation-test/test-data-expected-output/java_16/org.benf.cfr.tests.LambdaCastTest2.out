@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.LambdaCastTestInterfaces;
+
+class LambdaCastTest2 {
+    LambdaCastTest2() {
+    }
+
+    static void test(Object o) {
+        System.out.println(o instanceof LambdaCastTestInterfaces.A && o instanceof LambdaCastTestInterfaces.B);
+    }
+
+    public static void main(String ... args) {
+        LambdaCastTest2.test((LambdaCastTestInterfaces.A & LambdaCastTestInterfaces.B)() -> System.out.println("A"));
+        LambdaCastTest2.test((LambdaCastTestInterfaces.A)((Object)((LambdaCastTestInterfaces.B)((Object)((LambdaCastTestInterfaces.A)() -> System.out.println("B"))))));
+    }
+}

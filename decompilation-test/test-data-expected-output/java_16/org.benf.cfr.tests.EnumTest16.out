@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.EnumSet;
+import org.benf.cfr.tests.EnumTest1;
+
+public class EnumTest16 {
+    EnumSet<EnumTest1> enumSet = EnumSet.noneOf(EnumTest1.class);
+
+    public void test() {
+        this.enumSet.add(EnumTest1.BAP);
+        this.enumSet.add(EnumTest1.BAR);
+    }
+}

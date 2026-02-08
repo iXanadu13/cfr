@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Set;
+
+public class SystemModuleTest {
+    public static void main(String ... args) throws Exception {
+        HashMap<String, String> mapRes = new HashMap<String, String>();
+        Class<?> moduleLayer = Class.forName("java.lang.ModuleLayer");
+        Method method = moduleLayer.getMethod("boot", new Class[0]);
+        Object res = method.invoke(null, new Object[0]);
+        Method modulesMeth = res.getClass().getMethod("modules", new Class[0]);
+        Object modules = modulesMeth.invoke(res, new Object[0]);
+        Set set = (Set)modules;
+        Method getPackagesMethod = Class.forName("java.lang.Module").getMethod("getPackages", new Class[0]);
+        Method getNameMethod = Class.forName("java.lang.Module").getMethod("getName", new Class[0]);
+        for (Object module : set) {
+            Object res2 = getPackagesMethod.invoke(module, new Object[0]);
+            Set m1 = (Set)res2;
+            String name = (String)getNameMethod.invoke(module, new Object[0]);
+            for (String packageName : m1) {
+                mapRes.put(packageName, name);
+            }
+        }
+        boolean x = true;
+    }
+}

@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally24 {
+    public void fn() {
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public void test(int x) {
+        try {
+            System.out.println("A");
+            this.fn();
+        } finally {
+            try {
+                System.out.println("B");
+                this.fn();
+            } finally {
+                System.out.println("C");
+            }
+        }
+    }
+}

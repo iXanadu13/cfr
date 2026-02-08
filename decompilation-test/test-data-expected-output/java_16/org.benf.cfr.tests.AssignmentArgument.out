@@ -1,0 +1,32 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class AssignmentArgument {
+    AssignmentArgument() {
+    }
+
+    static void testConstructor(int a) {
+        int b = a;
+        TestClass testClass = new TestClass(b);
+        System.out.println(a == b);
+    }
+
+    static void testMethod(int a) {
+        int b = a;
+        AssignmentArgument.testMethod(b);
+        System.out.println(a == b);
+    }
+
+    static void testArray(int a) {
+        int b = a;
+        int[] o = new int[b];
+        System.out.println(a == b);
+    }
+
+    static class TestClass {
+        TestClass(int i) {
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class CastTest25<T> {
+    void use(T t) {
+    }
+
+    void doSomething(List<T> l) {
+        this.use(l);
+    }
+}

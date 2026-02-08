@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionCanBeDroppedTest3 {
+    public static int decompileWrong(int x) {
+        return x;
+    }
+}

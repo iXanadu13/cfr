@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.management.MemoryType;
+
+class EnumSwitchTest3.1 {
+    static final /* synthetic */ int[] $SwitchMap$java$lang$management$MemoryType;
+
+    static {
+        $SwitchMap$java$lang$management$MemoryType = new int[MemoryType.values().length];
+        try {
+            EnumSwitchTest3.1.$SwitchMap$java$lang$management$MemoryType[MemoryType.HEAP.ordinal()] = 1;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+        try {
+            EnumSwitchTest3.1.$SwitchMap$java$lang$management$MemoryType[MemoryType.NON_HEAP.ordinal()] = 2;
+        } catch (NoSuchFieldError noSuchFieldError) {
+            // empty catch block
+        }
+    }
+}

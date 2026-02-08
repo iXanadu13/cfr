@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+
+public class TernaryTest6 {
+    public static Object bob(List<Integer> a, Set<Double> b, boolean c) {
+        Collection<Number> x = c ? a : b;
+        return x;
+    }
+}

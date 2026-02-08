@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestFred;
+
+class VarTypeTest8.1
+extends VarTypeTestFred {
+    VarTypeTest8.1() {
+    }
+
+    @Override
+    public String twoString() {
+        return "HERE";
+    }
+}

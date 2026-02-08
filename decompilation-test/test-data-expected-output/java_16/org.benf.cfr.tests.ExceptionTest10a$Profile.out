@@ -1,0 +1,38 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.IOException;
+import org.benf.cfr.tests.ExceptionTest10a;
+
+class ExceptionTest10a.Profile {
+    private String playerUUID;
+
+    private ExceptionTest10a.Profile() {
+    }
+
+    public ExceptionTest10a.Profile getSelectedProfile() {
+        return null;
+    }
+
+    public ExceptionTest10a.UserAuthentication getAuthDatabase() {
+        return new ExceptionTest10a.UserAuthentication(ExceptionTest10a.this);
+    }
+
+    public String getPlayerUUID() {
+        return this.playerUUID;
+    }
+
+    public void saveProfiles() throws IOException {
+        throw new IOException();
+    }
+
+    public void fireRefreshEvent() throws ExceptionTest10a.AuthenticationException {
+        throw new ExceptionTest10a.AuthenticationException(ExceptionTest10a.this);
+    }
+
+    public void doThat() throws ExceptionTest10a.InvalidCredentialsException {
+        throw new ExceptionTest10a.InvalidCredentialsException(ExceptionTest10a.this);
+    }
+}

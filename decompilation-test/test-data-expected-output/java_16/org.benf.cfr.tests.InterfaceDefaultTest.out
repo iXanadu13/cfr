@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public @interface InterfaceDefaultTest {
+    public boolean ignoreCancelled() default false;
+
+    public int andThis() default 0;
+}

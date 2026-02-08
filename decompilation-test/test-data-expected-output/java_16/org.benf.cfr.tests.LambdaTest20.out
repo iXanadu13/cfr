@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.Serializable;
+import java.util.function.Consumer;
+
+@FunctionalInterface
+public interface LambdaTest20<INPUT>
+extends Consumer<INPUT>,
+Serializable {
+    public void acceptWithThrowing(INPUT var1) throws Throwable;
+
+    @Override
+    default public void accept(INPUT input) {
+        try {
+            this.acceptWithThrowing(input);
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
+    @Override
+    default public LambdaTest20<INPUT> andThen(LambdaTest20<INPUT> consumer) {
+        return input -> {
+            this.acceptWithThrowing(input);
+            consumer.acceptWithThrowing(input);
+        };
+    }
+}

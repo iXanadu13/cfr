@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArrayTest10a {
+    void test3() {
+        CA[] a = new CB[4];
+        a = new CC[4];
+        System.out.println(a);
+        System.out.println(a);
+    }
+
+    private static class CB
+    extends CA {
+        private CB() {
+        }
+    }
+
+    private static class CC
+    extends CA {
+        private CC() {
+        }
+    }
+
+    private static class CA {
+        private CA() {
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.function.Consumer;
+
+public interface UnboundTypeTest2<T> {
+    public T doSomething();
+
+    public static <T> UnboundTypeTest2<T> getInstance() {
+        return null;
+    }
+
+    public static <T extends Consumer<Integer>> void foo(String[] args, T consumer) {
+        Consumer o2 = (Consumer)UnboundTypeTest2.getInstance().doSomething();
+        consumer.accept(2);
+        UnboundTypeTest2<T> o3 = UnboundTypeTest2.getInstance();
+    }
+}

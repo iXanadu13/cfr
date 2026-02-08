@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.SuperTest5;
+
+public class SuperTest5.Derived
+extends SuperTest5.Base {
+    public SuperTest5.Derived(int y) {
+        super(SuperTest5.this, y);
+    }
+
+    public String x() {
+        return "Hello";
+    }
+}

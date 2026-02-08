@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class HashMapNullKeyTest.HashThis {
+    private final int hascode;
+
+    public HashMapNullKeyTest.HashThis(int hash) {
+        this.hascode = hash;
+    }
+
+    public int hashCode() {
+        return this.hascode;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof HashMapNullKeyTest.HashThis)) {
+            return false;
+        }
+        HashMapNullKeyTest.HashThis other = (HashMapNullKeyTest.HashThis)obj;
+        return other.hascode == this.hascode;
+    }
+}

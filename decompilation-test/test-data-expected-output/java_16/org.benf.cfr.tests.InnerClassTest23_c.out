@@ -1,0 +1,29 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.Objects;
+
+public class InnerClassTest23_c {
+
+    private static class C {
+        private C() {
+        }
+
+        public static void test() {
+            C c;
+            C c2 = c = null;
+            Objects.requireNonNull(c2);
+            c2.new A(6);
+        }
+
+        class A {
+            int j;
+
+            A(int j) {
+                this.j = j;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+interface TypeTest39c.Wildcard<X> {
+}

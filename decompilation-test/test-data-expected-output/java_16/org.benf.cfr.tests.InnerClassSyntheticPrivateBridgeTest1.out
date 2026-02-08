@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.UnaryFunction;
+
+public class InnerClassSyntheticPrivateBridgeTest1 {
+    Integer invoker(int arg, UnaryFunction<Integer, Integer> fn) {
+        return fn.invoke(arg);
+    }
+
+    public int doit2(int x) {
+        return this.invoker(x, new Fred());
+    }
+
+    private static class Fred
+    implements UnaryFunction<Integer, Integer> {
+        private Fred() {
+        }
+
+        @Override
+        public Integer invoke(Integer arg) {
+            return arg * 3;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TypeTest48 {
+    private static void t1() {
+        boolean b1 = true;
+    }
+
+    private static void t2() {
+        boolean b1 = true;
+    }
+}

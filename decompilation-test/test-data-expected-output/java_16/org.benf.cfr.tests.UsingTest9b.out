@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.io.InputStream;
+import java.util.Base64;
+
+public class UsingTest9b {
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    static void test(InputStream in, Base64.Decoder decoder) {
+        try {
+            try (InputStream is = decoder.wrap(in);){
+                int x;
+                while ((x = is.read()) != 0) {
+                }
+            }
+            return;
+        } catch (Throwable throwable) {
+            return;
+        }
+    }
+}

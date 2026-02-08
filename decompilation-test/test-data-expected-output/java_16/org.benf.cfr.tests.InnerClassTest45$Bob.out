@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest45;
+
+class InnerClassTest45.Bob {
+    protected InnerClassTest45.Bob() {
+    }
+
+    public Object test() {
+        return new InnerClassTest45.Jim(InnerClassTest45.this);
+    }
+}

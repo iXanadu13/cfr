@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetFactory {
+    public static <X> Set<X> newSet() {
+        return new HashSet();
+    }
+
+    public static <X> Set<X> newSet(Collection<X> content) {
+        return new HashSet<X>(content);
+    }
+
+    public static <X> Set<X> newSet(X ... content) {
+        HashSet<X> res = new HashSet<X>();
+        for (X x : content) {
+            res.add(x);
+        }
+        return res;
+    }
+}

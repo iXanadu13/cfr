@@ -1,0 +1,46 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinally27 {
+    private boolean a;
+
+    public void fn() {
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public boolean test(int x) {
+        try {
+            if (x == 2) {
+                boolean bl = true;
+                return bl;
+            }
+            if (x == 3) {
+                boolean bl = true;
+                return bl;
+            }
+            try {
+                throw new UnsupportedOperationException();
+            } catch (UnsupportedOperationException e) {
+                try {
+                    if (x == 11) {
+                        boolean bl = false;
+                        return bl;
+                    }
+                    if (x == 13) {
+                        boolean bl = true;
+                        return bl;
+                    }
+                } finally {
+                    this.a = false;
+                }
+            }
+        } finally {
+            this.a = true;
+        }
+        return false;
+    }
+}

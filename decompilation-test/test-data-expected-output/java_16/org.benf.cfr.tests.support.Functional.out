@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests.support;
+
+import java.util.List;
+import org.benf.cfr.tests.support.Predicate;
+
+public class Functional {
+    public static <X> List<X> filter(List<X> in, Predicate<X> p) {
+        return in;
+    }
+}

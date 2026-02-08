@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AbeFence {
+    public static void main(String[] args) {
+        Object o = new Object(){
+            {
+                System.out.println("hello world");
+            }
+        };
+    }
+}

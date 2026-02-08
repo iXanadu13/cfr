@@ -1,0 +1,53 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Predicate;
+
+public class InnerClassTest26 {
+    int y;
+
+    public Predicate<Double> foo(int i) {
+        int x = 1;
+        if (x < 3) {
+            class Bob
+            implements Predicate<Double> {
+                Bob() {
+                }
+
+                @Override
+                public boolean test(Double in) {
+                    return in < (double)InnerClassTest26.this.y;
+                }
+            }
+            return new Bob();
+        }
+        if (x > 5) {
+            final int j = x + 3;
+            class Bob
+            implements Predicate<Double> {
+                Bob() {
+                }
+
+                @Override
+                public boolean test(Double in) {
+                    return in == (double)j;
+                }
+            }
+            return new Bob();
+        }
+        final int j = x + 30;
+        class Bob
+        implements Predicate<Double> {
+            Bob() {
+            }
+
+            @Override
+            public boolean test(Double in) {
+                return in + (double)j > (double)InnerClassTest26.this.y;
+            }
+        }
+        return new Bob();
+    }
+}

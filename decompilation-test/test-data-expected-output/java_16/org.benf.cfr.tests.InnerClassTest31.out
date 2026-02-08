@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InnerClassTest31 {
+    public int foo() {
+        class Bob {
+            Bob() {
+            }
+
+            public Bob mkBok() {
+                return new Bob();
+            }
+
+            int get() {
+                return 1;
+            }
+        }
+        return new Bob().mkBok().get();
+    }
+}

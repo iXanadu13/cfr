@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+
+public class InnerClassTest4.Inner1 {
+    private final List arg;
+
+    public InnerClassTest4.Inner1(List arg) {
+        this.arg = arg;
+    }
+
+    public int getX(int y) {
+        return 2;
+    }
+}

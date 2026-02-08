@@ -1,0 +1,350 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class BitwiseNarrowingConversionTest {
+    BitwiseNarrowingConversionTest() {
+    }
+
+    class Complement {
+        Complement() {
+        }
+
+        int byteComplement() {
+            int b = 0;
+            b = (byte)(~b);
+            return b;
+        }
+
+        int shortComplement() {
+            int b = 0;
+            b = (short)(~b);
+            return b;
+        }
+
+        int charComplement() {
+            int b = 0;
+            b = (char)(~b);
+            return b;
+        }
+
+        long intComplement() {
+            long b = 0L;
+            b = (int)(b ^ 0xFFFFFFFFFFFFFFFFL);
+            return b;
+        }
+    }
+
+    class CompoundXor {
+        CompoundXor() {
+        }
+
+        int byteCompoundXor0() {
+            byte b = 0;
+            b = (byte)(b ^ 0);
+            return b;
+        }
+
+        int shortCompoundXor0() {
+            short b = 0;
+            b = (short)(b ^ 0);
+            return b;
+        }
+
+        int charCompoundXor0() {
+            char b = '\u0000';
+            b = (char)(b ^ 0);
+            return b;
+        }
+
+        long intCompoundXor0() {
+            int b = 0;
+            return b ^= 0;
+        }
+
+        int byteCompoundXor1() {
+            byte b = 0;
+            b = (byte)(b ^ 1);
+            return b;
+        }
+
+        int shortCompoundXor1() {
+            short b = 0;
+            b = (short)(b ^ 1);
+            return b;
+        }
+
+        int charCompoundXor1() {
+            char b = '\u0000';
+            b = (char)(b ^ 1);
+            return b;
+        }
+
+        long intCompoundXor1() {
+            int b = 0;
+            return b ^= 1;
+        }
+    }
+
+    class Xor {
+        Xor() {
+        }
+
+        int byteXor0() {
+            byte b = 0;
+            b = (byte)(b ^ 0);
+            return b;
+        }
+
+        int shortXor0() {
+            short b = 0;
+            b = (short)(b ^ 0);
+            return b;
+        }
+
+        int charXor0() {
+            char b = '\u0000';
+            b = (char)(b ^ 0);
+            return b;
+        }
+
+        long intXor0() {
+            long b = 0L;
+            b = (int)(b ^ 0L);
+            return b;
+        }
+
+        int byteXor1() {
+            byte b = 0;
+            b = (byte)(b ^ 1);
+            return b;
+        }
+
+        int shortXor1() {
+            short b = 0;
+            b = (short)(b ^ 1);
+            return b;
+        }
+
+        int charXor1() {
+            char b = '\u0000';
+            b = (char)(b ^ 1);
+            return b;
+        }
+
+        long intXor1() {
+            long b = 0L;
+            b = (int)(b ^ 1L);
+            return b;
+        }
+    }
+
+    class CompoundOr {
+        CompoundOr() {
+        }
+
+        int byteCompoundOr0() {
+            byte b = 0;
+            b = (byte)(b | 0);
+            return b;
+        }
+
+        int shortCompoundOr0() {
+            short b = 0;
+            b = (short)(b | 0);
+            return b;
+        }
+
+        int charCompoundOr0() {
+            char b = '\u0000';
+            b = (char)(b | 0);
+            return b;
+        }
+
+        long intCompoundOr0() {
+            int b = 0;
+            return b |= 0;
+        }
+
+        int byteCompoundOr1() {
+            byte b = 0;
+            b = (byte)(b | 1);
+            return b;
+        }
+
+        int shortCompoundOr1() {
+            short b = 0;
+            b = (short)(b | 1);
+            return b;
+        }
+
+        int charCompoundOr1() {
+            char b = '\u0000';
+            b = (char)(b | 1);
+            return b;
+        }
+
+        long intCompoundOr1() {
+            int b = 0;
+            return b |= 1;
+        }
+    }
+
+    class Or {
+        Or() {
+        }
+
+        int byteOr0() {
+            byte b = 0;
+            b = (byte)(b | 0);
+            return b;
+        }
+
+        int shortOr0() {
+            short b = 0;
+            b = (short)(b | 0);
+            return b;
+        }
+
+        int charOr0() {
+            char b = '\u0000';
+            b = (char)(b | 0);
+            return b;
+        }
+
+        long intOr0() {
+            long b = 0L;
+            b = (int)(b | 0L);
+            return b;
+        }
+
+        int byteOr1() {
+            byte b = 0;
+            b = (byte)(b | 1);
+            return b;
+        }
+
+        int shortOr1() {
+            short b = 0;
+            b = (short)(b | 1);
+            return b;
+        }
+
+        int charOr1() {
+            char b = '\u0000';
+            b = (char)(b | 1);
+            return b;
+        }
+
+        long intOr1() {
+            long b = 0L;
+            b = (int)(b | 1L);
+            return b;
+        }
+    }
+
+    class CompoundAnd {
+        CompoundAnd() {
+        }
+
+        int byteCompoundAnd0() {
+            byte b = 0;
+            b = (byte)(b & 0);
+            return b;
+        }
+
+        int shortCompoundAnd0() {
+            short b = 0;
+            b = (short)(b & 0);
+            return b;
+        }
+
+        int charCompoundAnd0() {
+            char b = '\u0000';
+            b = (char)(b & 0);
+            return b;
+        }
+
+        long intCompoundAnd0() {
+            int b = 0;
+            return b &= 0;
+        }
+
+        int byteCompoundAnd1() {
+            byte b = 0;
+            b = (byte)(b & 1);
+            return b;
+        }
+
+        int shortCompoundAnd1() {
+            short b = 0;
+            b = (short)(b & 1);
+            return b;
+        }
+
+        int charCompoundAnd1() {
+            char b = '\u0000';
+            b = (char)(b & 1);
+            return b;
+        }
+
+        long intCompoundAnd1() {
+            int b = 0;
+            return b &= 1;
+        }
+    }
+
+    class And {
+        And() {
+        }
+
+        int byteAnd0() {
+            byte b = 0;
+            b = (byte)(b & 0);
+            return b;
+        }
+
+        int shortAnd0() {
+            short b = 0;
+            b = (short)(b & 0);
+            return b;
+        }
+
+        int charAnd0() {
+            char b = '\u0000';
+            b = (char)(b & 0);
+            return b;
+        }
+
+        long intAnd0() {
+            long b = 0L;
+            b = (int)(b & 0L);
+            return b;
+        }
+
+        int byteAnd1() {
+            byte b = 0;
+            b = (byte)(b & 1);
+            return b;
+        }
+
+        int shortAnd1() {
+            short b = 0;
+            b = (short)(b & 1);
+            return b;
+        }
+
+        int charAnd1() {
+            char b = '\u0000';
+            b = (char)(b & 1);
+            return b;
+        }
+
+        long intAnd1() {
+            long b = 0L;
+            b = (int)(b & 1L);
+            return b;
+        }
+    }
+}

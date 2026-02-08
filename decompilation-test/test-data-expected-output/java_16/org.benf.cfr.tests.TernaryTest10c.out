@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class TernaryTest10c {
+    private byte b;
+
+    public void test3(boolean a) {
+        this.b = (byte)(a ? Integer.valueOf(1) : Integer.valueOf(0)).intValue();
+    }
+}

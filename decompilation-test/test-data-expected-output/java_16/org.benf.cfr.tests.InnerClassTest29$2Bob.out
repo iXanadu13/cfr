@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.Predicate;
+
+class InnerClassTest29.2Bob<T>
+implements Predicate<T> {
+    InnerClassTest29.2Bob() {
+    }
+
+    @Override
+    public boolean test(T in) {
+        return in != null;
+    }
+}

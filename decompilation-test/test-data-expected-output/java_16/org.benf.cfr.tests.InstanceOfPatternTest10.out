@@ -1,0 +1,31 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class InstanceOfPatternTest10 {
+    static String s = "WIBBLE";
+
+    public static void test(Object obj) {
+        Object object = obj;
+        if (!(object instanceof String)) {
+            throw new IllegalStateException();
+        }
+        String s = (String)object;
+        System.out.println(s);
+    }
+
+    public static void test2(Object obj) {
+        Object object = obj;
+        if (!(object instanceof String)) {
+            throw new IllegalStateException();
+        }
+        String s = (String)object;
+        System.out.println(InstanceOfPatternTest10.s);
+    }
+
+    public static void main(String ... args) {
+        InstanceOfPatternTest10.test("Fred");
+        InstanceOfPatternTest10.test2("Fred");
+    }
+}

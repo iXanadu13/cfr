@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.Singleton;
+import org.benf.cfr.tests.SwitchInstanceTest2_One;
+import org.benf.cfr.tests.SwitchInstanceTest2_Two;
+
+public class SwitchInstanceTest2 {
+    public Singleton getSingleton(int x) {
+        switch (x) {
+            case 1: {
+                return SwitchInstanceTest2_One.INSTANCE;
+            }
+            case 2: {
+                return SwitchInstanceTest2_Two.INSTANCE;
+            }
+        }
+        return null;
+    }
+}

@@ -1,0 +1,49 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class SuperMemberAccess3 {
+    private String a;
+
+    private String test() {
+        return null;
+    }
+
+    public static class GrandChild
+    extends Child {
+        private double a;
+
+        private double test() {
+            return 1.1;
+        }
+
+        double doSomething1() {
+            double x = this.test();
+            return this.a;
+        }
+
+        String doSomething2() {
+            String x = this.test();
+            return ((SuperMemberAccess3)this).a;
+        }
+
+        int doSomething2b() {
+            return ((Child)this).a;
+        }
+
+        int doSomething() {
+            int x = this.test();
+            return ((Child)this).a;
+        }
+    }
+
+    public static class Child
+    extends SuperMemberAccess3 {
+        private int a;
+
+        private int test() {
+            return 1;
+        }
+    }
+}

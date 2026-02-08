@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class OrderTest5 {
+    public void printStuff(int x) {
+        x = x << 1;
+        System.out.println(x & (x >>= 1) & x);
+    }
+}

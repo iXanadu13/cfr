@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.DeclarationAndTypeUseAnnotations;
+
+class DeclarationAndTypeUseAnnotations.Test {
+    @DeclarationAndTypeUseAnnotations.MyParam
+    String field;
+
+    @DeclarationAndTypeUseAnnotations.MyParam
+    DeclarationAndTypeUseAnnotations.Test() {
+    }
+
+    @DeclarationAndTypeUseAnnotations.MyParam
+    String test(@DeclarationAndTypeUseAnnotations.MyParam int i) {
+        return null;
+    }
+}

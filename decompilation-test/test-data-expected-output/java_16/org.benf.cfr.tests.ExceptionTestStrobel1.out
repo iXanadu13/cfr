@@ -1,0 +1,27 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestStrobel1 {
+    private static void rethrow(Throwable t) throws Throwable {
+        throw t;
+    }
+
+    static void test(int a, int b) {
+        try {
+            try {
+                throw new UnsupportedOperationException();
+            } catch (RuntimeException e) {
+                ExceptionTestStrobel1.rethrow(e);
+                return;
+            }
+        } catch (UnsupportedOperationException e) {
+            System.out.println("unchecked");
+            return;
+        } catch (Throwable e) {
+            System.out.println("checked");
+            return;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.CallTest1;
+
+class CallTest1.B
+extends CallTest1.A {
+    private CallTest1.B() {
+    }
+
+    @Override
+    void foo() {
+        System.out.println("B");
+    }
+}

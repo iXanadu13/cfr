@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.support.BinaryFunction;
+
+public class LambdaTest4 {
+    private int x;
+
+    public LambdaTest4(int x) {
+        this.x = x;
+    }
+
+    Integer invoker(int arg, BinaryFunction<Integer, String, Integer> fn) {
+        return fn.invoke(arg, "Fre");
+    }
+
+    public int test(int y, Object o) {
+        return this.invoker(3, (x, z) -> 2 + x + y + 1 + z.length() + this.x);
+    }
+}

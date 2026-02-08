@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ArithOpTest4 {
+    public void test1(long l) {
+        if (l > Long.MAX_VALUE) {
+            System.out.println("BIG");
+        }
+        if (l == Long.MAX_VALUE) {
+            System.out.println("BIG");
+        }
+    }
+}

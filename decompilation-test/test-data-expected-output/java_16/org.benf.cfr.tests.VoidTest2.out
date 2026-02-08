@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class VoidTest2 {
+    public static void main(String ... args) {
+        System.out.println(Void.TYPE == Void.class);
+    }
+}

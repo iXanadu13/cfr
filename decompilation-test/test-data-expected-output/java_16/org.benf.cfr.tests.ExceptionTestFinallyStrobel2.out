@@ -1,0 +1,65 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class ExceptionTestFinallyStrobel2 {
+    private static String zero() {
+        return "zero";
+    }
+
+    private static String negative() {
+        return "negative";
+    }
+
+    private static String positive() {
+        return "positive";
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public String test(int x) {
+        try {
+            block19: {
+                block18: {
+                    if (x == 0) {
+                        String string = "zero";
+                        return string;
+                    }
+                    if (x >= 0) break block18;
+                    String string = ExceptionTestFinallyStrobel2.negative();
+                    System.out.println("inner finally");
+                }
+                if (x <= 0) break block19;
+                String string = ExceptionTestFinallyStrobel2.positive();
+                System.out.println("inner finally");
+            }
+            try {
+                if (x == 0) {
+                    String string = ExceptionTestFinallyStrobel2.zero();
+                    System.out.println("inner finally");
+                }
+                System.out.println("inner finally");
+            } catch (Throwable t) {
+                try {
+                    System.out.println("inner catch");
+                    String string = "inner error";
+                    System.out.println("inner finally");
+                } catch (Throwable throwable) {
+                    System.out.println("inner finally");
+                    throw throwable;
+                }
+            }
+            String t = "unreachable";
+            return t;
+        } catch (RuntimeException e) {
+            System.out.println("catch");
+            String string = "error";
+            return string;
+        } finally {
+            System.out.println("finally");
+            throw new RuntimeException("whoop whoop");
+        }
+    }
+}

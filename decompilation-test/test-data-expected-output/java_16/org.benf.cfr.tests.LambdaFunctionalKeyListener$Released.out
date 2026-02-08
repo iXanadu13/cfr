@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.awt.event.KeyEvent;
+import org.benf.cfr.tests.LambdaFunctionalKeyListener;
+
+@FunctionalInterface
+public interface LambdaFunctionalKeyListener.Released
+extends LambdaFunctionalKeyListener {
+    @Override
+    public void keyReleased(KeyEvent var1);
+}

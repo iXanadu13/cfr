@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.List;
+import java.util.Set;
+
+public class IfEmptyTest2 {
+    public boolean test1(List<Object> list, Set<Object> set) {
+        if (set == null) {
+            // empty if block
+        }
+        return true;
+    }
+}

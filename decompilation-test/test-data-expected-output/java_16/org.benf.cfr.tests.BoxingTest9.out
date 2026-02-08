@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class BoxingTest9 {
+    private boolean t(Integer i) {
+        return i == 6;
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest6;
+
+public class InnerClassTest6.Inner2 {
+    private final InnerClassTest6.Inner1 i1;
+
+    public InnerClassTest6.Inner2() {
+        this.i1 = new InnerClassTest6.Inner1(InnerClassTest6.this, 3);
+    }
+}

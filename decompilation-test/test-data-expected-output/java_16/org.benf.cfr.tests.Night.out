@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Night {
+    static List<? extends String> list = new ArrayList<String>();
+
+    public static void main(String[] args) {
+        list.add("hi");
+        System.out.println(list.get(0));
+    }
+}

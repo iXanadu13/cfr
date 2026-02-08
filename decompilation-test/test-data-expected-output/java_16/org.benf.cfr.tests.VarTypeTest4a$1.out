@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.VarTypeTestFred;
+
+class VarTypeTest4a.1
+extends VarTypeTestFred {
+    int foo = 3;
+
+    VarTypeTest4a.1() {
+    }
+}

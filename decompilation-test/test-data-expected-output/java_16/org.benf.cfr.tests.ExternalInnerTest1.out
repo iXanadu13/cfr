@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest7;
+
+public class ExternalInnerTest1 {
+    public void test() {
+        InnerClassTest7.bar bar2 = InnerClassTest7.bar.JAMES;
+    }
+}

@@ -1,0 +1,13 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class CallTest3b.B {
+    private CallTest3b.B() {
+    }
+
+    public void foo() {
+        System.out.println("B");
+    }
+}

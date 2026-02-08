@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class InstanceOfTest2.Integer {
+    private InstanceOfTest2.Integer() {
+    }
+}

@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.StructTest2;
+
+public class ScopeTest11 {
+    StructTest2 y;
+
+    public void foo(StructTest2 structTest1) {
+        StructTest2 x = this.y = structTest1;
+        x.x.a = "fred";
+        x = this.y;
+        x.x.b = 3;
+        x = this.y;
+        x.x.b = 2;
+        x = this.y;
+        x.x.b = 1;
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class LeeZhou1.C1 {
+    private final int x;
+
+    private LeeZhou1.C1(int x) {
+        this.x = x;
+    }
+}

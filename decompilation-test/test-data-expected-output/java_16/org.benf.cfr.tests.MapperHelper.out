@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+class MapperHelper {
+    MapperHelper() {
+    }
+
+    static String getTableName(Object o, Object o2) {
+        return "a";
+    }
+
+    static Object getTable(Object s) {
+        return null;
+    }
+}

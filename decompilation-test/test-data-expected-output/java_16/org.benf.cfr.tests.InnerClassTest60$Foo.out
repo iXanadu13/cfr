@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest60;
+
+class InnerClassTest60.Foo {
+    private InnerClassTest60.Foo() {
+    }
+
+    InnerClassTest60.Bip getBip() {
+        return null;
+    }
+}

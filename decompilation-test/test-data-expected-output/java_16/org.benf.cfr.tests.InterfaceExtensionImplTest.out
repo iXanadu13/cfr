@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InterfaceExtensionTest;
+
+public class InterfaceExtensionImplTest
+implements InterfaceExtensionTest {
+    @Override
+    public void test1() {
+        System.out.println("Fred");
+    }
+}

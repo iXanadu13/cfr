@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.Dollar$Bill;
+
+public class Dollar {
+    private Dollar$Bill bill = new Dollar$Bill();
+}

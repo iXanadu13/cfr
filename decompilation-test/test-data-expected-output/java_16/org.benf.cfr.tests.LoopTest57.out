@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+public class LoopTest57 {
+    public void test(Map<Object, String> m) {
+        ArrayList<String> lst = new ArrayList<String>();
+        for (Map.Entry<Object, String> e : m.entrySet()) {
+            lst.add(e.getValue());
+        }
+        for (String s : lst) {
+            System.out.println(s);
+        }
+    }
+}

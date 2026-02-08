@@ -1,0 +1,18 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class AssignTest2a {
+    private static long sid = 0L;
+    private final long id0;
+
+    public AssignTest2a() {
+        this.id0 = sid++;
+        long y = sid;
+    }
+
+    public AssignTest2a(boolean b) {
+        this.id0 = ++sid;
+    }
+}

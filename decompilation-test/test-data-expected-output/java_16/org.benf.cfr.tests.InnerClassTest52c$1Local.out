@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.InnerClassTest52c;
+
+class InnerClassTest52c.1Local
+implements InnerClassTest52c.ILocal {
+    InnerClassTest52c.1Local() {
+    }
+}

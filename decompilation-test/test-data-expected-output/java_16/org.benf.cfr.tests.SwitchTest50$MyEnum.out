@@ -1,0 +1,10 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+enum SwitchTest50.MyEnum {
+    A,
+    B;
+
+}

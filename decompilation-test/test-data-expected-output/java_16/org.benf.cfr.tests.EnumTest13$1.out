@@ -1,0 +1,14 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.EnumTest13;
+
+final class EnumTest13.1
+extends EnumTest13 {
+    @Override
+    public Integer performCastAction(Integer orig, Integer tgtType) {
+        return EnumTest13.foo();
+    }
+}

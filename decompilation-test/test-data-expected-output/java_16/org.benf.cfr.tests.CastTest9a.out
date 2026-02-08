@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+public class CastTest9a {
+    public void t1() {
+        Integer s = 2;
+        this.call(s.intValue());
+        this.call(s.intValue());
+        this.call(s.intValue());
+        this.call(s.intValue());
+        this.call((double)s.intValue());
+    }
+
+    public void call(long l) {
+    }
+
+    public void call(double d) {
+    }
+}
