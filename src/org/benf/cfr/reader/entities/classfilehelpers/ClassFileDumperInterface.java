@@ -34,7 +34,7 @@ public class ClassFileDumperInterface extends AbstractClassFileDumper {
         d.print(getAccessFlagsString(c.getAccessFlags(), accessFlagsToDump));
 
         d.print("interface ");
-        c.dumpClassIdentity(d, innerClassDumpType);
+        c.dumpClassIdentity(d);
         d.newln();
 
         ClassSignature signature = c.getClassSignature();
