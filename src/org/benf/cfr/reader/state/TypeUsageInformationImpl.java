@@ -55,6 +55,11 @@ public class TypeUsageInformationImpl implements TypeUsageInformation {
     }
 
     @Override
+    public JavaRefTypeInstance getCurrentScope() {
+        return analysisType;
+    }
+
+    @Override
     public String generateInnerClassShortName(JavaRefTypeInstance clazz) {
         return TypeUsageUtils.generateInnerClassShortName(iid, clazz, analysisType, false);
     }
@@ -237,6 +242,11 @@ public class TypeUsageInformationImpl implements TypeUsageInformation {
     @Override
     public Set<DetectedStaticImport> getDetectedStaticImports() {
         return staticImports;
+    }
+
+    @Override
+    public TypeUsageInformation getDelegateTypeUsageInformation() {
+        return null;
     }
 
     @Override

@@ -118,7 +118,18 @@ public class Mapping implements ObfuscationMapping {
         }
 
         @Override
+        public TypeUsageInformation getDelegateTypeUsageInformation() {
+            // TODO: 2026/2/8 2:21 throw an error here?
+            return null;
+        }
+
+        @Override
         public JavaRefTypeInstance getAnalysisType() {
+            return delegateRemapped.getAnalysisType();
+        }
+
+        @Override
+        public JavaRefTypeInstance getCurrentScope() {
             return delegateRemapped.getAnalysisType();
         }
 

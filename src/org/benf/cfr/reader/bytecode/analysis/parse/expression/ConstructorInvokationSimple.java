@@ -15,8 +15,11 @@ import org.benf.cfr.reader.bytecode.analysis.types.discovery.InferredJavaType;
 import org.benf.cfr.reader.entities.ClassFileField;
 import org.benf.cfr.reader.entities.classfilehelpers.OverloadMethodSet;
 import org.benf.cfr.reader.entities.exceptions.ExceptionCheck;
+import org.benf.cfr.reader.state.InnerClassTypeUsageInformation;
+import org.benf.cfr.reader.state.TypeUsageInformation;
 import org.benf.cfr.reader.util.MiscConstants;
 import org.benf.cfr.reader.util.output.Dumper;
+import org.benf.cfr.reader.util.output.TypeContext;
 
 import java.util.List;
 
@@ -78,7 +81,11 @@ public class ConstructorInvokationSimple extends AbstractConstructorInvokation i
             }
         }
 
-        d.keyword("new ").dump(clazz).separator("(");
+        d.keyword("new ");
+
+        dumpType(d, clazz, prototype);
+
+        d.separator("(");
         boolean first = true;
         for (int i = 0; i < args.size(); ++i) {
             if (prototype.isHiddenArg(i)) continue;
@@ -89,6 +96,51 @@ public class ConstructorInvokationSimple extends AbstractConstructorInvokation i
         }
         d.separator(")");
         return d;
+    }
+
+    private void dumpType(Dumper d, JavaTypeInstance clazz, MethodPrototype prototype) {
+        boolean isInitialization = prototype.isInstanceMethod() && prototype.isInnerOuterThis() && prototype.getName().equals("<init>");
+        if (!isInitialization) {
+            d.dump(clazz, TypeContext.INNER);
+            return;
+        }
+        if (!(prototype.getReturnType() instanceof JavaRefTypeInstance)) {
+            d.dump(clazz, TypeContext.INNER);
+            return;
+        }
+        JavaTypeInstance ancestor = d.getTypeUsageInformation().getAnalysisType();
+        JavaRefTypeInstance returnType = (JavaRefTypeInstance) prototype.getReturnType();
+//        JavaRefTypeInstance superType = (JavaRefTypeInstance) prototype.getArgs().get(0);
+        if (ancestor == null || !(clazz instanceof JavaRefTypeInstance)) {
+            d.dump(clazz, TypeContext.INNER);
+            return;
+        }
+
+        TypeUsageInformation current = d.getTypeUsageInformation();
+        if (returnType.equals(d.getTypeUsageInformation().getCurrentScope())) {
+            // just dump as normal
+            d.dump(clazz, TypeContext.INNER);
+            return;
+        }
+        while (current != null && current.getCurrentScope() != null && !current.getCurrentScope().equals(ancestor)) {
+            // returns null if is not in inner class
+            current = current.getDelegateTypeUsageInformation();
+        }
+        if (current == null) {
+            // cannot find the outer scope
+            d.dump(clazz, TypeContext.INNER);
+            return;
+        }
+        if (returnType.equals(ancestor)) {
+            TypeUsageInformation innerclassTypeUsageInformation = new InnerClassTypeUsageInformation(current, d.getTypeUsageInformation().getCurrentScope());
+            Dumper d2 = d.withTypeUsageInformation(innerclassTypeUsageInformation);
+            d2.dump(clazz, TypeContext.INNER);
+        } else if (!current.hasLocalInstance(returnType)) {
+            // see: InnerClassTest23_Strobel, InnerClassTest44
+            d.dump(clazz, TypeContext.NEW);
+        } else {
+            d.dump(clazz, TypeContext.INNER);
+        }
     }
 
     @Override

@@ -2,11 +2,14 @@ package org.benf.cfr.reader.entities.classfilehelpers;
 
 import org.benf.cfr.reader.bytecode.analysis.opgraph.Op04StructuredStatement;
 import org.benf.cfr.reader.bytecode.analysis.parse.Expression;
+import org.benf.cfr.reader.bytecode.analysis.types.JavaRefTypeInstance;
 import org.benf.cfr.reader.bytecode.analysis.types.JavaTypeInstance;
 import org.benf.cfr.reader.bytecode.analysis.types.MethodPrototype;
 import org.benf.cfr.reader.entities.*;
 import org.benf.cfr.reader.entities.attributes.AttributeCode;
+import org.benf.cfr.reader.state.InnerClassTypeUsageInformation;
 import org.benf.cfr.reader.state.TypeUsageCollector;
+import org.benf.cfr.reader.state.TypeUsageInformation;
 import org.benf.cfr.reader.util.collections.ListFactory;
 import org.benf.cfr.reader.util.StringUtils;
 import org.benf.cfr.reader.util.output.Dumper;
@@ -61,10 +64,13 @@ public class ClassFileDumperAnonymousInner extends AbstractClassFileDumper {
         d.indent(1);
         int outcrs = d.getOutputCount();
 
+        TypeUsageInformation typeUsageInformation = d.getTypeUsageInformation();
+        TypeUsageInformation innerclassTypeUsageInformation = new InnerClassTypeUsageInformation(typeUsageInformation, (JavaRefTypeInstance) classFile.getClassType());
+        Dumper d2 = d.withTypeUsageInformation(innerclassTypeUsageInformation);
 
         List<ClassFileField> fields = classFile.getFields();
         for (ClassFileField field : fields) {
-            if (!field.shouldNotDisplay()) field.dump(d, classFile);
+            if (!field.shouldNotDisplay()) field.dump(d2, classFile);
         }
         List<Method> methods = classFile.getMethods();
         if (!methods.isEmpty()) {
@@ -78,22 +84,22 @@ public class ClassFileDumperAnonymousInner extends AbstractClassFileDumper {
                         // But we don't bother dumping if it's empty...
                         Op04StructuredStatement stm = anonymousConstructor.analyse();
                         if (!stm.isEmptyInitialiser()) {
-                            anonymousConstructor.dump(d);
+                            anonymousConstructor.dump(d2);
                         }
                     }
                     continue;
                 }
-                d.newln();
-                method.dump(d, true);
+                d2.newln();
+                method.dump(d2, true);
             }
         }
-        classFile.dumpNamedInnerClasses(d);
-        d.indent(-1);
+        classFile.dumpNamedInnerClasses(d2);
+        d2.indent(-1);
 
-        if (d.getOutputCount() == outcrs) {
-            d.removePendingCarriageReturn();
+        if (d2.getOutputCount() == outcrs) {
+            d2.removePendingCarriageReturn();
         }
-        d.print("}").newln();
+        d2.print("}").newln();
 
         return d;
     }

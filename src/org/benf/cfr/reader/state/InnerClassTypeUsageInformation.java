@@ -49,12 +49,26 @@ public class InnerClassTypeUsageInformation implements TypeUsageInformation {
         return delegate.getAnalysisType();
     }
 
+    @Override
+    public JavaRefTypeInstance getCurrentScope() {
+        return this.analysisInnerClass;
+    }
+
     private void initializeFrom() {
         Set<JavaRefTypeInstance> outerInners = delegate.getUsedInnerClassTypes();
         for (JavaRefTypeInstance outerInner : outerInners) {
+            // 外面的类名可能包含$，按层级语义上反而是这个innerClass的内部类
             if (outerInner.getInnerClassHereInfo().isTransitiveInnerClassOf(analysisInnerClass)) {
                 usedInnerClassTypes.add(outerInner);
                 String name = TypeUsageUtils.generateInnerClassShortName(iid, outerInner, analysisInnerClass, false);
+                if (!usedLocalTypeNames.contains(name)) {
+                    localTypeNames.put(outerInner, name);
+                    usedLocalTypeNames.add(name);
+                }
+            }
+            else if (delegate instanceof LocalClassAwareTypeUsageInformation && analysisInnerClass.equals(outerInner)) {
+                usedInnerClassTypes.add(outerInner);
+                String name = TypeUsageUtils.generateInnerClassShortName(iid, outerInner, analysisInnerClass.getInnerClassHereInfo().getOuterClass(), false);
                 if (!usedLocalTypeNames.contains(name)) {
                     localTypeNames.put(outerInner, name);
                     usedLocalTypeNames.add(name);
@@ -120,6 +134,11 @@ public class InnerClassTypeUsageInformation implements TypeUsageInformation {
     }
 
     @Override
+    public TypeUsageInformation getDelegateTypeUsageInformation() {
+        return this.delegate;
+    }
+
+    @Override
     public String generateOverriddenName(JavaRefTypeInstance clazz) {
         return delegate.generateOverriddenName(clazz);
     }
@@ -128,4 +147,5 @@ public class InnerClassTypeUsageInformation implements TypeUsageInformation {
     public Set<JavaRefTypeInstance> getShortenedClassTypes() {
         return delegate.getShortenedClassTypes();
     }
+
 }

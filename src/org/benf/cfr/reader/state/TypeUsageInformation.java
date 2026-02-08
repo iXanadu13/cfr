@@ -9,6 +9,7 @@ import java.util.Set;
 
 public interface TypeUsageInformation {
     JavaRefTypeInstance getAnalysisType();
+    JavaRefTypeInstance getCurrentScope();
 
     Set<JavaRefTypeInstance> getShortenedClassTypes();
 
@@ -31,4 +32,5 @@ public interface TypeUsageInformation {
     boolean isStaticImport(JavaTypeInstance clazz, String fixedName);
 
     Set<DetectedStaticImport> getDetectedStaticImports();
+    TypeUsageInformation getDelegateTypeUsageInformation();
 }

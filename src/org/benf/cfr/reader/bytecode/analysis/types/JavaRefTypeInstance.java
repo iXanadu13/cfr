@@ -304,6 +304,9 @@ public class JavaRefTypeInstance implements JavaTypeInstance {
     public void dumpInto(Dumper d, TypeUsageInformation typeUsageInformation, TypeContext typeContext) {
         String res = typeUsageInformation.getName(this, typeContext);
         if (res == null) throw new IllegalStateException();
+        if (typeContext == TypeContext.NEW) {
+            res = res.substring(res.lastIndexOf('.') + 1);
+        }
         d.print(res);
     }
 

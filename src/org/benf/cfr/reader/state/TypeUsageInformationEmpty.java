@@ -18,6 +18,11 @@ public class TypeUsageInformationEmpty implements TypeUsageInformation {
     }
 
     @Override
+    public JavaRefTypeInstance getCurrentScope() {
+        return null;
+    }
+
+    @Override
     public IllegalIdentifierDump getIid() {
         return null;
     }
@@ -30,6 +35,11 @@ public class TypeUsageInformationEmpty implements TypeUsageInformation {
     @Override
     public Set<DetectedStaticImport> getDetectedStaticImports() {
         return Collections.emptySet();
+    }
+
+    @Override
+    public TypeUsageInformation getDelegateTypeUsageInformation() {
+        return null;
     }
 
     @Override
