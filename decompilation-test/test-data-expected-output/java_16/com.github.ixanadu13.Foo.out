@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR.
+ */
+package com.github.ixanadu13;
+
+public class Foo {
+    public void test_switch() {
+        String str;
+        switch (str = "12") {
+            default: 
+        }
+    }
+
+    public void test_switch2() {
+        int i = 12;
+        switch (i) {
+            case 12: {
+                break;
+            }
+            case 13: {
+                break;
+            }
+            case 14: {
+                break;
+            }
+        }
+    }
+}
