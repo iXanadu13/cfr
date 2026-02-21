@@ -1,0 +1,44 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+class RecordComponentAnnotationsTest {
+    RecordComponentAnnotationsTest() {
+    }
+
+    record R(@RecordComponentAnnotation @FieldAnnotation int i, int i2) {
+        private final int i2;
+
+        @MethodAnnotation(value="method")
+        public int i2() {
+            return 1;
+        }
+
+        @MethodAnnotation
+        public int i() {
+            return this.i;
+        }
+    }
+
+    @Retention(value=RetentionPolicy.RUNTIME)
+    @Target(value={ElementType.RECORD_COMPONENT})
+    static @interface RecordComponentAnnotation {
+    }
+
+    @Retention(value=RetentionPolicy.RUNTIME)
+    @Target(value={ElementType.METHOD})
+    static @interface MethodAnnotation {
+        public String value() default "";
+    }
+
+    @Retention(value=RetentionPolicy.RUNTIME)
+    @Target(value={ElementType.FIELD})
+    static @interface FieldAnnotation {
+    }
+}

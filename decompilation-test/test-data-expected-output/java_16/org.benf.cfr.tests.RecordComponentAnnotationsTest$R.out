@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR.
+ */
+package org.benf.cfr.tests;
+
+import org.benf.cfr.tests.RecordComponentAnnotationsTest;
+
+record RecordComponentAnnotationsTest.R(@RecordComponentAnnotationsTest.RecordComponentAnnotation @RecordComponentAnnotationsTest.FieldAnnotation int i, int i2) {
+    private final int i2;
+
+    @RecordComponentAnnotationsTest.MethodAnnotation(value="method")
+    public int i2() {
+        return 1;
+    }
+
+    @RecordComponentAnnotationsTest.MethodAnnotation
+    public int i() {
+        return this.i;
+    }
+}
