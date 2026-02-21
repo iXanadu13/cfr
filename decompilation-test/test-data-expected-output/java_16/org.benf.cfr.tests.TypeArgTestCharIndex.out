@@ -7,6 +7,6 @@ public class TypeArgTestCharIndex {
     private static final String TEST = "src/main/java/com/example/Test.java";
 
     public static void main(String[] args) {
-        System.out.println(TEST.substring(TEST.lastIndexOf(47) + 1, TEST.indexOf(46)));
+        System.out.println(TEST.substring(TEST.lastIndexOf('/') + 1, TEST.indexOf('.')));
     }
 }

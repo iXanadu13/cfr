@@ -7,6 +7,6 @@ public class TypeArgTest1 {
     private static final String TEST = "src/Test.java";
 
     public static void main(String[] args) {
-        System.out.println(TEST.substring(TEST.indexOf(47) + 1, TEST.indexOf(46)));
+        System.out.println(TEST.substring(TEST.indexOf('/') + 1, TEST.indexOf('.')));
     }
 }
