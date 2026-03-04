@@ -60,7 +60,7 @@ public class InferredJavaType {
     }
 
     // This doesn't need to be threadsafe, it's a debugging aid only.
-    private static final AtomicInteger global_id = new AtomicInteger();
+    private static final AtomicInteger global_id = new AtomicInteger(0);
 
     private enum ClashState {
         None,
@@ -560,9 +560,11 @@ public class InferredJavaType {
 
         public void mkDelegate(IJTInternal newDelegate) {
             if (isDelegate) {
-                InferredJavaType.mkDelegate(delegate, newDelegate);
-//                delegate.mkDelegate(newDelegate);
+                delegate.mkDelegate(newDelegate);
             } else {
+                if (newDelegate == this) {
+                    throw new IllegalStateException("Attempt to delegate to self!");
+                }
                 isDelegate = true;
                 delegate = newDelegate;
             }
@@ -834,6 +836,13 @@ public class InferredJavaType {
             if (otherTypeInstance instanceof JavaGenericPlaceholderTypeInstance ^ thisTypeInstance instanceof JavaGenericPlaceholderTypeInstance) {
                 return CastAction.InsertExplicit;
             }
+        }
+
+        if (this.value.isLocked()) {
+            // Insert an extra layer of indirection
+            IJTInternal tmp = new IJTInternal_Impl(this.value.getJavaTypeInstance(), this.value.getSource(), false);
+            tmp.mkDelegate(this.value);
+            this.value = tmp;
         }
 
         mkDelegate(this.value, other.value);
